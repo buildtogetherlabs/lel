@@ -2,39 +2,24 @@
 .venv/
 __pycache__/
 *.py[cod]
-*.egg-info/
 .pytest_cache/
 
-# OS / editor
+# OS
 .DS_Store
-.idea/
-.vscode/
-*.swp
 
-# ── Generated outputs (never commit proof/renders until quality-gated) ──
+# Local generates only
 output/images/
 output/metadata/
 output/previews/
-output/proof/
-!output/**/.gitkeep
-!output/README.md
-
-# QA reports from local runs
 reports/*.png
 reports/*.json
+!output/README.md
 !reports/README.md
-!reports/.gitkeep
 
-# Full-collection manifests (regenerable; large)
+# Full collection dumps
 manifests/combos_*.json
 manifests/combos_*.csv
 manifests/images_sha256.txt
-# Keep curation notes
-!manifests/curation_report.json
 
-# Secrets
 .env
 .env.*
-
-# Legacy auto-align dumps (optional local only; template path is source of truth)
-# layers_normalized stays tracked for now as archive; do not add new proof sets there

@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-"""Quick composite preview for placement QA."""
+"""Quick composite preview for production QA."""
 from __future__ import annotations
 
 import argparse
-import json
 from pathlib import Path
 
-from paths import CONFIG, PREVIEWS
+from paths import PREVIEWS
 from composite import composite_token
 
 
@@ -14,7 +13,7 @@ def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--background", default="void_black")
     p.add_argument("--face", required=True)
-    p.add_argument("--clothing", required=True)
+    p.add_argument("--clothing", default="none")
     p.add_argument("--hat", default="none")
     p.add_argument("--accessory", default="none")
     p.add_argument("--mask", default="none")
@@ -29,8 +28,7 @@ def main() -> None:
         "accessory": args.accessory,
         "mask": args.mask,
     }
-    canvas = json.loads((CONFIG / "canvas.json").read_text())
-    img = composite_token(combo, canvas)
+    img = composite_token(combo)
 
     PREVIEWS.mkdir(parents=True, exist_ok=True)
     out = Path(args.out) if args.out else PREVIEWS / (

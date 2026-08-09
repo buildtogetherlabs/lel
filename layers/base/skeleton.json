@@ -1,0 +1,56 @@
+{
+  "canvas": {
+    "width": 1000,
+    "height": 1000
+  },
+  "master_face_id": "wojak_neutral_calm",
+  "master_face_source": "layers_raw/wojak_pfp_project/faces2/wojak_neutral_calm.png",
+  "face_placement": {
+    "content_top": 0.08,
+    "content_height": 0.8,
+    "center_x": 0.5,
+    "head_width_approx": 0.66
+  },
+  "guides_y": {
+    "head_top": 0.08,
+    "hat_brim": 0.3,
+    "brow": 0.256,
+    "eye_line": 0.37,
+    "nose": 0.464,
+    "mouth": 0.544,
+    "chin": 0.64,
+    "collar": 0.66,
+    "shoulder": 0.86
+  },
+  "guides_x": {
+    "center": 0.5,
+    "head_left": 0.17,
+    "head_right": 0.83,
+    "eye_span": 0.38,
+    "accessory_center_x": 0.54
+  },
+  "layer_order": [
+    "background",
+    "face",
+    "clothing",
+    "mask",
+    "accessory",
+    "hat"
+  ],
+  "export_rules": {
+    "format": "PNG",
+    "mode": "RGBA",
+    "size": [
+      1000,
+      1000
+    ],
+    "transparent_background": true,
+    "no_drop_shadows": true,
+    "line_weight": "match master base black stroke"
+  },
+  "placement_notes": {
+    "clothing": "top pinned to collar (moved down)",
+    "accessory": "glasses shifted right for 3/4 face",
+    "hat": "bottom on hat_brim"
+  }
+}

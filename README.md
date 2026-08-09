@@ -1,77 +1,55 @@
 # LEL
 
-Generative Wojak PFP collection — target **6,666** (ERC-721 / Robinhood-compatible metadata).
+White-base Wojak PFP collection — target **6,666**.
 
 Repo: [buildtogetherlabs/lel](https://github.com/buildtogetherlabs/lel)
 
-## Base policy
+## Clean layout
 
-**Majority = classic white wojak faces only.**
+```
+layers/
+  base/                 # master white body + workbench (draw here)
+  face/                 # white faces (mass gen) — 53
+  face_special_1of1/    # gray/devil/etc. — later 1-of-1s — 31
+  clothing/             # production redraws (empty until drawn)
+  hat/
+  accessory/
+  background/           # solid BGs — ready
+  mask/
 
-| Pool | Role |
-|---|---|
-| `layers_template/face/` (~53) | Mass collection faces (white) |
-| `layers_template/face_special_1of1/` (~31) | Gray NPC, red devil, pink, skeleton, clown, soy, etc. — **1-of-1 later** |
-
-See `template/base_policy.json`, `template/faces_white.txt`, `template/faces_special_1of1.txt`.
-
-## Status
-
-| Piece | State |
-|---|---|
-| Master template + skeleton | Locked |
-| White faces registered | ~53 in `layers_template/face/` |
-| Clothing / hats / accessories aligned to skeleton | Yes (`align_traits.py`) |
-| Special faces parked for 1-of-1 | Yes |
-| Generator reads `layers_template/` | Yes |
-| Proof samples | Local only (gitignored) |
-
-Alignment is **good enough to iterate**; full mint quality may still need per-trait redraws on clothing/hats. Special bases stay out of mass gen.
-
-## Layout
-
-| Path | What |
-|---|---|
-| `template/` | Master base, guides, policy, briefs |
-| `layers_template/` | **Production** layers (white path) |
-| `layers_raw/` | Archive / style reference |
-| `layers_normalized/` | Legacy experiment (ignore for mint) |
-| `scripts/` | align / catalog / generate / composite |
-| `output/`, `reports/` | Local generates only |
-
-## Commands
-
-```bash
-cd ~/Projects/wojak-collection   # or clone from GitHub
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-
-# Align clothing/hats/accessories to master skeleton
-python scripts/align_traits.py
-
-# Rebuild trait catalog from layers_template (white faces only)
-python scripts/build_catalog.py
-
-# Local completed samples
-python scripts/generate_collection.py --count 36
-python scripts/make_contact_sheet.py --limit 36 --out reports/samples_completed_36.png
-open reports/samples_completed_36.png
+style_ref/              # ORIGINAL trait art — style reference for redraw only
+template/               # docs, queue, skeleton, master copies
+scripts/                # build / preview / generate
+config/
 ```
 
-## Layer order
+**Production rule:** clothing, hats, and accessories are drawn **on** the white master body (`layers/base/`), exported as transparent 1000×1000 layers into `layers/{category}/`.
+
+## Start redrawing
+
+1. Open workbench: `layers/base/workbench_draw_here.png`  
+2. Checklist: `template/TRAIT_QUEUE.md`  
+3. Style refs: `style_ref/clothing`, `style_ref/hats`, `style_ref/accessories`, …  
+4. Export finished traits → `layers/clothing/`, `layers/hat/`, `layers/accessory/`  
+5. Full instructions: `template/FLAWLESS_PRODUCTION.md`
+
+```bash
+cd ~/Projects/wojak-collection   # → Lacie
+source .venv/bin/activate
+
+python scripts/build_catalog.py
+python scripts/preview_trait.py --face wojak_neutral_calm --clothing YOUR_ID
+python scripts/generate_collection.py --count 24
+```
+
+## Layer stack
 
 Background → Face → Clothing → Mask → Accessory → Hat
 
-## Flawless quality
+## Policy
 
-Auto-align is for **draft** composites only. Mint-ready traits must be **redrawn as 1000×1000** layers against `template/master_base.png`.
-
-See **`template/FLAWLESS_PRODUCTION.md`**.
-
-Draft boards (master + trait): `python scripts/export_redraw_boards.py --category clothing --limit 12`
-
-## Notes
-
-- Generated renders are **not** committed (keeps the repo clean).
-- Pepe tee / McDonald’s uniform excluded from mass clothing pool for now.
-- Next quality step: redraw worst clothing/hats against `template/master_base.png` when auto-align isn’t enough.
+| Pool | Use |
+|---|---|
+| White faces | Majority collection |
+| Special faces | 1-of-1 later only |
+| style_ref | Look at for design — do not mint as-is |

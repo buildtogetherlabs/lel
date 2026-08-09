@@ -16,7 +16,7 @@ import random
 import sys
 from pathlib import Path
 
-from paths import CONFIG, LAYERS_TEMPLATE, MANIFESTS
+from paths import CONFIG, LAYERS, MANIFESTS
 from composite import render_and_save
 
 
@@ -177,7 +177,7 @@ def main() -> None:
             tid = c[cat]
             if tid == "none":
                 continue
-            if not (LAYERS_TEMPLATE / cat / f"{tid}.png").exists():
+            if not (LAYERS / cat / f"{tid}.png").exists():
                 missing.append(f"{cat}/{tid}")
     if missing:
         uniq = sorted(set(missing))

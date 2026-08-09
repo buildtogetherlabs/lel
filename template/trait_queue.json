@@ -1,0 +1,1240 @@
+{
+  "policy": "Draw every production trait ON layers/base/master_base.png (1000x1000). style_ref/ is design reference only.",
+  "master": "layers/base/master_base.png",
+  "workbench": "layers/base/workbench_draw_here.png",
+  "export_root": "layers/",
+  "style_ref_root": "style_ref/",
+  "categories": {
+    "clothing": {
+      "count": 87,
+      "items": [
+        {
+          "id": "beige_jacket_orange_scarf",
+          "style_ref": "style_ref/clothing/beige_jacket_orange_scarf.png",
+          "export_to": "layers/clothing/beige_jacket_orange_scarf.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_blazer_brown_tshirt",
+          "style_ref": "style_ref/clothing/black_blazer_brown_tshirt.png",
+          "export_to": "layers/clothing/black_blazer_brown_tshirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_blazer_tan_tshirt",
+          "style_ref": "style_ref/clothing/black_blazer_tan_tshirt.png",
+          "export_to": "layers/clothing/black_blazer_tan_tshirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_hoodie",
+          "style_ref": "style_ref/clothing/black_hoodie.png",
+          "export_to": "layers/clothing/black_hoodie.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_jacket_olive_turtleneck",
+          "style_ref": "style_ref/clothing/black_jacket_olive_turtleneck.png",
+          "export_to": "layers/clothing/black_jacket_olive_turtleneck.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_jacket_yellow_turtleneck",
+          "style_ref": "style_ref/clothing/black_jacket_yellow_turtleneck.png",
+          "export_to": "layers/clothing/black_jacket_yellow_turtleneck.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_leather_jacket_brown_tshirt",
+          "style_ref": "style_ref/clothing/black_leather_jacket_brown_tshirt.png",
+          "export_to": "layers/clothing/black_leather_jacket_brown_tshirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_suit_black_tie",
+          "style_ref": "style_ref/clothing/black_suit_black_tie.png",
+          "export_to": "layers/clothing/black_suit_black_tie.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_suit_black_tie_variant",
+          "style_ref": "style_ref/clothing/black_suit_black_tie_variant.png",
+          "export_to": "layers/clothing/black_suit_black_tie_variant.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_suit_blue_striped_tie",
+          "style_ref": "style_ref/clothing/black_suit_blue_striped_tie.png",
+          "export_to": "layers/clothing/black_suit_blue_striped_tie.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_suit_purple_tie",
+          "style_ref": "style_ref/clothing/black_suit_purple_tie.png",
+          "export_to": "layers/clothing/black_suit_purple_tie.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_suit_white_collar",
+          "style_ref": "style_ref/clothing/black_suit_white_collar.png",
+          "export_to": "layers/clothing/black_suit_white_collar.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_tuxedo_bow_tie",
+          "style_ref": "style_ref/clothing/black_tuxedo_bow_tie.png",
+          "export_to": "layers/clothing/black_tuxedo_bow_tie.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_tuxedo_bow_tie_rose",
+          "style_ref": "style_ref/clothing/black_tuxedo_bow_tie_rose.png",
+          "export_to": "layers/clothing/black_tuxedo_bow_tie_rose.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_tuxedo_white_bow_tie",
+          "style_ref": "style_ref/clothing/black_tuxedo_white_bow_tie.png",
+          "export_to": "layers/clothing/black_tuxedo_white_bow_tie.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_vest_gray_sleeves",
+          "style_ref": "style_ref/clothing/black_vest_gray_sleeves.png",
+          "export_to": "layers/clothing/black_vest_gray_sleeves.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_vest_white_sleeves",
+          "style_ref": "style_ref/clothing/black_vest_white_sleeves.png",
+          "export_to": "layers/clothing/black_vest_white_sleeves.png",
+          "status": "todo"
+        },
+        {
+          "id": "blue_victorian_dress_black_hat",
+          "style_ref": "style_ref/clothing/blue_victorian_dress_black_hat.png",
+          "export_to": "layers/clothing/blue_victorian_dress_black_hat.png",
+          "status": "todo"
+        },
+        {
+          "id": "blue_vneck_sweater_shirt_tie",
+          "style_ref": "style_ref/clothing/blue_vneck_sweater_shirt_tie.png",
+          "export_to": "layers/clothing/blue_vneck_sweater_shirt_tie.png",
+          "status": "todo"
+        },
+        {
+          "id": "blue_vneck_sweater_white_shirt_tie",
+          "style_ref": "style_ref/clothing/blue_vneck_sweater_white_shirt_tie.png",
+          "export_to": "layers/clothing/blue_vneck_sweater_white_shirt_tie.png",
+          "status": "todo"
+        },
+        {
+          "id": "brown_uniform_yellow_stars_collar",
+          "style_ref": "style_ref/clothing/brown_uniform_yellow_stars_collar.png",
+          "export_to": "layers/clothing/brown_uniform_yellow_stars_collar.png",
+          "status": "todo"
+        },
+        {
+          "id": "brushstroke_camo_military_jacket",
+          "style_ref": "style_ref/clothing/brushstroke_camo_military_jacket.png",
+          "export_to": "layers/clothing/brushstroke_camo_military_jacket.png",
+          "status": "todo"
+        },
+        {
+          "id": "burgundy_suit_decorative_collar",
+          "style_ref": "style_ref/clothing/burgundy_suit_decorative_collar.png",
+          "export_to": "layers/clothing/burgundy_suit_decorative_collar.png",
+          "status": "todo"
+        },
+        {
+          "id": "camo_tactical_vest_tan_shoulders",
+          "style_ref": "style_ref/clothing/camo_tactical_vest_tan_shoulders.png",
+          "export_to": "layers/clothing/camo_tactical_vest_tan_shoulders.png",
+          "status": "todo"
+        },
+        {
+          "id": "checkered_suit_black_tie",
+          "style_ref": "style_ref/clothing/checkered_suit_black_tie.png",
+          "export_to": "layers/clothing/checkered_suit_black_tie.png",
+          "status": "todo"
+        },
+        {
+          "id": "denim_jacket_bandana",
+          "style_ref": "style_ref/clothing/denim_jacket_bandana.png",
+          "export_to": "layers/clothing/denim_jacket_bandana.png",
+          "status": "todo"
+        },
+        {
+          "id": "gray_blazer_brown_tshirt",
+          "style_ref": "style_ref/clothing/gray_blazer_brown_tshirt.png",
+          "export_to": "layers/clothing/gray_blazer_brown_tshirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "gray_jacket_orange_turtleneck",
+          "style_ref": "style_ref/clothing/gray_jacket_orange_turtleneck.png",
+          "export_to": "layers/clothing/gray_jacket_orange_turtleneck.png",
+          "status": "todo"
+        },
+        {
+          "id": "gray_jacket_orange_turtleneck_variant",
+          "style_ref": "style_ref/clothing/gray_jacket_orange_turtleneck_variant.png",
+          "export_to": "layers/clothing/gray_jacket_orange_turtleneck_variant.png",
+          "status": "todo"
+        },
+        {
+          "id": "gray_suit_black_tie",
+          "style_ref": "style_ref/clothing/gray_suit_black_tie.png",
+          "export_to": "layers/clothing/gray_suit_black_tie.png",
+          "status": "todo"
+        },
+        {
+          "id": "gray_tactical_vest",
+          "style_ref": "style_ref/clothing/gray_tactical_vest.png",
+          "export_to": "layers/clothing/gray_tactical_vest.png",
+          "status": "todo"
+        },
+        {
+          "id": "green_button_shirt_collar",
+          "style_ref": "style_ref/clothing/green_button_shirt_collar.png",
+          "export_to": "layers/clothing/green_button_shirt_collar.png",
+          "status": "todo"
+        },
+        {
+          "id": "green_military_jacket",
+          "style_ref": "style_ref/clothing/green_military_jacket.png",
+          "export_to": "layers/clothing/green_military_jacket.png",
+          "status": "todo"
+        },
+        {
+          "id": "medieval_knight_armor_axe",
+          "style_ref": "style_ref/clothing/medieval_knight_armor_axe.png",
+          "export_to": "layers/clothing/medieval_knight_armor_axe.png",
+          "status": "todo"
+        },
+        {
+          "id": "napoleonic_uniform_gold_epaulettes",
+          "style_ref": "style_ref/clothing/napoleonic_uniform_gold_epaulettes.png",
+          "export_to": "layers/clothing/napoleonic_uniform_gold_epaulettes.png",
+          "status": "todo"
+        },
+        {
+          "id": "navy_jacket_gray_turtleneck",
+          "style_ref": "style_ref/clothing/navy_jacket_gray_turtleneck.png",
+          "export_to": "layers/clothing/navy_jacket_gray_turtleneck.png",
+          "status": "todo"
+        },
+        {
+          "id": "navy_jacket_gray_white_turtleneck",
+          "style_ref": "style_ref/clothing/navy_jacket_gray_white_turtleneck.png",
+          "export_to": "layers/clothing/navy_jacket_gray_white_turtleneck.png",
+          "status": "todo"
+        },
+        {
+          "id": "navy_suit_navy_tie",
+          "style_ref": "style_ref/clothing/navy_suit_navy_tie.png",
+          "export_to": "layers/clothing/navy_suit_navy_tie.png",
+          "status": "todo"
+        },
+        {
+          "id": "navy_suit_red_tie",
+          "style_ref": "style_ref/clothing/navy_suit_red_tie.png",
+          "export_to": "layers/clothing/navy_suit_red_tie.png",
+          "status": "todo"
+        },
+        {
+          "id": "navy_suit_red_tie_variant",
+          "style_ref": "style_ref/clothing/navy_suit_red_tie_variant.png",
+          "export_to": "layers/clothing/navy_suit_red_tie_variant.png",
+          "status": "todo"
+        },
+        {
+          "id": "purple_collar_teeth",
+          "style_ref": "style_ref/clothing/purple_collar_teeth.png",
+          "export_to": "layers/clothing/purple_collar_teeth.png",
+          "status": "todo"
+        },
+        {
+          "id": "red_dress_uniform_medals",
+          "style_ref": "style_ref/clothing/red_dress_uniform_medals.png",
+          "export_to": "layers/clothing/red_dress_uniform_medals.png",
+          "status": "todo"
+        },
+        {
+          "id": "red_victorian_dress_black_hat",
+          "style_ref": "style_ref/clothing/red_victorian_dress_black_hat.png",
+          "export_to": "layers/clothing/red_victorian_dress_black_hat.png",
+          "status": "todo"
+        },
+        {
+          "id": "tactical_leg_ammo_bandolier",
+          "style_ref": "style_ref/clothing/tactical_leg_ammo_bandolier.png",
+          "export_to": "layers/clothing/tactical_leg_ammo_bandolier.png",
+          "status": "todo"
+        },
+        {
+          "id": "tactical_saddle_backpack",
+          "style_ref": "style_ref/clothing/tactical_saddle_backpack.png",
+          "export_to": "layers/clothing/tactical_saddle_backpack.png",
+          "status": "todo"
+        },
+        {
+          "id": "tactical_vest_desert_camo_sleeves",
+          "style_ref": "style_ref/clothing/tactical_vest_desert_camo_sleeves.png",
+          "export_to": "layers/clothing/tactical_vest_desert_camo_sleeves.png",
+          "status": "todo"
+        },
+        {
+          "id": "tactical_vest_multicam_sleeves",
+          "style_ref": "style_ref/clothing/tactical_vest_multicam_sleeves.png",
+          "export_to": "layers/clothing/tactical_vest_multicam_sleeves.png",
+          "status": "todo"
+        },
+        {
+          "id": "tactical_vest_woodland_camo_sleeves",
+          "style_ref": "style_ref/clothing/tactical_vest_woodland_camo_sleeves.png",
+          "export_to": "layers/clothing/tactical_vest_woodland_camo_sleeves.png",
+          "status": "todo"
+        },
+        {
+          "id": "tan_blazer_navy_shirt",
+          "style_ref": "style_ref/clothing/tan_blazer_navy_shirt.png",
+          "export_to": "layers/clothing/tan_blazer_navy_shirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "tan_blazer_navy_tshirt",
+          "style_ref": "style_ref/clothing/tan_blazer_navy_tshirt.png",
+          "export_to": "layers/clothing/tan_blazer_navy_tshirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "tan_suit_black_tie",
+          "style_ref": "style_ref/clothing/tan_suit_black_tie.png",
+          "export_to": "layers/clothing/tan_suit_black_tie.png",
+          "status": "todo"
+        },
+        {
+          "id": "tuxedo_red_jacket",
+          "style_ref": "style_ref/clothing/tuxedo_red_jacket.png",
+          "export_to": "layers/clothing/tuxedo_red_jacket.png",
+          "status": "todo"
+        },
+        {
+          "id": "white_blazer_red_shirt",
+          "style_ref": "style_ref/clothing/white_blazer_red_shirt.png",
+          "export_to": "layers/clothing/white_blazer_red_shirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "white_blazer_red_tshirt",
+          "style_ref": "style_ref/clothing/white_blazer_red_tshirt.png",
+          "export_to": "layers/clothing/white_blazer_red_tshirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "white_shirt_black_bow_tie",
+          "style_ref": "style_ref/clothing/white_shirt_black_bow_tie.png",
+          "export_to": "layers/clothing/white_shirt_black_bow_tie.png",
+          "status": "todo"
+        },
+        {
+          "id": "woodland_camo_military_jacket",
+          "style_ref": "style_ref/clothing/woodland_camo_military_jacket.png",
+          "export_to": "layers/clothing/woodland_camo_military_jacket.png",
+          "status": "todo"
+        },
+        {
+          "id": "ash_gray_tee",
+          "style_ref": "style_ref/clothing2/ash_gray_tee.png",
+          "export_to": "layers/clothing/ash_gray_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_button_shirt",
+          "style_ref": "style_ref/clothing2/black_button_shirt.png",
+          "export_to": "layers/clothing/black_button_shirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_collar_shirt",
+          "style_ref": "style_ref/clothing2/black_collar_shirt.png",
+          "export_to": "layers/clothing/black_collar_shirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_raglan_tee",
+          "style_ref": "style_ref/clothing2/black_raglan_tee.png",
+          "export_to": "layers/clothing/black_raglan_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_tee",
+          "style_ref": "style_ref/clothing2/black_tee.png",
+          "export_to": "layers/clothing/black_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_vest_green_stripes",
+          "style_ref": "style_ref/clothing2/black_vest_green_stripes.png",
+          "export_to": "layers/clothing/black_vest_green_stripes.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_white_plaid",
+          "style_ref": "style_ref/clothing2/black_white_plaid.png",
+          "export_to": "layers/clothing/black_white_plaid.png",
+          "status": "todo"
+        },
+        {
+          "id": "blue_plaid_flannel",
+          "style_ref": "style_ref/clothing2/blue_plaid_flannel.png",
+          "export_to": "layers/clothing/blue_plaid_flannel.png",
+          "status": "todo"
+        },
+        {
+          "id": "charcoal_tee",
+          "style_ref": "style_ref/clothing2/charcoal_tee.png",
+          "export_to": "layers/clothing/charcoal_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "dark_gray_polo",
+          "style_ref": "style_ref/clothing2/dark_gray_polo.png",
+          "export_to": "layers/clothing/dark_gray_polo.png",
+          "status": "todo"
+        },
+        {
+          "id": "dark_gray_shirt",
+          "style_ref": "style_ref/clothing2/dark_gray_shirt.png",
+          "export_to": "layers/clothing/dark_gray_shirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "dark_gray_tee",
+          "style_ref": "style_ref/clothing2/dark_gray_tee.png",
+          "export_to": "layers/clothing/dark_gray_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "gray_polo_shirt",
+          "style_ref": "style_ref/clothing2/gray_polo_shirt.png",
+          "export_to": "layers/clothing/gray_polo_shirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "gray_raglan_tee",
+          "style_ref": "style_ref/clothing2/gray_raglan_tee.png",
+          "export_to": "layers/clothing/gray_raglan_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "green_pol_pepe_tee",
+          "style_ref": "style_ref/clothing2/green_pol_pepe_tee.png",
+          "export_to": "layers/clothing/green_pol_pepe_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "green_tee",
+          "style_ref": "style_ref/clothing2/green_tee.png",
+          "export_to": "layers/clothing/green_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "hawaiian_floral_shirt",
+          "style_ref": "style_ref/clothing2/hawaiian_floral_shirt.png",
+          "export_to": "layers/clothing/hawaiian_floral_shirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "light_gray_polo",
+          "style_ref": "style_ref/clothing2/light_gray_polo.png",
+          "export_to": "layers/clothing/light_gray_polo.png",
+          "status": "todo"
+        },
+        {
+          "id": "light_gray_tee",
+          "style_ref": "style_ref/clothing2/light_gray_tee.png",
+          "export_to": "layers/clothing/light_gray_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "mcdonalds_uniform",
+          "style_ref": "style_ref/clothing2/mcdonalds_uniform.png",
+          "export_to": "layers/clothing/mcdonalds_uniform.png",
+          "status": "todo"
+        },
+        {
+          "id": "medium_gray_tee",
+          "style_ref": "style_ref/clothing2/medium_gray_tee.png",
+          "export_to": "layers/clothing/medium_gray_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "navy_blue_button_shirt",
+          "style_ref": "style_ref/clothing2/navy_blue_button_shirt.png",
+          "export_to": "layers/clothing/navy_blue_button_shirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "navy_collar_shirt",
+          "style_ref": "style_ref/clothing2/navy_collar_shirt.png",
+          "export_to": "layers/clothing/navy_collar_shirt.png",
+          "status": "todo"
+        },
+        {
+          "id": "navy_tee",
+          "style_ref": "style_ref/clothing2/navy_tee.png",
+          "export_to": "layers/clothing/navy_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "orange_tee",
+          "style_ref": "style_ref/clothing2/orange_tee.png",
+          "export_to": "layers/clothing/orange_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "red_black_flannel",
+          "style_ref": "style_ref/clothing2/red_black_flannel.png",
+          "export_to": "layers/clothing/red_black_flannel.png",
+          "status": "todo"
+        },
+        {
+          "id": "slate_gray_tee",
+          "style_ref": "style_ref/clothing2/slate_gray_tee.png",
+          "export_to": "layers/clothing/slate_gray_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "white_gray_tee",
+          "style_ref": "style_ref/clothing2/white_gray_tee.png",
+          "export_to": "layers/clothing/white_gray_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "white_nasa_tee",
+          "style_ref": "style_ref/clothing2/white_nasa_tee.png",
+          "export_to": "layers/clothing/white_nasa_tee.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_hoodie_drawstrings",
+          "style_ref": "style_ref/hoodies/black_hoodie_drawstrings.png",
+          "export_to": "layers/clothing/black_hoodie_drawstrings.png",
+          "status": "todo"
+        },
+        {
+          "id": "black_jacket_green_stripes",
+          "style_ref": "style_ref/hoodies/black_jacket_green_stripes.png",
+          "export_to": "layers/clothing/black_jacket_green_stripes.png",
+          "status": "todo"
+        }
+      ]
+    },
+    "hat": {
+      "count": 66,
+      "items": [
+        {
+          "id": "bandana_green",
+          "style_ref": "style_ref/hats/bandana_green.png",
+          "export_to": "layers/hat/bandana_green.png",
+          "status": "todo"
+        },
+        {
+          "id": "bandana_navy_blue",
+          "style_ref": "style_ref/hats/bandana_navy_blue.png",
+          "export_to": "layers/hat/bandana_navy_blue.png",
+          "status": "todo"
+        },
+        {
+          "id": "bandana_red",
+          "style_ref": "style_ref/hats/bandana_red.png",
+          "export_to": "layers/hat/bandana_red.png",
+          "status": "todo"
+        },
+        {
+          "id": "beanie_black_ribbed",
+          "style_ref": "style_ref/hats/beanie_black_ribbed.png",
+          "export_to": "layers/hat/beanie_black_ribbed.png",
+          "status": "todo"
+        },
+        {
+          "id": "beanie_dark_ribbed",
+          "style_ref": "style_ref/hats/beanie_dark_ribbed.png",
+          "export_to": "layers/hat/beanie_dark_ribbed.png",
+          "status": "todo"
+        },
+        {
+          "id": "beret_black",
+          "style_ref": "style_ref/hats/beret_black.png",
+          "export_to": "layers/hat/beret_black.png",
+          "status": "todo"
+        },
+        {
+          "id": "beret_military_green_plain",
+          "style_ref": "style_ref/hats/beret_military_green_plain.png",
+          "export_to": "layers/hat/beret_military_green_plain.png",
+          "status": "todo"
+        },
+        {
+          "id": "beret_military_green_red_star",
+          "style_ref": "style_ref/hats/beret_military_green_red_star.png",
+          "export_to": "layers/hat/beret_military_green_red_star.png",
+          "status": "todo"
+        },
+        {
+          "id": "beret_military_maroon_star",
+          "style_ref": "style_ref/hats/beret_military_maroon_star.png",
+          "export_to": "layers/hat/beret_military_maroon_star.png",
+          "status": "todo"
+        },
+        {
+          "id": "bicorne_black_napoleon",
+          "style_ref": "style_ref/hats/bicorne_black_napoleon.png",
+          "export_to": "layers/hat/bicorne_black_napoleon.png",
+          "status": "todo"
+        },
+        {
+          "id": "boonie_camo_rhodesian",
+          "style_ref": "style_ref/hats/boonie_camo_rhodesian.png",
+          "export_to": "layers/hat/boonie_camo_rhodesian.png",
+          "status": "todo"
+        },
+        {
+          "id": "boonie_camo_woodland",
+          "style_ref": "style_ref/hats/boonie_camo_woodland.png",
+          "export_to": "layers/hat/boonie_camo_woodland.png",
+          "status": "todo"
+        },
+        {
+          "id": "bucket_black",
+          "style_ref": "style_ref/hats/bucket_black.png",
+          "export_to": "layers/hat/bucket_black.png",
+          "status": "todo"
+        },
+        {
+          "id": "bucket_checkered_red_white",
+          "style_ref": "style_ref/hats/bucket_checkered_red_white.png",
+          "export_to": "layers/hat/bucket_checkered_red_white.png",
+          "status": "todo"
+        },
+        {
+          "id": "bucket_frog_green_pepe",
+          "style_ref": "style_ref/hats/bucket_frog_green_pepe.png",
+          "export_to": "layers/hat/bucket_frog_green_pepe.png",
+          "status": "todo"
+        },
+        {
+          "id": "bucket_green",
+          "style_ref": "style_ref/hats/bucket_green.png",
+          "export_to": "layers/hat/bucket_green.png",
+          "status": "todo"
+        },
+        {
+          "id": "bucket_purple",
+          "style_ref": "style_ref/hats/bucket_purple.png",
+          "export_to": "layers/hat/bucket_purple.png",
+          "status": "todo"
+        },
+        {
+          "id": "campaign_hat_brown_plain",
+          "style_ref": "style_ref/hats/campaign_hat_brown_plain.png",
+          "export_to": "layers/hat/campaign_hat_brown_plain.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_bitcoin_orange_white_circle",
+          "style_ref": "style_ref/hats/cap_bitcoin_orange_white_circle.png",
+          "export_to": "layers/hat/cap_bitcoin_orange_white_circle.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_black_down_only",
+          "style_ref": "style_ref/hats/cap_black_down_only.png",
+          "export_to": "layers/hat/cap_black_down_only.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_black_gradient_logo",
+          "style_ref": "style_ref/hats/cap_black_gradient_logo.png",
+          "export_to": "layers/hat/cap_black_gradient_logo.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_blue_plain",
+          "style_ref": "style_ref/hats/cap_blue_plain.png",
+          "export_to": "layers/hat/cap_blue_plain.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_dominos_black",
+          "style_ref": "style_ref/hats/cap_dominos_black.png",
+          "export_to": "layers/hat/cap_dominos_black.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_gray_meme_pepsi",
+          "style_ref": "style_ref/hats/cap_gray_meme_pepsi.png",
+          "export_to": "layers/hat/cap_gray_meme_pepsi.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_maga_red",
+          "style_ref": "style_ref/hats/cap_maga_red.png",
+          "export_to": "layers/hat/cap_maga_red.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_mcdonalds_black_small_logo",
+          "style_ref": "style_ref/hats/cap_mcdonalds_black_small_logo.png",
+          "export_to": "layers/hat/cap_mcdonalds_black_small_logo.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_mcdonalds_red_golden_arches",
+          "style_ref": "style_ref/hats/cap_mcdonalds_red_golden_arches.png",
+          "export_to": "layers/hat/cap_mcdonalds_red_golden_arches.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_nintendo_red",
+          "style_ref": "style_ref/hats/cap_nintendo_red.png",
+          "export_to": "layers/hat/cap_nintendo_red.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_pilot_blue_airline",
+          "style_ref": "style_ref/hats/cap_pilot_blue_airline.png",
+          "export_to": "layers/hat/cap_pilot_blue_airline.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_police_black_badge",
+          "style_ref": "style_ref/hats/cap_police_black_badge.png",
+          "export_to": "layers/hat/cap_police_black_badge.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_propeller_multicolor",
+          "style_ref": "style_ref/hats/cap_propeller_multicolor.png",
+          "export_to": "layers/hat/cap_propeller_multicolor.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_red_bitcoin_yellow",
+          "style_ref": "style_ref/hats/cap_red_bitcoin_yellow.png",
+          "export_to": "layers/hat/cap_red_bitcoin_yellow.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_san_andreas_black",
+          "style_ref": "style_ref/hats/cap_san_andreas_black.png",
+          "export_to": "layers/hat/cap_san_andreas_black.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_white_black_maroon_panels",
+          "style_ref": "style_ref/hats/cap_white_black_maroon_panels.png",
+          "export_to": "layers/hat/cap_white_black_maroon_panels.png",
+          "status": "todo"
+        },
+        {
+          "id": "cap_white_gray_plain",
+          "style_ref": "style_ref/hats/cap_white_gray_plain.png",
+          "export_to": "layers/hat/cap_white_gray_plain.png",
+          "status": "todo"
+        },
+        {
+          "id": "chef_hat_white_toque",
+          "style_ref": "style_ref/hats/chef_hat_white_toque.png",
+          "export_to": "layers/hat/chef_hat_white_toque.png",
+          "status": "todo"
+        },
+        {
+          "id": "cowboy_black_red_band",
+          "style_ref": "style_ref/hats/cowboy_black_red_band.png",
+          "export_to": "layers/hat/cowboy_black_red_band.png",
+          "status": "todo"
+        },
+        {
+          "id": "cowboy_brown",
+          "style_ref": "style_ref/hats/cowboy_brown.png",
+          "export_to": "layers/hat/cowboy_brown.png",
+          "status": "todo"
+        },
+        {
+          "id": "cowboy_white",
+          "style_ref": "style_ref/hats/cowboy_white.png",
+          "export_to": "layers/hat/cowboy_white.png",
+          "status": "todo"
+        },
+        {
+          "id": "fedora_black_gray_band",
+          "style_ref": "style_ref/hats/fedora_black_gray_band.png",
+          "export_to": "layers/hat/fedora_black_gray_band.png",
+          "status": "todo"
+        },
+        {
+          "id": "fedora_blue_black_band",
+          "style_ref": "style_ref/hats/fedora_blue_black_band.png",
+          "export_to": "layers/hat/fedora_blue_black_band.png",
+          "status": "todo"
+        },
+        {
+          "id": "fedora_dark_brown",
+          "style_ref": "style_ref/hats/fedora_dark_brown.png",
+          "export_to": "layers/hat/fedora_dark_brown.png",
+          "status": "todo"
+        },
+        {
+          "id": "fedora_gray_black_band",
+          "style_ref": "style_ref/hats/fedora_gray_black_band.png",
+          "export_to": "layers/hat/fedora_gray_black_band.png",
+          "status": "todo"
+        },
+        {
+          "id": "fedora_tan_brown_classic",
+          "style_ref": "style_ref/hats/fedora_tan_brown_classic.png",
+          "export_to": "layers/hat/fedora_tan_brown_classic.png",
+          "status": "todo"
+        },
+        {
+          "id": "fedora_tan_variation",
+          "style_ref": "style_ref/hats/fedora_tan_variation.png",
+          "export_to": "layers/hat/fedora_tan_variation.png",
+          "status": "todo"
+        },
+        {
+          "id": "fez_burgundy_tassel",
+          "style_ref": "style_ref/hats/fez_burgundy_tassel.png",
+          "export_to": "layers/hat/fez_burgundy_tassel.png",
+          "status": "todo"
+        },
+        {
+          "id": "fez_red",
+          "style_ref": "style_ref/hats/fez_red.png",
+          "export_to": "layers/hat/fez_red.png",
+          "status": "todo"
+        },
+        {
+          "id": "gambler_black",
+          "style_ref": "style_ref/hats/gambler_black.png",
+          "export_to": "layers/hat/gambler_black.png",
+          "status": "todo"
+        },
+        {
+          "id": "gambler_brown",
+          "style_ref": "style_ref/hats/gambler_brown.png",
+          "export_to": "layers/hat/gambler_brown.png",
+          "status": "todo"
+        },
+        {
+          "id": "gambler_gray",
+          "style_ref": "style_ref/hats/gambler_gray.png",
+          "export_to": "layers/hat/gambler_gray.png",
+          "status": "todo"
+        },
+        {
+          "id": "gambler_navy_blue",
+          "style_ref": "style_ref/hats/gambler_navy_blue.png",
+          "export_to": "layers/hat/gambler_navy_blue.png",
+          "status": "todo"
+        },
+        {
+          "id": "hardhat_orange",
+          "style_ref": "style_ref/hats/hardhat_orange.png",
+          "export_to": "layers/hat/hardhat_orange.png",
+          "status": "todo"
+        },
+        {
+          "id": "hardhat_yellow",
+          "style_ref": "style_ref/hats/hardhat_yellow.png",
+          "export_to": "layers/hat/hardhat_yellow.png",
+          "status": "todo"
+        },
+        {
+          "id": "helmet_camo_woodland_m1",
+          "style_ref": "style_ref/hats/helmet_camo_woodland_m1.png",
+          "export_to": "layers/hat/helmet_camo_woodland_m1.png",
+          "status": "todo"
+        },
+        {
+          "id": "helmet_combat_green_modern",
+          "style_ref": "style_ref/hats/helmet_combat_green_modern.png",
+          "export_to": "layers/hat/helmet_combat_green_modern.png",
+          "status": "todo"
+        },
+        {
+          "id": "helmet_military_gray_clean",
+          "style_ref": "style_ref/hats/helmet_military_gray_clean.png",
+          "export_to": "layers/hat/helmet_military_gray_clean.png",
+          "status": "todo"
+        },
+        {
+          "id": "helmet_military_gray_horse_emblem",
+          "style_ref": "style_ref/hats/helmet_military_gray_horse_emblem.png",
+          "export_to": "layers/hat/helmet_military_gray_horse_emblem.png",
+          "status": "todo"
+        },
+        {
+          "id": "helmet_military_green_clean",
+          "style_ref": "style_ref/hats/helmet_military_green_clean.png",
+          "export_to": "layers/hat/helmet_military_green_clean.png",
+          "status": "todo"
+        },
+        {
+          "id": "helmet_military_olive_damaged",
+          "style_ref": "style_ref/hats/helmet_military_olive_damaged.png",
+          "export_to": "layers/hat/helmet_military_olive_damaged.png",
+          "status": "todo"
+        },
+        {
+          "id": "helmet_swat_black_goggles",
+          "style_ref": "style_ref/hats/helmet_swat_black_goggles.png",
+          "export_to": "layers/hat/helmet_swat_black_goggles.png",
+          "status": "todo"
+        },
+        {
+          "id": "helmet_vietnam_born_to_feel",
+          "style_ref": "style_ref/hats/helmet_vietnam_born_to_feel.png",
+          "export_to": "layers/hat/helmet_vietnam_born_to_feel.png",
+          "status": "todo"
+        },
+        {
+          "id": "pith_helmet_green_safari",
+          "style_ref": "style_ref/hats/pith_helmet_green_safari.png",
+          "export_to": "layers/hat/pith_helmet_green_safari.png",
+          "status": "todo"
+        },
+        {
+          "id": "pith_helmet_tan_safari",
+          "style_ref": "style_ref/hats/pith_helmet_tan_safari.png",
+          "export_to": "layers/hat/pith_helmet_tan_safari.png",
+          "status": "todo"
+        },
+        {
+          "id": "ranger_hat_brown_badge",
+          "style_ref": "style_ref/hats/ranger_hat_brown_badge.png",
+          "export_to": "layers/hat/ranger_hat_brown_badge.png",
+          "status": "todo"
+        },
+        {
+          "id": "stocking_black",
+          "style_ref": "style_ref/hats/stocking_black.png",
+          "export_to": "layers/hat/stocking_black.png",
+          "status": "todo"
+        },
+        {
+          "id": "top_hat_white_gray",
+          "style_ref": "style_ref/hats/top_hat_white_gray.png",
+          "export_to": "layers/hat/top_hat_white_gray.png",
+          "status": "todo"
+        }
+      ]
+    },
+    "accessory": {
+      "count": 34,
+      "items": [
+        {
+          "id": "accessory_bitcoin_necklace",
+          "style_ref": "style_ref/accessories/accessory_bitcoin_necklace.png",
+          "export_to": "layers/accessory/accessory_bitcoin_necklace.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_black_cape_flowing",
+          "style_ref": "style_ref/accessories/accessory_black_cape_flowing.png",
+          "export_to": "layers/accessory/accessory_black_cape_flowing.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_brown_scarf",
+          "style_ref": "style_ref/accessories/accessory_brown_scarf.png",
+          "export_to": "layers/accessory/accessory_brown_scarf.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_chain_necklace_black",
+          "style_ref": "style_ref/accessories/accessory_chain_necklace_black.png",
+          "export_to": "layers/accessory/accessory_chain_necklace_black.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_chain_necklace_gold",
+          "style_ref": "style_ref/accessories/accessory_chain_necklace_gold.png",
+          "export_to": "layers/accessory/accessory_chain_necklace_gold.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_cigar_black",
+          "style_ref": "style_ref/accessories/accessory_cigar_black.png",
+          "export_to": "layers/accessory/accessory_cigar_black.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_cigarette_smoking",
+          "style_ref": "style_ref/accessories/accessory_cigarette_smoking.png",
+          "export_to": "layers/accessory/accessory_cigarette_smoking.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_gas_mask_black",
+          "style_ref": "style_ref/accessories/accessory_gas_mask_black.png",
+          "export_to": "layers/accessory/accessory_gas_mask_black.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_glasses_aviator_outline",
+          "style_ref": "style_ref/accessories/accessory_glasses_aviator_outline.png",
+          "export_to": "layers/accessory/accessory_glasses_aviator_outline.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_glasses_black_frame",
+          "style_ref": "style_ref/accessories/accessory_glasses_black_frame.png",
+          "export_to": "layers/accessory/accessory_glasses_black_frame.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_glasses_black_orange_accent",
+          "style_ref": "style_ref/accessories/accessory_glasses_black_orange_accent.png",
+          "export_to": "layers/accessory/accessory_glasses_black_orange_accent.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_glasses_blue_frame",
+          "style_ref": "style_ref/accessories/accessory_glasses_blue_frame.png",
+          "export_to": "layers/accessory/accessory_glasses_blue_frame.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_glasses_brown_reading",
+          "style_ref": "style_ref/accessories/accessory_glasses_brown_reading.png",
+          "export_to": "layers/accessory/accessory_glasses_brown_reading.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_glasses_rectangle_glare",
+          "style_ref": "style_ref/accessories/accessory_glasses_rectangle_glare.png",
+          "export_to": "layers/accessory/accessory_glasses_rectangle_glare.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_glasses_rectangle_outline",
+          "style_ref": "style_ref/accessories/accessory_glasses_rectangle_outline.png",
+          "export_to": "layers/accessory/accessory_glasses_rectangle_outline.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_glasses_round_reflective",
+          "style_ref": "style_ref/accessories/accessory_glasses_round_reflective.png",
+          "export_to": "layers/accessory/accessory_glasses_round_reflective.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_glasses_tan_reading",
+          "style_ref": "style_ref/accessories/accessory_glasses_tan_reading.png",
+          "export_to": "layers/accessory/accessory_glasses_tan_reading.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_goggles_brown_aviator",
+          "style_ref": "style_ref/accessories/accessory_goggles_brown_aviator.png",
+          "export_to": "layers/accessory/accessory_goggles_brown_aviator.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_gray_bowtie",
+          "style_ref": "style_ref/accessories/accessory_gray_bowtie.png",
+          "export_to": "layers/accessory/accessory_gray_bowtie.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_pilot_goggles_brown",
+          "style_ref": "style_ref/accessories/accessory_pilot_goggles_brown.png",
+          "export_to": "layers/accessory/accessory_pilot_goggles_brown.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_pipe_brown",
+          "style_ref": "style_ref/accessories/accessory_pipe_brown.png",
+          "export_to": "layers/accessory/accessory_pipe_brown.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_pipe_tan",
+          "style_ref": "style_ref/accessories/accessory_pipe_tan.png",
+          "export_to": "layers/accessory/accessory_pipe_tan.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_red_black_cape",
+          "style_ref": "style_ref/accessories/accessory_red_black_cape.png",
+          "export_to": "layers/accessory/accessory_red_black_cape.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_red_cape",
+          "style_ref": "style_ref/accessories/accessory_red_cape.png",
+          "export_to": "layers/accessory/accessory_red_cape.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_spiked_collar_ring",
+          "style_ref": "style_ref/accessories/accessory_spiked_collar_ring.png",
+          "export_to": "layers/accessory/accessory_spiked_collar_ring.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_sunglasses_black_dark",
+          "style_ref": "style_ref/accessories/accessory_sunglasses_black_dark.png",
+          "export_to": "layers/accessory/accessory_sunglasses_black_dark.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_sunglasses_black_rectangular",
+          "style_ref": "style_ref/accessories/accessory_sunglasses_black_rectangular.png",
+          "export_to": "layers/accessory/accessory_sunglasses_black_rectangular.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_sunglasses_brown_aviator",
+          "style_ref": "style_ref/accessories/accessory_sunglasses_brown_aviator.png",
+          "export_to": "layers/accessory/accessory_sunglasses_brown_aviator.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_sunglasses_brown_aviator_dark",
+          "style_ref": "style_ref/accessories/accessory_sunglasses_brown_aviator_dark.png",
+          "export_to": "layers/accessory/accessory_sunglasses_brown_aviator_dark.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_sunglasses_gold_blue_aviator",
+          "style_ref": "style_ref/accessories/accessory_sunglasses_gold_blue_aviator.png",
+          "export_to": "layers/accessory/accessory_sunglasses_gold_blue_aviator.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_sunglasses_gold_white_aviator",
+          "style_ref": "style_ref/accessories/accessory_sunglasses_gold_white_aviator.png",
+          "export_to": "layers/accessory/accessory_sunglasses_gold_white_aviator.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_sunglasses_palm_tree_reflection",
+          "style_ref": "style_ref/accessories/accessory_sunglasses_palm_tree_reflection.png",
+          "export_to": "layers/accessory/accessory_sunglasses_palm_tree_reflection.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_sunglasses_round_black",
+          "style_ref": "style_ref/accessories/accessory_sunglasses_round_black.png",
+          "export_to": "layers/accessory/accessory_sunglasses_round_black.png",
+          "status": "todo"
+        },
+        {
+          "id": "accessory_sunglasses_silver_dark_aviator",
+          "style_ref": "style_ref/accessories/accessory_sunglasses_silver_dark_aviator.png",
+          "export_to": "layers/accessory/accessory_sunglasses_silver_dark_aviator.png",
+          "status": "todo"
+        }
+      ]
+    }
+  },
+  "faces_white": {
+    "count": 53,
+    "ids": [
+      "acne_red_dots_eyebrows",
+      "angry_stubble",
+      "boomer_beard_wrinkles",
+      "confused_squint",
+      "creepy_smiling_big_teeth",
+      "crying_streams",
+      "depressed_dark",
+      "elderly_super_wrinkled",
+      "grumpy_frown",
+      "happy_content",
+      "happy_smiling",
+      "neutral_calm",
+      "neutral_simple",
+      "neutral_squinting",
+      "sad_baggy_eyes",
+      "sad_baggy_eyes_variant",
+      "sad_concerned_eyebrow",
+      "sad_dark_circles",
+      "sad_droopy",
+      "sad_stubble",
+      "sad_tired",
+      "sad_tired_no_stubble",
+      "smirking",
+      "smug_grin",
+      "smug_pointing",
+      "smug_slight_smile",
+      "tired_heavy_eyes",
+      "wojak_angry_determined",
+      "wojak_angry_furrowed",
+      "wojak_beaten_bruised",
+      "wojak_blushing_with_tears",
+      "wojak_content_smile",
+      "wojak_creepy_wide_grin",
+      "wojak_crying_but_happy",
+      "wojak_crying_streams",
+      "wojak_derpy_rolling_eyes",
+      "wojak_evil_red_eyes",
+      "wojak_eyes_closed_peaceful",
+      "wojak_intense_crying_gritted",
+      "wojak_intense_crying_teeth",
+      "wojak_laughing_excited",
+      "wojak_neutral_calm",
+      "wojak_neutral_straight_brows",
+      "wojak_side_glance",
+      "wojak_single_tear",
+      "wojak_sinister_smirk",
+      "wojak_slight_smile",
+      "wojak_smirking_wrinkled",
+      "wojak_smug_content",
+      "wojak_sweating_stressed",
+      "wojak_tears_neutral_face",
+      "wojak_wrinkled_determined",
+      "wojak_wrinkled_neutral"
+    ]
+  },
+  "faces_special_1of1": {
+    "count": 31,
+    "ids": [
+      "angry_soy_glasses",
+      "angry_vampire_fangs",
+      "bloody_horror_crying",
+      "clown_makeup",
+      "creepy_wide_smile",
+      "dark_shadowed_beard",
+      "evil_grin_teeth",
+      "glasses_screaming_beard",
+      "jeff_killer_smile",
+      "npc_gray_angry_furrowed_brow",
+      "npc_gray_angry_gritting_teeth",
+      "npc_gray_cracked_mask_brown",
+      "npc_gray_cracked_mask_tan",
+      "npc_gray_cracked_mask_white",
+      "npc_gray_neutral",
+      "npc_gray_sad_eyebrows",
+      "npc_gray_sunglasses",
+      "npc_gray_surprised_mouth",
+      "npc_gray_winking",
+      "pink_crying_blood_tears",
+      "pink_crying_blood_tears_variant",
+      "red_angry_gritting_teeth",
+      "shocked_wide_eyes",
+      "skeleton_skull",
+      "smoking_cigarette_brown_hair",
+      "soy_glasses_black_hair",
+      "soy_glasses_open_mouth",
+      "tired_sad_subtle",
+      "very_sad_depressed",
+      "wojak_beaten_bloody",
+      "wojak_red_devil_horns"
+    ]
+  }
+}

@@ -1,0 +1,299 @@
+# LEL trait queue — draw ON the white base
+
+**Export:** 1000×1000 PNG RGBA → `layers/{category}/{id}.png`
+**Workbench:** `layers/base/workbench_draw_here.png`
+**Style refs (originals):** `style_ref/`
+
+## How
+
+1. Open `layers/base/workbench_draw_here.png` locked underneath.
+2. Look at `style_ref/...` for design/colors only.
+3. Draw trait fitted to the white body (collar / eyes / hat brim).
+4. Export transparent trait only into `layers/`.
+5. Check off below.
+
+## Clothing (87)
+
+- [ ] `beige_jacket_orange_scarf`  ref:`style_ref/clothing/beige_jacket_orange_scarf.png`  → `layers/clothing/beige_jacket_orange_scarf.png`
+- [ ] `black_blazer_brown_tshirt`  ref:`style_ref/clothing/black_blazer_brown_tshirt.png`  → `layers/clothing/black_blazer_brown_tshirt.png`
+- [ ] `black_blazer_tan_tshirt`  ref:`style_ref/clothing/black_blazer_tan_tshirt.png`  → `layers/clothing/black_blazer_tan_tshirt.png`
+- [ ] `black_hoodie`  ref:`style_ref/clothing/black_hoodie.png`  → `layers/clothing/black_hoodie.png`
+- [ ] `black_jacket_olive_turtleneck`  ref:`style_ref/clothing/black_jacket_olive_turtleneck.png`  → `layers/clothing/black_jacket_olive_turtleneck.png`
+- [ ] `black_jacket_yellow_turtleneck`  ref:`style_ref/clothing/black_jacket_yellow_turtleneck.png`  → `layers/clothing/black_jacket_yellow_turtleneck.png`
+- [ ] `black_leather_jacket_brown_tshirt`  ref:`style_ref/clothing/black_leather_jacket_brown_tshirt.png`  → `layers/clothing/black_leather_jacket_brown_tshirt.png`
+- [ ] `black_suit_black_tie`  ref:`style_ref/clothing/black_suit_black_tie.png`  → `layers/clothing/black_suit_black_tie.png`
+- [ ] `black_suit_black_tie_variant`  ref:`style_ref/clothing/black_suit_black_tie_variant.png`  → `layers/clothing/black_suit_black_tie_variant.png`
+- [ ] `black_suit_blue_striped_tie`  ref:`style_ref/clothing/black_suit_blue_striped_tie.png`  → `layers/clothing/black_suit_blue_striped_tie.png`
+- [ ] `black_suit_purple_tie`  ref:`style_ref/clothing/black_suit_purple_tie.png`  → `layers/clothing/black_suit_purple_tie.png`
+- [ ] `black_suit_white_collar`  ref:`style_ref/clothing/black_suit_white_collar.png`  → `layers/clothing/black_suit_white_collar.png`
+- [ ] `black_tuxedo_bow_tie`  ref:`style_ref/clothing/black_tuxedo_bow_tie.png`  → `layers/clothing/black_tuxedo_bow_tie.png`
+- [ ] `black_tuxedo_bow_tie_rose`  ref:`style_ref/clothing/black_tuxedo_bow_tie_rose.png`  → `layers/clothing/black_tuxedo_bow_tie_rose.png`
+- [ ] `black_tuxedo_white_bow_tie`  ref:`style_ref/clothing/black_tuxedo_white_bow_tie.png`  → `layers/clothing/black_tuxedo_white_bow_tie.png`
+- [ ] `black_vest_gray_sleeves`  ref:`style_ref/clothing/black_vest_gray_sleeves.png`  → `layers/clothing/black_vest_gray_sleeves.png`
+- [ ] `black_vest_white_sleeves`  ref:`style_ref/clothing/black_vest_white_sleeves.png`  → `layers/clothing/black_vest_white_sleeves.png`
+- [ ] `blue_victorian_dress_black_hat`  ref:`style_ref/clothing/blue_victorian_dress_black_hat.png`  → `layers/clothing/blue_victorian_dress_black_hat.png`
+- [ ] `blue_vneck_sweater_shirt_tie`  ref:`style_ref/clothing/blue_vneck_sweater_shirt_tie.png`  → `layers/clothing/blue_vneck_sweater_shirt_tie.png`
+- [ ] `blue_vneck_sweater_white_shirt_tie`  ref:`style_ref/clothing/blue_vneck_sweater_white_shirt_tie.png`  → `layers/clothing/blue_vneck_sweater_white_shirt_tie.png`
+- [ ] `brown_uniform_yellow_stars_collar`  ref:`style_ref/clothing/brown_uniform_yellow_stars_collar.png`  → `layers/clothing/brown_uniform_yellow_stars_collar.png`
+- [ ] `brushstroke_camo_military_jacket`  ref:`style_ref/clothing/brushstroke_camo_military_jacket.png`  → `layers/clothing/brushstroke_camo_military_jacket.png`
+- [ ] `burgundy_suit_decorative_collar`  ref:`style_ref/clothing/burgundy_suit_decorative_collar.png`  → `layers/clothing/burgundy_suit_decorative_collar.png`
+- [ ] `camo_tactical_vest_tan_shoulders`  ref:`style_ref/clothing/camo_tactical_vest_tan_shoulders.png`  → `layers/clothing/camo_tactical_vest_tan_shoulders.png`
+- [ ] `checkered_suit_black_tie`  ref:`style_ref/clothing/checkered_suit_black_tie.png`  → `layers/clothing/checkered_suit_black_tie.png`
+- [ ] `denim_jacket_bandana`  ref:`style_ref/clothing/denim_jacket_bandana.png`  → `layers/clothing/denim_jacket_bandana.png`
+- [ ] `gray_blazer_brown_tshirt`  ref:`style_ref/clothing/gray_blazer_brown_tshirt.png`  → `layers/clothing/gray_blazer_brown_tshirt.png`
+- [ ] `gray_jacket_orange_turtleneck`  ref:`style_ref/clothing/gray_jacket_orange_turtleneck.png`  → `layers/clothing/gray_jacket_orange_turtleneck.png`
+- [ ] `gray_jacket_orange_turtleneck_variant`  ref:`style_ref/clothing/gray_jacket_orange_turtleneck_variant.png`  → `layers/clothing/gray_jacket_orange_turtleneck_variant.png`
+- [ ] `gray_suit_black_tie`  ref:`style_ref/clothing/gray_suit_black_tie.png`  → `layers/clothing/gray_suit_black_tie.png`
+- [ ] `gray_tactical_vest`  ref:`style_ref/clothing/gray_tactical_vest.png`  → `layers/clothing/gray_tactical_vest.png`
+- [ ] `green_button_shirt_collar`  ref:`style_ref/clothing/green_button_shirt_collar.png`  → `layers/clothing/green_button_shirt_collar.png`
+- [ ] `green_military_jacket`  ref:`style_ref/clothing/green_military_jacket.png`  → `layers/clothing/green_military_jacket.png`
+- [ ] `medieval_knight_armor_axe`  ref:`style_ref/clothing/medieval_knight_armor_axe.png`  → `layers/clothing/medieval_knight_armor_axe.png`
+- [ ] `napoleonic_uniform_gold_epaulettes`  ref:`style_ref/clothing/napoleonic_uniform_gold_epaulettes.png`  → `layers/clothing/napoleonic_uniform_gold_epaulettes.png`
+- [ ] `navy_jacket_gray_turtleneck`  ref:`style_ref/clothing/navy_jacket_gray_turtleneck.png`  → `layers/clothing/navy_jacket_gray_turtleneck.png`
+- [ ] `navy_jacket_gray_white_turtleneck`  ref:`style_ref/clothing/navy_jacket_gray_white_turtleneck.png`  → `layers/clothing/navy_jacket_gray_white_turtleneck.png`
+- [ ] `navy_suit_navy_tie`  ref:`style_ref/clothing/navy_suit_navy_tie.png`  → `layers/clothing/navy_suit_navy_tie.png`
+- [ ] `navy_suit_red_tie`  ref:`style_ref/clothing/navy_suit_red_tie.png`  → `layers/clothing/navy_suit_red_tie.png`
+- [ ] `navy_suit_red_tie_variant`  ref:`style_ref/clothing/navy_suit_red_tie_variant.png`  → `layers/clothing/navy_suit_red_tie_variant.png`
+- [ ] `purple_collar_teeth`  ref:`style_ref/clothing/purple_collar_teeth.png`  → `layers/clothing/purple_collar_teeth.png`
+- [ ] `red_dress_uniform_medals`  ref:`style_ref/clothing/red_dress_uniform_medals.png`  → `layers/clothing/red_dress_uniform_medals.png`
+- [ ] `red_victorian_dress_black_hat`  ref:`style_ref/clothing/red_victorian_dress_black_hat.png`  → `layers/clothing/red_victorian_dress_black_hat.png`
+- [ ] `tactical_leg_ammo_bandolier`  ref:`style_ref/clothing/tactical_leg_ammo_bandolier.png`  → `layers/clothing/tactical_leg_ammo_bandolier.png`
+- [ ] `tactical_saddle_backpack`  ref:`style_ref/clothing/tactical_saddle_backpack.png`  → `layers/clothing/tactical_saddle_backpack.png`
+- [ ] `tactical_vest_desert_camo_sleeves`  ref:`style_ref/clothing/tactical_vest_desert_camo_sleeves.png`  → `layers/clothing/tactical_vest_desert_camo_sleeves.png`
+- [ ] `tactical_vest_multicam_sleeves`  ref:`style_ref/clothing/tactical_vest_multicam_sleeves.png`  → `layers/clothing/tactical_vest_multicam_sleeves.png`
+- [ ] `tactical_vest_woodland_camo_sleeves`  ref:`style_ref/clothing/tactical_vest_woodland_camo_sleeves.png`  → `layers/clothing/tactical_vest_woodland_camo_sleeves.png`
+- [ ] `tan_blazer_navy_shirt`  ref:`style_ref/clothing/tan_blazer_navy_shirt.png`  → `layers/clothing/tan_blazer_navy_shirt.png`
+- [ ] `tan_blazer_navy_tshirt`  ref:`style_ref/clothing/tan_blazer_navy_tshirt.png`  → `layers/clothing/tan_blazer_navy_tshirt.png`
+- [ ] `tan_suit_black_tie`  ref:`style_ref/clothing/tan_suit_black_tie.png`  → `layers/clothing/tan_suit_black_tie.png`
+- [ ] `tuxedo_red_jacket`  ref:`style_ref/clothing/tuxedo_red_jacket.png`  → `layers/clothing/tuxedo_red_jacket.png`
+- [ ] `white_blazer_red_shirt`  ref:`style_ref/clothing/white_blazer_red_shirt.png`  → `layers/clothing/white_blazer_red_shirt.png`
+- [ ] `white_blazer_red_tshirt`  ref:`style_ref/clothing/white_blazer_red_tshirt.png`  → `layers/clothing/white_blazer_red_tshirt.png`
+- [ ] `white_shirt_black_bow_tie`  ref:`style_ref/clothing/white_shirt_black_bow_tie.png`  → `layers/clothing/white_shirt_black_bow_tie.png`
+- [ ] `woodland_camo_military_jacket`  ref:`style_ref/clothing/woodland_camo_military_jacket.png`  → `layers/clothing/woodland_camo_military_jacket.png`
+- [ ] `ash_gray_tee`  ref:`style_ref/clothing2/ash_gray_tee.png`  → `layers/clothing/ash_gray_tee.png`
+- [ ] `black_button_shirt`  ref:`style_ref/clothing2/black_button_shirt.png`  → `layers/clothing/black_button_shirt.png`
+- [ ] `black_collar_shirt`  ref:`style_ref/clothing2/black_collar_shirt.png`  → `layers/clothing/black_collar_shirt.png`
+- [ ] `black_raglan_tee`  ref:`style_ref/clothing2/black_raglan_tee.png`  → `layers/clothing/black_raglan_tee.png`
+- [ ] `black_tee`  ref:`style_ref/clothing2/black_tee.png`  → `layers/clothing/black_tee.png`
+- [ ] `black_vest_green_stripes`  ref:`style_ref/clothing2/black_vest_green_stripes.png`  → `layers/clothing/black_vest_green_stripes.png`
+- [ ] `black_white_plaid`  ref:`style_ref/clothing2/black_white_plaid.png`  → `layers/clothing/black_white_plaid.png`
+- [ ] `blue_plaid_flannel`  ref:`style_ref/clothing2/blue_plaid_flannel.png`  → `layers/clothing/blue_plaid_flannel.png`
+- [ ] `charcoal_tee`  ref:`style_ref/clothing2/charcoal_tee.png`  → `layers/clothing/charcoal_tee.png`
+- [ ] `dark_gray_polo`  ref:`style_ref/clothing2/dark_gray_polo.png`  → `layers/clothing/dark_gray_polo.png`
+- [ ] `dark_gray_shirt`  ref:`style_ref/clothing2/dark_gray_shirt.png`  → `layers/clothing/dark_gray_shirt.png`
+- [ ] `dark_gray_tee`  ref:`style_ref/clothing2/dark_gray_tee.png`  → `layers/clothing/dark_gray_tee.png`
+- [ ] `gray_polo_shirt`  ref:`style_ref/clothing2/gray_polo_shirt.png`  → `layers/clothing/gray_polo_shirt.png`
+- [ ] `gray_raglan_tee`  ref:`style_ref/clothing2/gray_raglan_tee.png`  → `layers/clothing/gray_raglan_tee.png`
+- [ ] `green_pol_pepe_tee`  ref:`style_ref/clothing2/green_pol_pepe_tee.png`  → `layers/clothing/green_pol_pepe_tee.png`
+- [ ] `green_tee`  ref:`style_ref/clothing2/green_tee.png`  → `layers/clothing/green_tee.png`
+- [ ] `hawaiian_floral_shirt`  ref:`style_ref/clothing2/hawaiian_floral_shirt.png`  → `layers/clothing/hawaiian_floral_shirt.png`
+- [ ] `light_gray_polo`  ref:`style_ref/clothing2/light_gray_polo.png`  → `layers/clothing/light_gray_polo.png`
+- [ ] `light_gray_tee`  ref:`style_ref/clothing2/light_gray_tee.png`  → `layers/clothing/light_gray_tee.png`
+- [ ] `mcdonalds_uniform`  ref:`style_ref/clothing2/mcdonalds_uniform.png`  → `layers/clothing/mcdonalds_uniform.png`
+- [ ] `medium_gray_tee`  ref:`style_ref/clothing2/medium_gray_tee.png`  → `layers/clothing/medium_gray_tee.png`
+- [ ] `navy_blue_button_shirt`  ref:`style_ref/clothing2/navy_blue_button_shirt.png`  → `layers/clothing/navy_blue_button_shirt.png`
+- [ ] `navy_collar_shirt`  ref:`style_ref/clothing2/navy_collar_shirt.png`  → `layers/clothing/navy_collar_shirt.png`
+- [ ] `navy_tee`  ref:`style_ref/clothing2/navy_tee.png`  → `layers/clothing/navy_tee.png`
+- [ ] `orange_tee`  ref:`style_ref/clothing2/orange_tee.png`  → `layers/clothing/orange_tee.png`
+- [ ] `red_black_flannel`  ref:`style_ref/clothing2/red_black_flannel.png`  → `layers/clothing/red_black_flannel.png`
+- [ ] `slate_gray_tee`  ref:`style_ref/clothing2/slate_gray_tee.png`  → `layers/clothing/slate_gray_tee.png`
+- [ ] `white_gray_tee`  ref:`style_ref/clothing2/white_gray_tee.png`  → `layers/clothing/white_gray_tee.png`
+- [ ] `white_nasa_tee`  ref:`style_ref/clothing2/white_nasa_tee.png`  → `layers/clothing/white_nasa_tee.png`
+- [ ] `black_hoodie_drawstrings`  ref:`style_ref/hoodies/black_hoodie_drawstrings.png`  → `layers/clothing/black_hoodie_drawstrings.png`
+- [ ] `black_jacket_green_stripes`  ref:`style_ref/hoodies/black_jacket_green_stripes.png`  → `layers/clothing/black_jacket_green_stripes.png`
+
+## Hat (66)
+
+- [ ] `bandana_green`  ref:`style_ref/hats/bandana_green.png`  → `layers/hat/bandana_green.png`
+- [ ] `bandana_navy_blue`  ref:`style_ref/hats/bandana_navy_blue.png`  → `layers/hat/bandana_navy_blue.png`
+- [ ] `bandana_red`  ref:`style_ref/hats/bandana_red.png`  → `layers/hat/bandana_red.png`
+- [ ] `beanie_black_ribbed`  ref:`style_ref/hats/beanie_black_ribbed.png`  → `layers/hat/beanie_black_ribbed.png`
+- [ ] `beanie_dark_ribbed`  ref:`style_ref/hats/beanie_dark_ribbed.png`  → `layers/hat/beanie_dark_ribbed.png`
+- [ ] `beret_black`  ref:`style_ref/hats/beret_black.png`  → `layers/hat/beret_black.png`
+- [ ] `beret_military_green_plain`  ref:`style_ref/hats/beret_military_green_plain.png`  → `layers/hat/beret_military_green_plain.png`
+- [ ] `beret_military_green_red_star`  ref:`style_ref/hats/beret_military_green_red_star.png`  → `layers/hat/beret_military_green_red_star.png`
+- [ ] `beret_military_maroon_star`  ref:`style_ref/hats/beret_military_maroon_star.png`  → `layers/hat/beret_military_maroon_star.png`
+- [ ] `bicorne_black_napoleon`  ref:`style_ref/hats/bicorne_black_napoleon.png`  → `layers/hat/bicorne_black_napoleon.png`
+- [ ] `boonie_camo_rhodesian`  ref:`style_ref/hats/boonie_camo_rhodesian.png`  → `layers/hat/boonie_camo_rhodesian.png`
+- [ ] `boonie_camo_woodland`  ref:`style_ref/hats/boonie_camo_woodland.png`  → `layers/hat/boonie_camo_woodland.png`
+- [ ] `bucket_black`  ref:`style_ref/hats/bucket_black.png`  → `layers/hat/bucket_black.png`
+- [ ] `bucket_checkered_red_white`  ref:`style_ref/hats/bucket_checkered_red_white.png`  → `layers/hat/bucket_checkered_red_white.png`
+- [ ] `bucket_frog_green_pepe`  ref:`style_ref/hats/bucket_frog_green_pepe.png`  → `layers/hat/bucket_frog_green_pepe.png`
+- [ ] `bucket_green`  ref:`style_ref/hats/bucket_green.png`  → `layers/hat/bucket_green.png`
+- [ ] `bucket_purple`  ref:`style_ref/hats/bucket_purple.png`  → `layers/hat/bucket_purple.png`
+- [ ] `campaign_hat_brown_plain`  ref:`style_ref/hats/campaign_hat_brown_plain.png`  → `layers/hat/campaign_hat_brown_plain.png`
+- [ ] `cap_bitcoin_orange_white_circle`  ref:`style_ref/hats/cap_bitcoin_orange_white_circle.png`  → `layers/hat/cap_bitcoin_orange_white_circle.png`
+- [ ] `cap_black_down_only`  ref:`style_ref/hats/cap_black_down_only.png`  → `layers/hat/cap_black_down_only.png`
+- [ ] `cap_black_gradient_logo`  ref:`style_ref/hats/cap_black_gradient_logo.png`  → `layers/hat/cap_black_gradient_logo.png`
+- [ ] `cap_blue_plain`  ref:`style_ref/hats/cap_blue_plain.png`  → `layers/hat/cap_blue_plain.png`
+- [ ] `cap_dominos_black`  ref:`style_ref/hats/cap_dominos_black.png`  → `layers/hat/cap_dominos_black.png`
+- [ ] `cap_gray_meme_pepsi`  ref:`style_ref/hats/cap_gray_meme_pepsi.png`  → `layers/hat/cap_gray_meme_pepsi.png`
+- [ ] `cap_maga_red`  ref:`style_ref/hats/cap_maga_red.png`  → `layers/hat/cap_maga_red.png`
+- [ ] `cap_mcdonalds_black_small_logo`  ref:`style_ref/hats/cap_mcdonalds_black_small_logo.png`  → `layers/hat/cap_mcdonalds_black_small_logo.png`
+- [ ] `cap_mcdonalds_red_golden_arches`  ref:`style_ref/hats/cap_mcdonalds_red_golden_arches.png`  → `layers/hat/cap_mcdonalds_red_golden_arches.png`
+- [ ] `cap_nintendo_red`  ref:`style_ref/hats/cap_nintendo_red.png`  → `layers/hat/cap_nintendo_red.png`
+- [ ] `cap_pilot_blue_airline`  ref:`style_ref/hats/cap_pilot_blue_airline.png`  → `layers/hat/cap_pilot_blue_airline.png`
+- [ ] `cap_police_black_badge`  ref:`style_ref/hats/cap_police_black_badge.png`  → `layers/hat/cap_police_black_badge.png`
+- [ ] `cap_propeller_multicolor`  ref:`style_ref/hats/cap_propeller_multicolor.png`  → `layers/hat/cap_propeller_multicolor.png`
+- [ ] `cap_red_bitcoin_yellow`  ref:`style_ref/hats/cap_red_bitcoin_yellow.png`  → `layers/hat/cap_red_bitcoin_yellow.png`
+- [ ] `cap_san_andreas_black`  ref:`style_ref/hats/cap_san_andreas_black.png`  → `layers/hat/cap_san_andreas_black.png`
+- [ ] `cap_white_black_maroon_panels`  ref:`style_ref/hats/cap_white_black_maroon_panels.png`  → `layers/hat/cap_white_black_maroon_panels.png`
+- [ ] `cap_white_gray_plain`  ref:`style_ref/hats/cap_white_gray_plain.png`  → `layers/hat/cap_white_gray_plain.png`
+- [ ] `chef_hat_white_toque`  ref:`style_ref/hats/chef_hat_white_toque.png`  → `layers/hat/chef_hat_white_toque.png`
+- [ ] `cowboy_black_red_band`  ref:`style_ref/hats/cowboy_black_red_band.png`  → `layers/hat/cowboy_black_red_band.png`
+- [ ] `cowboy_brown`  ref:`style_ref/hats/cowboy_brown.png`  → `layers/hat/cowboy_brown.png`
+- [ ] `cowboy_white`  ref:`style_ref/hats/cowboy_white.png`  → `layers/hat/cowboy_white.png`
+- [ ] `fedora_black_gray_band`  ref:`style_ref/hats/fedora_black_gray_band.png`  → `layers/hat/fedora_black_gray_band.png`
+- [ ] `fedora_blue_black_band`  ref:`style_ref/hats/fedora_blue_black_band.png`  → `layers/hat/fedora_blue_black_band.png`
+- [ ] `fedora_dark_brown`  ref:`style_ref/hats/fedora_dark_brown.png`  → `layers/hat/fedora_dark_brown.png`
+- [ ] `fedora_gray_black_band`  ref:`style_ref/hats/fedora_gray_black_band.png`  → `layers/hat/fedora_gray_black_band.png`
+- [ ] `fedora_tan_brown_classic`  ref:`style_ref/hats/fedora_tan_brown_classic.png`  → `layers/hat/fedora_tan_brown_classic.png`
+- [ ] `fedora_tan_variation`  ref:`style_ref/hats/fedora_tan_variation.png`  → `layers/hat/fedora_tan_variation.png`
+- [ ] `fez_burgundy_tassel`  ref:`style_ref/hats/fez_burgundy_tassel.png`  → `layers/hat/fez_burgundy_tassel.png`
+- [ ] `fez_red`  ref:`style_ref/hats/fez_red.png`  → `layers/hat/fez_red.png`
+- [ ] `gambler_black`  ref:`style_ref/hats/gambler_black.png`  → `layers/hat/gambler_black.png`
+- [ ] `gambler_brown`  ref:`style_ref/hats/gambler_brown.png`  → `layers/hat/gambler_brown.png`
+- [ ] `gambler_gray`  ref:`style_ref/hats/gambler_gray.png`  → `layers/hat/gambler_gray.png`
+- [ ] `gambler_navy_blue`  ref:`style_ref/hats/gambler_navy_blue.png`  → `layers/hat/gambler_navy_blue.png`
+- [ ] `hardhat_orange`  ref:`style_ref/hats/hardhat_orange.png`  → `layers/hat/hardhat_orange.png`
+- [ ] `hardhat_yellow`  ref:`style_ref/hats/hardhat_yellow.png`  → `layers/hat/hardhat_yellow.png`
+- [ ] `helmet_camo_woodland_m1`  ref:`style_ref/hats/helmet_camo_woodland_m1.png`  → `layers/hat/helmet_camo_woodland_m1.png`
+- [ ] `helmet_combat_green_modern`  ref:`style_ref/hats/helmet_combat_green_modern.png`  → `layers/hat/helmet_combat_green_modern.png`
+- [ ] `helmet_military_gray_clean`  ref:`style_ref/hats/helmet_military_gray_clean.png`  → `layers/hat/helmet_military_gray_clean.png`
+- [ ] `helmet_military_gray_horse_emblem`  ref:`style_ref/hats/helmet_military_gray_horse_emblem.png`  → `layers/hat/helmet_military_gray_horse_emblem.png`
+- [ ] `helmet_military_green_clean`  ref:`style_ref/hats/helmet_military_green_clean.png`  → `layers/hat/helmet_military_green_clean.png`
+- [ ] `helmet_military_olive_damaged`  ref:`style_ref/hats/helmet_military_olive_damaged.png`  → `layers/hat/helmet_military_olive_damaged.png`
+- [ ] `helmet_swat_black_goggles`  ref:`style_ref/hats/helmet_swat_black_goggles.png`  → `layers/hat/helmet_swat_black_goggles.png`
+- [ ] `helmet_vietnam_born_to_feel`  ref:`style_ref/hats/helmet_vietnam_born_to_feel.png`  → `layers/hat/helmet_vietnam_born_to_feel.png`
+- [ ] `pith_helmet_green_safari`  ref:`style_ref/hats/pith_helmet_green_safari.png`  → `layers/hat/pith_helmet_green_safari.png`
+- [ ] `pith_helmet_tan_safari`  ref:`style_ref/hats/pith_helmet_tan_safari.png`  → `layers/hat/pith_helmet_tan_safari.png`
+- [ ] `ranger_hat_brown_badge`  ref:`style_ref/hats/ranger_hat_brown_badge.png`  → `layers/hat/ranger_hat_brown_badge.png`
+- [ ] `stocking_black`  ref:`style_ref/hats/stocking_black.png`  → `layers/hat/stocking_black.png`
+- [ ] `top_hat_white_gray`  ref:`style_ref/hats/top_hat_white_gray.png`  → `layers/hat/top_hat_white_gray.png`
+
+## Accessory (34)
+
+- [ ] `accessory_bitcoin_necklace`  ref:`style_ref/accessories/accessory_bitcoin_necklace.png`  → `layers/accessory/accessory_bitcoin_necklace.png`
+- [ ] `accessory_black_cape_flowing`  ref:`style_ref/accessories/accessory_black_cape_flowing.png`  → `layers/accessory/accessory_black_cape_flowing.png`
+- [ ] `accessory_brown_scarf`  ref:`style_ref/accessories/accessory_brown_scarf.png`  → `layers/accessory/accessory_brown_scarf.png`
+- [ ] `accessory_chain_necklace_black`  ref:`style_ref/accessories/accessory_chain_necklace_black.png`  → `layers/accessory/accessory_chain_necklace_black.png`
+- [ ] `accessory_chain_necklace_gold`  ref:`style_ref/accessories/accessory_chain_necklace_gold.png`  → `layers/accessory/accessory_chain_necklace_gold.png`
+- [ ] `accessory_cigar_black`  ref:`style_ref/accessories/accessory_cigar_black.png`  → `layers/accessory/accessory_cigar_black.png`
+- [ ] `accessory_cigarette_smoking`  ref:`style_ref/accessories/accessory_cigarette_smoking.png`  → `layers/accessory/accessory_cigarette_smoking.png`
+- [ ] `accessory_gas_mask_black`  ref:`style_ref/accessories/accessory_gas_mask_black.png`  → `layers/accessory/accessory_gas_mask_black.png`
+- [ ] `accessory_glasses_aviator_outline`  ref:`style_ref/accessories/accessory_glasses_aviator_outline.png`  → `layers/accessory/accessory_glasses_aviator_outline.png`
+- [ ] `accessory_glasses_black_frame`  ref:`style_ref/accessories/accessory_glasses_black_frame.png`  → `layers/accessory/accessory_glasses_black_frame.png`
+- [ ] `accessory_glasses_black_orange_accent`  ref:`style_ref/accessories/accessory_glasses_black_orange_accent.png`  → `layers/accessory/accessory_glasses_black_orange_accent.png`
+- [ ] `accessory_glasses_blue_frame`  ref:`style_ref/accessories/accessory_glasses_blue_frame.png`  → `layers/accessory/accessory_glasses_blue_frame.png`
+- [ ] `accessory_glasses_brown_reading`  ref:`style_ref/accessories/accessory_glasses_brown_reading.png`  → `layers/accessory/accessory_glasses_brown_reading.png`
+- [ ] `accessory_glasses_rectangle_glare`  ref:`style_ref/accessories/accessory_glasses_rectangle_glare.png`  → `layers/accessory/accessory_glasses_rectangle_glare.png`
+- [ ] `accessory_glasses_rectangle_outline`  ref:`style_ref/accessories/accessory_glasses_rectangle_outline.png`  → `layers/accessory/accessory_glasses_rectangle_outline.png`
+- [ ] `accessory_glasses_round_reflective`  ref:`style_ref/accessories/accessory_glasses_round_reflective.png`  → `layers/accessory/accessory_glasses_round_reflective.png`
+- [ ] `accessory_glasses_tan_reading`  ref:`style_ref/accessories/accessory_glasses_tan_reading.png`  → `layers/accessory/accessory_glasses_tan_reading.png`
+- [ ] `accessory_goggles_brown_aviator`  ref:`style_ref/accessories/accessory_goggles_brown_aviator.png`  → `layers/accessory/accessory_goggles_brown_aviator.png`
+- [ ] `accessory_gray_bowtie`  ref:`style_ref/accessories/accessory_gray_bowtie.png`  → `layers/accessory/accessory_gray_bowtie.png`
+- [ ] `accessory_pilot_goggles_brown`  ref:`style_ref/accessories/accessory_pilot_goggles_brown.png`  → `layers/accessory/accessory_pilot_goggles_brown.png`
+- [ ] `accessory_pipe_brown`  ref:`style_ref/accessories/accessory_pipe_brown.png`  → `layers/accessory/accessory_pipe_brown.png`
+- [ ] `accessory_pipe_tan`  ref:`style_ref/accessories/accessory_pipe_tan.png`  → `layers/accessory/accessory_pipe_tan.png`
+- [ ] `accessory_red_black_cape`  ref:`style_ref/accessories/accessory_red_black_cape.png`  → `layers/accessory/accessory_red_black_cape.png`
+- [ ] `accessory_red_cape`  ref:`style_ref/accessories/accessory_red_cape.png`  → `layers/accessory/accessory_red_cape.png`
+- [ ] `accessory_spiked_collar_ring`  ref:`style_ref/accessories/accessory_spiked_collar_ring.png`  → `layers/accessory/accessory_spiked_collar_ring.png`
+- [ ] `accessory_sunglasses_black_dark`  ref:`style_ref/accessories/accessory_sunglasses_black_dark.png`  → `layers/accessory/accessory_sunglasses_black_dark.png`
+- [ ] `accessory_sunglasses_black_rectangular`  ref:`style_ref/accessories/accessory_sunglasses_black_rectangular.png`  → `layers/accessory/accessory_sunglasses_black_rectangular.png`
+- [ ] `accessory_sunglasses_brown_aviator`  ref:`style_ref/accessories/accessory_sunglasses_brown_aviator.png`  → `layers/accessory/accessory_sunglasses_brown_aviator.png`
+- [ ] `accessory_sunglasses_brown_aviator_dark`  ref:`style_ref/accessories/accessory_sunglasses_brown_aviator_dark.png`  → `layers/accessory/accessory_sunglasses_brown_aviator_dark.png`
+- [ ] `accessory_sunglasses_gold_blue_aviator`  ref:`style_ref/accessories/accessory_sunglasses_gold_blue_aviator.png`  → `layers/accessory/accessory_sunglasses_gold_blue_aviator.png`
+- [ ] `accessory_sunglasses_gold_white_aviator`  ref:`style_ref/accessories/accessory_sunglasses_gold_white_aviator.png`  → `layers/accessory/accessory_sunglasses_gold_white_aviator.png`
+- [ ] `accessory_sunglasses_palm_tree_reflection`  ref:`style_ref/accessories/accessory_sunglasses_palm_tree_reflection.png`  → `layers/accessory/accessory_sunglasses_palm_tree_reflection.png`
+- [ ] `accessory_sunglasses_round_black`  ref:`style_ref/accessories/accessory_sunglasses_round_black.png`  → `layers/accessory/accessory_sunglasses_round_black.png`
+- [ ] `accessory_sunglasses_silver_dark_aviator`  ref:`style_ref/accessories/accessory_sunglasses_silver_dark_aviator.png`  → `layers/accessory/accessory_sunglasses_silver_dark_aviator.png`
+
+## White faces ready (53)
+
+- [x] `acne_red_dots_eyebrows`
+- [x] `angry_stubble`
+- [x] `boomer_beard_wrinkles`
+- [x] `confused_squint`
+- [x] `creepy_smiling_big_teeth`
+- [x] `crying_streams`
+- [x] `depressed_dark`
+- [x] `elderly_super_wrinkled`
+- [x] `grumpy_frown`
+- [x] `happy_content`
+- [x] `happy_smiling`
+- [x] `neutral_calm`
+- [x] `neutral_simple`
+- [x] `neutral_squinting`
+- [x] `sad_baggy_eyes`
+- [x] `sad_baggy_eyes_variant`
+- [x] `sad_concerned_eyebrow`
+- [x] `sad_dark_circles`
+- [x] `sad_droopy`
+- [x] `sad_stubble`
+- [x] `sad_tired`
+- [x] `sad_tired_no_stubble`
+- [x] `smirking`
+- [x] `smug_grin`
+- [x] `smug_pointing`
+- [x] `smug_slight_smile`
+- [x] `tired_heavy_eyes`
+- [x] `wojak_angry_determined`
+- [x] `wojak_angry_furrowed`
+- [x] `wojak_beaten_bruised`
+- [x] `wojak_blushing_with_tears`
+- [x] `wojak_content_smile`
+- [x] `wojak_creepy_wide_grin`
+- [x] `wojak_crying_but_happy`
+- [x] `wojak_crying_streams`
+- [x] `wojak_derpy_rolling_eyes`
+- [x] `wojak_evil_red_eyes`
+- [x] `wojak_eyes_closed_peaceful`
+- [x] `wojak_intense_crying_gritted`
+- [x] `wojak_intense_crying_teeth`
+- [x] `wojak_laughing_excited`
+- [x] `wojak_neutral_calm`
+- [x] `wojak_neutral_straight_brows`
+- [x] `wojak_side_glance`
+- [x] `wojak_single_tear`
+- [x] `wojak_sinister_smirk`
+- [x] `wojak_slight_smile`
+- [x] `wojak_smirking_wrinkled`
+- [x] `wojak_smug_content`
+- [x] `wojak_sweating_stressed`
+- [x] `wojak_tears_neutral_face`
+- [x] `wojak_wrinkled_determined`
+- [x] `wojak_wrinkled_neutral`
+
+## Special 1-of-1 later (31) — not mass gen
+
+- [ ] `angry_soy_glasses` (special)
+- [ ] `angry_vampire_fangs` (special)
+- [ ] `bloody_horror_crying` (special)
+- [ ] `clown_makeup` (special)
+- [ ] `creepy_wide_smile` (special)
+- [ ] `dark_shadowed_beard` (special)
+- [ ] `evil_grin_teeth` (special)
+- [ ] `glasses_screaming_beard` (special)
+- [ ] `jeff_killer_smile` (special)
+- [ ] `npc_gray_angry_furrowed_brow` (special)
+- [ ] `npc_gray_angry_gritting_teeth` (special)
+- [ ] `npc_gray_cracked_mask_brown` (special)
+- [ ] `npc_gray_cracked_mask_tan` (special)
+- [ ] `npc_gray_cracked_mask_white` (special)
+- [ ] `npc_gray_neutral` (special)
+- [ ] `npc_gray_sad_eyebrows` (special)
+- [ ] `npc_gray_sunglasses` (special)
+- [ ] `npc_gray_surprised_mouth` (special)
+- [ ] `npc_gray_winking` (special)
+- [ ] `pink_crying_blood_tears` (special)
+- [ ] `pink_crying_blood_tears_variant` (special)
+- [ ] `red_angry_gritting_teeth` (special)
+- [ ] `shocked_wide_eyes` (special)
+- [ ] `skeleton_skull` (special)
+- [ ] `smoking_cigarette_brown_hair` (special)
+- [ ] `soy_glasses_black_hair` (special)
+- [ ] `soy_glasses_open_mouth` (special)
+- [ ] `tired_sad_subtle` (special)
+- [ ] `very_sad_depressed` (special)
+- [ ] `wojak_beaten_bloody` (special)
+- [ ] `wojak_red_devil_horns` (special)

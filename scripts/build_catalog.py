@@ -1,17 +1,12 @@
 #!/usr/bin/env python3
-"""
-Build config/traits.json from layers_template (white-base production set).
-
-Faces come only from layers_template/face/ (white wojaks).
-Special 1-of-1 faces in face_special_1of1/ are listed but excluded from mass gen.
-"""
+"""Build config/traits.json from production layers/ (white-base set)."""
 from __future__ import annotations
 
 import json
 import re
 from pathlib import Path
 
-from paths import CONFIG, LAYERS_TEMPLATE, MANIFESTS
+from paths import CONFIG, LAYERS, MANIFESTS
 
 
 def display_name(stem: str) -> str:
@@ -31,7 +26,7 @@ def list_traits(category: str, folder: Path, weight: float = 5.0, tier: str = "c
                 "id": p.stem,
                 "category": category,
                 "name": display_name(p.stem),
-                "source_rel": str(p.relative_to(LAYERS_TEMPLATE)),
+                "source_rel": str(p.relative_to(LAYERS)),
                 "weight": weight,
                 "tier": tier,
             }
@@ -54,12 +49,11 @@ def main() -> None:
         for b in bgs_cfg["backgrounds"]
     ]
 
-    faces = list_traits("face", LAYERS_TEMPLATE / "face", weight=8.0)
-    clothing = list_traits("clothing", LAYERS_TEMPLATE / "clothing", weight=6.0)
-    hats = list_traits("hat", LAYERS_TEMPLATE / "hat", weight=4.0)
-    accessories = list_traits("accessory", LAYERS_TEMPLATE / "accessory", weight=3.0)
+    faces = list_traits("face", LAYERS / "face", weight=8.0)
+    clothing = list_traits("clothing", LAYERS / "clothing", weight=6.0)
+    hats = list_traits("hat", LAYERS / "hat", weight=4.0)
+    accessories = list_traits("accessory", LAYERS / "accessory", weight=3.0)
 
-    # Optional none
     hats.append(
         {
             "id": "none",
@@ -91,13 +85,13 @@ def main() -> None:
         }
     ]
 
-    special_dir = LAYERS_TEMPLATE / "face_special_1of1"
+    special_dir = LAYERS / "face_special_1of1"
     specials = [p.stem for p in sorted(special_dir.glob("*.png"))] if special_dir.is_dir() else []
 
     catalog = {
-        "version": 2,
+        "version": 3,
         "base_policy": "white_only_majority",
-        "layers_root": str(LAYERS_TEMPLATE),
+        "layers_root": str(LAYERS),
         "counts": {
             "background": len(backgrounds),
             "face_white": len(faces),
@@ -124,6 +118,8 @@ def main() -> None:
     print("Wrote", out)
     for k, v in catalog["counts"].items():
         print(f"  {k}: {v}")
+    if catalog["counts"]["clothing"] == 0:
+        print("NOTE: clothing/hat/accessory empty — redraw onto master, save into layers/")
 
 
 if __name__ == "__main__":

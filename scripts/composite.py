@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Composite template layers into a single token image + metadata."""
+"""Composite production layers into a token image + metadata."""
 from __future__ import annotations
 
 import json
@@ -8,7 +8,7 @@ from typing import Any
 
 from PIL import Image
 
-from paths import CONFIG, IMAGES, LAYERS_TEMPLATE, METADATA
+from paths import CONFIG, IMAGES, LAYERS, METADATA
 
 
 def load_json(path: Path):
@@ -18,7 +18,7 @@ def load_json(path: Path):
 def layer_path(category: str, trait_id: str) -> Path | None:
     if not trait_id or trait_id == "none":
         return None
-    p = LAYERS_TEMPLATE / category / f"{trait_id}.png"
+    p = LAYERS / category / f"{trait_id}.png"
     return p if p.exists() else None
 
 
@@ -32,35 +32,27 @@ def alpha_paste(base: Image.Image, overlay_path: Path | None) -> Image.Image:
 
 
 def composite_token(combo: dict[str, Any], canvas: dict | None = None) -> Image.Image:
-    if canvas is None:
-        # Prefer template skeleton layer order
-        sk = CONFIG / "template_skeleton.json"
-        if sk.exists():
-            data = load_json(sk)
-            w = data["canvas"]["width"]
-            h = data["canvas"]["height"]
-            order = data.get(
-                "layer_order",
-                ["background", "face", "clothing", "mask", "accessory", "hat"],
-            )
-        else:
-            canvas = load_json(CONFIG / "canvas.json")
-            w, h = canvas["width"], canvas["height"]
-            order = canvas.get(
-                "layer_order",
-                ["background", "face", "clothing", "mask", "accessory", "hat"],
-            )
-    else:
+    sk_path = CONFIG / "template_skeleton.json"
+    if canvas is None and sk_path.exists():
+        data = load_json(sk_path)
+        w, h = data["canvas"]["width"], data["canvas"]["height"]
+        order = data.get(
+            "layer_order",
+            ["background", "face", "clothing", "mask", "accessory", "hat"],
+        )
+    elif canvas is not None:
         w, h = canvas["width"], canvas["height"]
         order = canvas.get(
             "layer_order",
             ["background", "face", "clothing", "mask", "accessory", "hat"],
         )
+    else:
+        w = h = 1000
+        order = ["background", "face", "clothing", "mask", "accessory", "hat"]
 
     img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     for cat in order:
-        tid = combo.get(cat)
-        img = alpha_paste(img, layer_path(cat, tid))
+        img = alpha_paste(img, layer_path(cat, combo.get(cat)))
     return img
 
 
@@ -88,26 +80,18 @@ def metadata_for(
         ("accessory", "Accessory"),
         ("mask", "Mask"),
     ]:
-        attrs.append(
-            {
-                "trait_type": label,
-                "value": resolve_name(cat, combo.get(cat, "none")),
-            }
-        )
+        attrs.append({"trait_type": label, "value": resolve_name(cat, combo.get(cat, "none"))})
 
     meta = rules.get("metadata", {})
-    prefix = meta.get("name_prefix", "LEL")
     out = {
-        "name": f"{prefix} #{token_id}",
+        "name": f"{meta.get('name_prefix', 'LEL')} #{token_id}",
         "description": meta.get(
-            "description", "LEL — generative white-base Wojak PFP collection."
+            "description",
+            "LEL — white-base Wojak PFP collection.",
         ),
         "attributes": attrs,
+        "image": image_uri or f"images/{token_id}.png",
     }
-    if image_uri:
-        out["image"] = image_uri
-    else:
-        out["image"] = f"images/{token_id}.png"
     if meta.get("external_url"):
         out["external_url"] = meta["external_url"]
     return out
@@ -122,12 +106,9 @@ def render_and_save(
 ) -> tuple[Path, Path]:
     IMAGES.mkdir(parents=True, exist_ok=True)
     METADATA.mkdir(parents=True, exist_ok=True)
-
     img = composite_token(combo, canvas)
     img_path = IMAGES / f"{token_id}.png"
     img.save(img_path, format="PNG", optimize=True)
-
-    meta = metadata_for(token_id, combo, catalog, rules)
     meta_path = METADATA / f"{token_id}.json"
-    meta_path.write_text(json.dumps(meta, indent=2))
+    meta_path.write_text(json.dumps(metadata_for(token_id, combo, catalog, rules), indent=2))
     return img_path, meta_path

@@ -1,0 +1,238 @@
+{
+  "categories": [
+    {
+      "category": "face",
+      "n": 98,
+      "flags": [],
+      "top_mean": 0.1,
+      "top_med": 0.1,
+      "bot_mean": 0.9,
+      "bot_med": 0.9,
+      "cx_mean": 0.5,
+      "cx_med": 0.5,
+      "cy_mean": 0.5,
+      "cy_med": 0.5,
+      "width_mean": 0.685,
+      "width_med": 0.66,
+      "height_mean": 0.8,
+      "height_med": 0.8
+    },
+    {
+      "category": "clothing",
+      "n": 87,
+      "flags": [
+        {
+          "id": "black_hoodie_drawstrings",
+          "issue": "bot=0.852 outside [0.90,1.01]"
+        },
+        {
+          "id": "black_jacket_green_stripes",
+          "issue": "bot=0.847 outside [0.90,1.01]"
+        },
+        {
+          "id": "black_jacket_olive_turtleneck",
+          "issue": "bot=0.891 outside [0.90,1.01]"
+        },
+        {
+          "id": "black_suit_black_tie",
+          "issue": "bot=0.891 outside [0.90,1.01]"
+        },
+        {
+          "id": "black_suit_blue_striped_tie",
+          "issue": "bot=0.891 outside [0.90,1.01]"
+        },
+        {
+          "id": "black_vest_white_sleeves",
+          "issue": "bot=0.891 outside [0.90,1.01]"
+        },
+        {
+          "id": "brown_uniform_yellow_stars_collar",
+          "issue": "bot=0.881 outside [0.90,1.01]"
+        },
+        {
+          "id": "burgundy_suit_decorative_collar",
+          "issue": "bot=0.884 outside [0.90,1.01]"
+        },
+        {
+          "id": "checkered_suit_black_tie",
+          "issue": "bot=0.891 outside [0.90,1.01]"
+        },
+        {
+          "id": "denim_jacket_bandana",
+          "issue": "bot=0.887 outside [0.90,1.01]"
+        },
+        {
+          "id": "gray_suit_black_tie",
+          "issue": "bot=0.891 outside [0.90,1.01]"
+        },
+        {
+          "id": "gray_tactical_vest",
+          "issue": "bot=0.852 outside [0.90,1.01]"
+        },
+        {
+          "id": "green_button_shirt_collar",
+          "issue": "bot=0.825 outside [0.90,1.01]"
+        },
+        {
+          "id": "purple_collar_teeth",
+          "issue": "bot=0.727 outside [0.90,1.01]"
+        },
+        {
+          "id": "tactical_leg_ammo_bandolier",
+          "issue": "width=0.527 outside [0.70,1.00]"
+        },
+        {
+          "id": "tan_blazer_navy_shirt",
+          "issue": "bot=0.891 outside [0.90,1.01]"
+        }
+      ],
+      "top_mean": 0.56,
+      "top_med": 0.56,
+      "bot_mean": 0.948,
+      "bot_med": 0.959,
+      "cx_mean": 0.5,
+      "cx_med": 0.5,
+      "cy_mean": 0.754,
+      "cy_med": 0.759,
+      "width_mean": 0.942,
+      "width_med": 0.96,
+      "height_mean": 0.388,
+      "height_med": 0.399
+    },
+    {
+      "category": "hat",
+      "n": 66,
+      "flags": [
+        {
+          "id": "bandana_green",
+          "issue": "width=0.366 outside [0.40,0.85]"
+        },
+        {
+          "id": "bandana_navy_blue",
+          "issue": "width=0.366 outside [0.40,0.85]"
+        },
+        {
+          "id": "bandana_red",
+          "issue": "width=0.366 outside [0.40,0.85]"
+        },
+        {
+          "id": "beanie_black_ribbed",
+          "issue": "width=0.392 outside [0.40,0.85]"
+        },
+        {
+          "id": "bicorne_black_napoleon",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        },
+        {
+          "id": "chef_hat_white_toque",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        },
+        {
+          "id": "fez_red",
+          "issue": "width=0.381 outside [0.40,0.85]"
+        },
+        {
+          "id": "hardhat_orange",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        },
+        {
+          "id": "hardhat_yellow",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        },
+        {
+          "id": "helmet_camo_woodland_m1",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        },
+        {
+          "id": "helmet_combat_green_modern",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        },
+        {
+          "id": "helmet_military_gray_clean",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        },
+        {
+          "id": "helmet_military_gray_horse_emblem",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        },
+        {
+          "id": "helmet_military_green_clean",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        },
+        {
+          "id": "helmet_military_olive_damaged",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        },
+        {
+          "id": "helmet_swat_black_goggles",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        },
+        {
+          "id": "helmet_vietnam_born_to_feel",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        },
+        {
+          "id": "pith_helmet_green_safari",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        },
+        {
+          "id": "pith_helmet_tan_safari",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        },
+        {
+          "id": "top_hat_white_gray",
+          "issue": "bot=0.320 outside [0.14,0.30]"
+        }
+      ],
+      "top_mean": 0.001,
+      "top_med": 0.0,
+      "bot_mean": 0.301,
+      "bot_med": 0.3,
+      "cx_mean": 0.5,
+      "cx_med": 0.5,
+      "cy_mean": 0.151,
+      "cy_med": 0.15,
+      "width_mean": 0.592,
+      "width_med": 0.6,
+      "height_mean": 0.3,
+      "height_med": 0.3
+    },
+    {
+      "category": "accessory",
+      "n": 34,
+      "flags": [],
+      "top_mean": 0.344,
+      "top_med": 0.311,
+      "bot_mean": 0.581,
+      "bot_med": 0.467,
+      "cx_mean": 0.514,
+      "cx_med": 0.5,
+      "cy_mean": 0.462,
+      "cy_med": 0.381,
+      "width_mean": 0.504,
+      "width_med": 0.5,
+      "height_mean": 0.237,
+      "height_med": 0.171
+    },
+    {
+      "category": "mask",
+      "n": 11,
+      "flags": [],
+      "top_mean": 0.12,
+      "top_med": 0.12,
+      "bot_mean": 0.82,
+      "bot_med": 0.82,
+      "cx_mean": 0.499,
+      "cx_med": 0.499,
+      "cy_mean": 0.47,
+      "cy_med": 0.47,
+      "width_mean": 0.772,
+      "width_med": 0.795,
+      "height_mean": 0.7,
+      "height_med": 0.7
+    }
+  ],
+  "diagnostic_sheet": "/Users/bmelliott/Projects/wojak-collection/reports/qa_diagnostic.png",
+  "total_flags": 36,
+  "pass": true
+}

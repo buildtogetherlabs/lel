@@ -13,44 +13,14 @@
   ],
   "anchors": {
     "head_center_x": 0.5,
-    "eye_line_y": 0.38,
-    "hat_brim_y": 0.28,
-    "neck_join_y": 0.62,
-    "shoulder_y": 0.72
+    "eye_line_y": 0.36,
+    "hat_brim_y": 0.22,
+    "neck_join_y": 0.54,
+    "shoulder_y": 0.70,
+    "notes": "Actual placement logic lives in scripts/normalize_batch.py SKELETON"
   },
-  "category_defaults": {
-    "face": {
-      "target_height_ratio": 0.78,
-      "center_x": 0.5,
-      "anchor_y": 0.48,
-      "anchor": "center"
-    },
-    "mask": {
-      "target_height_ratio": 0.72,
-      "center_x": 0.5,
-      "anchor_y": 0.42,
-      "anchor": "center"
-    },
-    "clothing": {
-      "target_width_ratio": 0.95,
-      "center_x": 0.5,
-      "anchor_y": 0.98,
-      "anchor": "bottom_center"
-    },
-    "hat": {
-      "target_width_ratio": 0.55,
-      "center_x": 0.5,
-      "anchor_y": 0.20,
-      "anchor": "center"
-    },
-    "accessory": {
-      "target_width_ratio": 0.40,
-      "center_x": 0.5,
-      "anchor_y": 0.40,
-      "anchor": "center"
-    },
-    "background": {
-      "fill": true
-    }
+  "background": {
+    "fill": true
   }
 }
+

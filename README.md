@@ -2,54 +2,61 @@
 
 White-base Wojak PFP collection — target **6,666**.
 
-Repo: [buildtogetherlabs/lel](https://github.com/buildtogetherlabs/lel)
+## Architecture (flawless alignment)
 
-## Clean layout
+```
+background
+    + body_base          ← blank white head/neck/shoulders (NO face)
+    + face               ← eyes / expression / features (own files)
+    + clothing           ← drawn to fit body
+    + accessory          ← glasses etc.
+    + hat
+```
+
+**Body and face are separate.** Clothing and hats align to the body outline; glasses align to the face on that body.
+
+## Layout
 
 ```
 layers/
-  base/                 # master white body + workbench (draw here)
-  face/                 # white faces (mass gen) — 53
-  face_special_1of1/    # gray/devil/etc. — later 1-of-1s — 31
-  clothing/             # production redraws (empty until drawn)
-  hat/
-  accessory/
-  background/           # solid BGs — ready
-  mask/
-
-style_ref/              # ORIGINAL trait art — style reference for redraw only
-template/               # docs, queue, skeleton, master copies
-scripts/                # build / preview / generate
-config/
+  base/body_base.png       # blank body (canonical)
+  base/workbench_draw_here.png
+  face/                    # white face layers
+  face_special_1of1/       # later 1-of-1s
+  clothing/ hat/ accessory/  # empty → redraw here
+  background/
+style_ref/                 # originals for design reference
+template/                  # docs + eye style reference
 ```
 
-**Production rule:** clothing, hats, and accessories are drawn **on** the white master body (`layers/base/`), exported as transparent 1000×1000 layers into `layers/{category}/`.
+## Open these
 
-## Start redrawing
+| File | Why |
+|---|---|
+| `layers/base/body_base.png` | Blank body to align everything to |
+| `layers/base/workbench_draw_here.png` | Draw clothing/hats/faces on this |
+| `template/face_eye_reference.jpg` | Correct eye style for face redraws |
+| `template/TRAIT_QUEUE.md` | What to redraw |
+| `template/FLAWLESS_PRODUCTION.md` | How |
 
-1. Open workbench: `layers/base/workbench_draw_here.png`  
-2. Checklist: `template/TRAIT_QUEUE.md`  
-3. Style refs: `style_ref/clothing`, `style_ref/hats`, `style_ref/accessories`, …  
-4. Export finished traits → `layers/clothing/`, `layers/hat/`, `layers/accessory/`  
-5. Full instructions: `template/FLAWLESS_PRODUCTION.md`
+## Commands
 
 ```bash
-cd ~/Projects/wojak-collection   # → Lacie
+cd ~/Projects/wojak-collection
 source .venv/bin/activate
 
+# body only
+python scripts/preview_trait.py --face none --background void_black
+
+# body + a face
+python scripts/preview_trait.py --face wojak_neutral_calm --background paper_white
+
 python scripts/build_catalog.py
-python scripts/preview_trait.py --face wojak_neutral_calm --clothing YOUR_ID
-python scripts/generate_collection.py --count 24
+python scripts/generate_collection.py --count 24   # after clothing exists
 ```
-
-## Layer stack
-
-Background → Face → Clothing → Mask → Accessory → Hat
 
 ## Policy
 
-| Pool | Use |
-|---|---|
-| White faces | Majority collection |
-| Special faces | 1-of-1 later only |
-| style_ref | Look at for design — do not mint as-is |
+- Mass gen: white body + white faces only  
+- Special skins (gray, devil, etc.): 1-of-1 later  
+- `style_ref/`: look only — do not mint as-is  

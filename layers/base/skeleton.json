@@ -3,7 +3,7 @@
     "width": 1000,
     "height": 1000
   },
-  "master_face_id": "wojak_neutral_calm",
+  "master_face_id": null,
   "master_face_source": "layers_raw/wojak_pfp_project/faces2/wojak_neutral_calm.png",
   "face_placement": {
     "content_top": 0.08,
@@ -31,6 +31,7 @@
   },
   "layer_order": [
     "background",
+    "body",
     "face",
     "clothing",
     "mask",
@@ -52,5 +53,7 @@
     "clothing": "top pinned to collar (moved down)",
     "accessory": "glasses shifted right for 3/4 face",
     "hat": "bottom on hat_brim"
-  }
+  },
+  "body_base": "layers/base/body_base.png",
+  "notes": "Body base has NO facial features. Faces are separate layers. Clothing/hats/accessories align to body_base outline."
 }

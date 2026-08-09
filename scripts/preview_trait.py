@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Quick composite preview for production QA."""
+"""Preview a composite: body + face + optional traits."""
 from __future__ import annotations
 
 import argparse
@@ -12,7 +12,8 @@ from composite import composite_token
 def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--background", default="void_black")
-    p.add_argument("--face", required=True)
+    p.add_argument("--body", default="body_base")
+    p.add_argument("--face", default="none")
     p.add_argument("--clothing", default="none")
     p.add_argument("--hat", default="none")
     p.add_argument("--accessory", default="none")
@@ -22,6 +23,7 @@ def main() -> None:
 
     combo = {
         "background": args.background,
+        "body": args.body,
         "face": args.face,
         "clothing": args.clothing,
         "hat": args.hat,

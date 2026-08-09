@@ -62,10 +62,19 @@ def composite_token(combo: dict[str, Any], canvas: dict | None = None) -> Image.
         w = h = 1000
         order = DEFAULT_ORDER
 
-    # Always include body unless explicitly disabled
     c = dict(combo)
+    face_id = (c.get("face") or "none").lower()
+    has_face = face_id not in ("", "none")
+
+    # Current face files are full busts (head+neck+shoulders+features).
+    # Stacking them on body_base causes double silhouettes.
+    # Rule: if a face is present, skip body (face provides the figure).
+    # When face is none, use blank body_base (for workbench / clothing QA).
+    # Later: features-only faces should re-enable body under face.
     if "body" not in c or not c["body"]:
         c["body"] = "body_base"
+    if has_face:
+        c["body"] = "none"
 
     img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     for cat in order:

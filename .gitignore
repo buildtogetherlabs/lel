@@ -35,3 +35,6 @@ manifests/images_sha256.txt
 # Secrets
 .env
 .env.*
+
+# Legacy auto-align dumps (optional local only; template path is source of truth)
+# layers_normalized stays tracked for now as archive; do not add new proof sets there

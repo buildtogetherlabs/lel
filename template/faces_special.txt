@@ -1,0 +1,5 @@
+faces/angry_mad.png	asp=0.995
+faces/elderly_wrinkled.png	asp=1.05
+faces3/sad_closed_eyes.png	asp=0.757
+faces2/wojak_wide_eyes_anxious.png	asp=1.059
+faces3/bloody_horror_injured.png	asp=0.954

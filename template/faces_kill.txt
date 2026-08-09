@@ -1,0 +1,13 @@
+faces2/wojak_black_green_outline.png
+faces3/small_simple_icon.png
+faces3/blank_outline.png
+faces/big_ear_side_profile.png
+faces3/sad_frown.png
+faces3/crying_blue_tears.png
+faces3/tongue_out.png
+faces3/clown_makeup.png
+faces3/happy_laughing.png
+faces3/female_wojak_ponytail.png
+faces3/neutral_wrinkled.png
+faces3/vampire_fangs_blood.png
+faces3/tired_neutral.png

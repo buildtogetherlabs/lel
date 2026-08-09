@@ -1,22 +1,41 @@
 # LEL
 
-Generative Wojak PFP collection pipeline — target supply **6,666** (ERC-721 / Robinhood-compatible metadata).
+Generative Wojak PFP collection — target **6,666** (ERC-721 / Robinhood-compatible metadata).
 
 Repo: [buildtogetherlabs/lel](https://github.com/buildtogetherlabs/lel)
 
+## Strategy (current)
+
+**Hybrid template path** — auto-align of raw mixed crops was abandoned (geometry incompatible).
+
+1. Lock **one master body** (`wojak_neutral_calm`)
+2. **Register** best faces to that skeleton  
+3. **Redraw** clothing / hats / glasses against the master  
+4. Only then generate proof → 6,666  
+
+See **`template/REDRAW_BRIEF.md`** for the full art brief.
+
 ## Status
 
-Art pipeline: normalize trait layers → local proof samples → scale to 6,666 → mint packaging.
+| Phase | State |
+|---|---|
+| Master template + guides | Done → `template/` |
+| Face keep/kill curation | Done → `template/faces_*.txt` |
+| First-pass face register | Done → `layers_template/face/` (~84) |
+| Clothing / hat / glasses redraw | **Not started** (critical path) |
+| Proof 50 / full 6666 | Blocked on redraw gate |
 
-**Generated renders are local-only** (gitignored). Nothing under `output/` or `reports/*.png` is committed until a quality-gated release snapshot is intentional.
+## Layout
 
-| Piece | Location | In git? |
-|---|---|---|
-| Raw trait layers | `layers_raw/wojak_pfp_project/` | yes |
-| Normalized 1000×1000 PNGs | `layers_normalized/` | yes |
-| Trait catalog / rules | `config/` | yes |
-| Generator scripts | `scripts/` | yes |
-| Renders / proof / QA sheets | `output/`, `reports/` | **no** (local) |
+| Path | What |
+|---|---|
+| `template/` | Master base, guides, skeleton, redraw brief, keep/kill lists |
+| `layers_template/` | **Production** traits (template-registered / redrawn) |
+| `layers_raw/` | Archive / style reference only |
+| `layers_normalized/` | Legacy auto-align experiment (do not use for mint) |
+| `config/` | Rules, backgrounds, skeleton copy |
+| `scripts/` | Curate, register, generate, QA |
+| `output/`, `reports/` | Local generates only (gitignored) |
 
 ## Quick start
 
@@ -27,41 +46,29 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-# Rebuild trait catalog from raw layers
-python scripts/curate_traits.py
+# Inspect master template
+open template/master_template_guides.png
+open template/REDRAW_BRIEF.md
 
-# Normalize layers onto shared canvas
-python scripts/normalize_batch.py
+# Re-register faces to template (optional)
+python scripts/register_face.py --all-keep
 
-# Preview one combo (writes output/previews/ — local only)
-python scripts/preview_trait.py \
-  --face neutral_calm \
-  --clothing black_hoodie \
-  --hat cap_maga_red
-
-# Local proof set (not committed)
-python scripts/generate_collection.py --count 50
-python scripts/make_contact_sheet.py --out reports/preview_50.png
-python scripts/qa_alignment.py
-
-# Full collection when ready (local)
-python scripts/generate_collection.py --count 6666
+# After clothing/hats/glasses exist under layers_template/:
+# (generator switch to layers_template comes next when art is ready)
 ```
+
+## Quality gate (before another proof set)
+
+From `template/REDRAW_BRIEF.md`:
+
+- ≥ 20 faces in `layers_template/face/` (registered + QA’d)  
+- ≥ 15 clothing **redrawn** to collar line  
+- ≥ 12 hats **redrawn** to brim line  
+- ≥ 8 glasses **redrawn** to eye line  
+- Local spot-check: no floating hats / collar-through-face  
+
+Until then, **do not** commit sample PNGs.
 
 ## Layer order
 
 Background → Face → Clothing → Mask → Accessory → Hat
-
-## Config
-
-- `config/canvas.json` — canvas size + layer order
-- `config/traits.json` — curated production traits (`curate_traits.py`)
-- `config/rules.json` — supply, seed, mask rate, compatibility
-- `config/placement_overrides.json` — per-trait scale/offset tweaks
-- `config/backgrounds.json` — solid background palette
-
-## Housekeeping
-
-- Do **not** commit proof runs or contact sheets by default.
-- Failed / intermediate sample sets should be deleted, not left beside the next attempt.
-- Re-run generate anytime; combos are deterministic via `config/rules.json` seed.

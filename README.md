@@ -29,6 +29,13 @@ style_ref/                 # originals for design reference
 template/                  # docs + eye style reference
 ```
 
+## Drawing map (dial this in first)
+
+Primary: `layers/base/drawing_map.png`  
+Clean: `layers/base/drawing_map_clean.png`  
+Face check: `layers/base/drawing_map_with_face_check.png`  
+Docs: `template/DRAWING_MAP.md`
+
 ## Open these
 
 | File | Why |

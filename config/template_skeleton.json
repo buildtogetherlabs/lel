@@ -3,31 +3,42 @@
     "width": 1000,
     "height": 1000
   },
-  "master_face_id": null,
-  "master_face_source": "layers_raw/wojak_pfp_project/faces2/wojak_neutral_calm.png",
-  "face_placement": {
-    "content_top": 0.08,
-    "content_height": 0.8,
-    "center_x": 0.5,
-    "head_width_approx": 0.66
-  },
+  "body_base": "layers/base/body_base.png",
   "guides_y": {
-    "head_top": 0.08,
-    "hat_brim": 0.3,
-    "brow": 0.256,
-    "eye_line": 0.37,
-    "nose": 0.464,
-    "mouth": 0.544,
+    "head_top": 0.09,
+    "hat_brim": 0.19,
+    "brow": 0.3,
+    "eye_line": 0.39,
+    "nose": 0.49,
+    "mouth": 0.56,
     "chin": 0.64,
-    "collar": 0.66,
-    "shoulder": 0.86
+    "collar": 0.69,
+    "shoulder": 0.78
   },
   "guides_x": {
-    "center": 0.5,
-    "head_left": 0.17,
-    "head_right": 0.83,
-    "eye_span": 0.38,
-    "accessory_center_x": 0.54
+    "canvas_center": 0.5,
+    "head_center_x": 0.55,
+    "accessory_center_x": 0.53,
+    "head_left": 0.29,
+    "head_right": 0.81,
+    "eye_span": 0.38
+  },
+  "zones": {
+    "hat": {
+      "y0": 0.09,
+      "y1": 0.32,
+      "note": "Hats live here; brim on hat_brim (0.19)"
+    },
+    "face": {
+      "y0": 0.28,
+      "y1": 0.64,
+      "note": "Facial features only; eyes on eye_line (0.39)"
+    },
+    "clothing": {
+      "y0": 0.69,
+      "y1": 1.0,
+      "note": "Top of clothing on collar (0.69); covers shoulders"
+    }
   },
   "layer_order": [
     "background",
@@ -38,22 +49,5 @@
     "accessory",
     "hat"
   ],
-  "export_rules": {
-    "format": "PNG",
-    "mode": "RGBA",
-    "size": [
-      1000,
-      1000
-    ],
-    "transparent_background": true,
-    "no_drop_shadows": true,
-    "line_weight": "match master base black stroke"
-  },
-  "placement_notes": {
-    "clothing": "top pinned to collar (moved down)",
-    "accessory": "glasses shifted right for 3/4 face",
-    "hat": "bottom on hat_brim"
-  },
-  "body_base": "layers/base/body_base.png",
-  "notes": "Body base has NO facial features. Faces are separate layers. Clothing/hats/accessories align to body_base outline."
+  "notes": "Dialed from body_base width profile + face overlay check. 3/4 head_center_x=0.55. Glasses box on accessory_center_x=0.53. Redraw faces so pupils sit in the green eyes box."
 }

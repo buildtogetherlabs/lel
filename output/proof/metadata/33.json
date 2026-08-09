@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #33",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Royal Purple"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Neutral Simple"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Dark Gray Tee"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Fez Red"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Glasses Blue Frame"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/33.png"
+}

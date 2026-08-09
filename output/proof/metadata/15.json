@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #15",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Void Black"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Evil Grin Teeth"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "White Blazer Red Tshirt"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Cap Mcdonalds Red Golden Arches"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Sunglasses Round Black"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/15.png"
+}

@@ -1,0 +1,41 @@
+{
+  "collection_size": 6666,
+  "proof_size": 50,
+  "seed": 6666,
+  "mask_rate": 0.09,
+  "hat_none_weight": 40.0,
+  "accessory_none_weight": 38.0,
+  "mask_none_weight": 100.0,
+  "compatibility": {
+    "mask_blocks_glasses": true,
+    "heavy_mask_keywords": [
+      "balaclava",
+      "npc",
+      "stitched",
+      "scratchy",
+      "horror",
+      "gas_mask"
+    ],
+    "glasses_keywords": [
+      "glasses",
+      "sunglasses",
+      "goggles",
+      "aviator"
+    ],
+    "face_hat_conflicts": [
+      {
+        "face_contains": ["female_wojak_ponytail"],
+        "hat_contains": ["helmet", "beanie", "stocking"]
+      },
+      {
+        "face_contains": ["red_devil_horns", "devil"],
+        "hat_contains": ["helmet", "top_hat", "cowboy"]
+      }
+    ]
+  },
+  "metadata": {
+    "name_prefix": "Wojak",
+    "description": "Wojak PFP Collection — 6,666 unique wojaks.",
+    "external_url": ""
+  }
+}

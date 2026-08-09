@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #45",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Dust Beige"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Tired Heavy Eyes"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Black Button Shirt"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Bandana Red"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Glasses Round Reflective"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/45.png"
+}

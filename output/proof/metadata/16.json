@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #16",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Royal Purple"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Glasses Screaming Beard"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Burgundy Suit Decorative Collar"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Cap Propeller Multicolor"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Glasses Black Orange Accent"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/16.png"
+}

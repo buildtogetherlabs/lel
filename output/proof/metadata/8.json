@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #8",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Blood Maroon"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Neutral Calm"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Medium Gray Tee"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Cap San Andreas Black"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Spiked Collar Ring"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/8.png"
+}

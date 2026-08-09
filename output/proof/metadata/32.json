@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #32",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Muted Blue"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Npc Gray Winking"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Medium Gray Tee"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Bucket Green"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Glasses Round Reflective"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/32.png"
+}

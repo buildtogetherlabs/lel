@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #19",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Muted Blue"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Side Glance"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Ash Gray Tee"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Cap Propeller Multicolor"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Glasses Rectangle Glare"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/19.png"
+}

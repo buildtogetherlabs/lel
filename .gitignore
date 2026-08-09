@@ -1,0 +1,26 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local full mint dumps (keep proof samples tracked if small)
+output/images/
+output/metadata/
+output/previews/
+
+# Large full-collection manifests (keep proof manifests)
+manifests/combos_6666.json
+manifests/combos_6666.csv
+manifests/images_sha256.txt
+
+# Secrets / env
+.env
+.env.*

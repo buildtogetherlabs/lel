@@ -1,0 +1,127 @@
+WOJAK PFP HAT COLLECTION CATALOG
+=================================
+Total Hats: 66
+All files renamed with descriptive names for easy identification
+
+BASEBALL CAPS
+=============
+cap_black_down_only.png - Black "down only" baseball cap
+cap_black_gradient_logo.png - Black cap with gradient logo (cyan/purple)
+cap_bitcoin_orange_white_circle.png - Orange Bitcoin cap (white circle logo)
+cap_blue_plain.png - Blue baseball cap (plain)
+cap_dominos_black.png - Black Domino's Pizza cap
+cap_gray_meme_pepsi.png - Light gray "MEME" cap (Pepsi style)
+cap_maga_red.png - Red MAGA baseball cap
+cap_mcdonalds_black_small_logo.png - Black McDonald's cap (small logo)
+cap_mcdonalds_red_golden_arches.png - Red McDonald's cap (large golden arches)
+cap_nintendo_red.png - Red Nintendo baseball cap
+cap_pilot_blue_airline.png - Blue pilot/airline captain cap
+cap_police_black_badge.png - Police cap (black with badge)
+cap_propeller_multicolor.png - Propeller cap (multicolored with spinning propeller)
+cap_red_bitcoin_yellow.png - Red Bitcoin cap (yellow symbol)
+cap_san_andreas_black.png - Black "San Andreas" baseball cap
+cap_white_black_maroon_panels.png - White cap with black/maroon panels
+cap_white_gray_plain.png - White/gray baseball cap (plain)
+
+BUCKET HATS
+============
+bucket_black.png - Black/dark gray bucket hat
+bucket_checkered_red_white.png - Red & white checkered bucket hat
+bucket_frog_green_pepe.png - Green frog bucket hat (Pepe reference)
+bucket_green.png - Green bucket hat
+bucket_purple.png - Purple bucket hat
+
+BEANIES & BANDANAS
+==================
+bandana_green.png - Green bandana
+bandana_navy_blue.png - Navy blue bandana
+bandana_red.png - Red bandana
+beanie_black_ribbed.png - Black beanie with ribbed cuff
+beanie_dark_ribbed.png - Dark beanie with ribbed cuff
+
+BERETS
+======
+beret_black.png - Black beret
+beret_military_green_plain.png - Dark green military beret (plain)
+beret_military_green_red_star.png - Green military beret with red star
+beret_military_maroon_star.png - Maroon/burgundy military beret with yellow star badge
+
+MILITARY HELMETS
+================
+helmet_camo_woodland_m1.png - Woodland camo helmet (M1 style)
+helmet_combat_green_modern.png - Modern combat helmet (green with accessories)
+helmet_military_gray_clean.png - Gray military helmet (clean)
+helmet_military_gray_horse_emblem.png - Gray military helmet with white horse emblem
+helmet_military_green_clean.png - Military helmet (clean olive green)
+helmet_military_olive_damaged.png - Battle-worn military helmet (olive with damage)
+helmet_swat_black_goggles.png - Black SWAT helmet with orange goggles
+helmet_vietnam_born_to_feel.png - "BORN TO FEEL" Vietnam helmet (camo with cigarette pack)
+
+BOONIE HATS
+===========
+boonie_camo_rhodesian.png - Rhodesian brushstroke camo boonie hat
+boonie_camo_woodland.png - Woodland camo boonie hat
+
+FEDORAS
+=======
+fedora_black_gray_band.png - Black fedora with gray/white band
+fedora_blue_black_band.png - Blue fedora with black band
+fedora_dark_brown.png - Dark brown/black fedora
+fedora_gray_black_band.png - Gray fedora with black band
+fedora_tan_brown_classic.png - Tan/brown fedora (classic)
+fedora_tan_variation.png - Tan fedora (variation)
+
+GAMBLER/WIDE-BRIM HATS
+======================
+gambler_black.png - Black gambler style hat
+gambler_brown.png - Brown gambler style hat
+gambler_gray.png - Gray gambler style hat
+gambler_navy_blue.png - Navy blue gambler style hat
+
+COWBOY HATS
+===========
+cowboy_black_red_band.png - Black cowboy hat with red band
+cowboy_brown.png - Brown cowboy hat
+cowboy_white.png - White cowboy hat
+
+FORMAL & HISTORICAL
+===================
+bicorne_black_napoleon.png - Black bicorne (Napoleon hat)
+top_hat_white_gray.png - White/gray top hat
+
+SPECIALTY HATS
+==============
+campaign_hat_brown_plain.png - Brown campaign/ranger hat (plain)
+chef_hat_white_toque.png - White chef's hat (toque)
+fez_burgundy_tassel.png - Burgundy fez with tassel
+fez_red.png - Red fez
+pith_helmet_green_safari.png - Green pith helmet (safari/colonial style)
+pith_helmet_tan_safari.png - Tan/beige safari pith helmet
+ranger_hat_brown_badge.png - Brown ranger hat with badge
+turban_black.png - Black turban/head wrap
+
+CONSTRUCTION
+============
+hardhat_orange.png - Orange construction hard hat
+hardhat_yellow.png - Yellow construction hard hat
+
+CATEGORIES SUMMARY
+==================
+Baseball Caps: 16+
+Bucket Hats: 5+
+Beanies: 2
+Military Helmets: 6
+Combat Helmets: 3
+Berets: 3
+Bandanas: 3
+Construction Hard Hats: 2
+Fedoras: 6
+Gambler/Wide-Brim: 4
+Cowboy Hats: 3
+Formal (Top Hat): 1
+Uniform Hats (Police, Pilot, Chef, Ranger): 4
+Historical (Bicorne, Pith, Fez): 5
+Novelty/Meme: 2
+Camo/Tactical: 4
+
+Total: 66 unique hats

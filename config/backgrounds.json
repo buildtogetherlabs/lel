@@ -1,0 +1,16 @@
+{
+  "backgrounds": [
+    { "id": "void_black", "name": "Void Black", "color": [12, 12, 14, 255], "weight": 18, "tier": "common" },
+    { "id": "paper_white", "name": "Paper White", "color": [245, 243, 238, 255], "weight": 16, "tier": "common" },
+    { "id": "slate_gray", "name": "Slate Gray", "color": [90, 96, 105, 255], "weight": 12, "tier": "common" },
+    { "id": "dust_beige", "name": "Dust Beige", "color": [214, 198, 168, 255], "weight": 10, "tier": "common" },
+    { "id": "muted_blue", "name": "Muted Blue", "color": [72, 104, 140, 255], "weight": 9, "tier": "uncommon" },
+    { "id": "forest_green", "name": "Forest Green", "color": [46, 84, 58, 255], "weight": 8, "tier": "uncommon" },
+    { "id": "blood_maroon", "name": "Blood Maroon", "color": [92, 28, 36, 255], "weight": 7, "tier": "uncommon" },
+    { "id": "sunset_orange", "name": "Sunset Orange", "color": [210, 120, 54, 255], "weight": 6, "tier": "rare" },
+    { "id": "toxic_lime", "name": "Toxic Lime", "color": [140, 200, 60, 255], "weight": 5, "tier": "rare" },
+    { "id": "royal_purple", "name": "Royal Purple", "color": [88, 48, 130, 255], "weight": 5, "tier": "rare" },
+    { "id": "hot_pink", "name": "Hot Pink", "color": [220, 70, 140, 255], "weight": 3, "tier": "epic" },
+    { "id": "gold_wash", "name": "Gold Wash", "color": [198, 160, 60, 255], "weight": 1, "tier": "legendary" }
+  ]
+}

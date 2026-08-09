@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #44",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Blood Maroon"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Very Sad Depressed"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Mcdonalds Uniform"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Bucket Checkered Red White"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Sunglasses Palm Tree Reflection"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/44.png"
+}

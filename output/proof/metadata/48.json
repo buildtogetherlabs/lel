@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #48",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Slate Gray"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Tired Neutral"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Black Blazer Brown Tshirt"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Cap White Black Maroon Panels"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Glasses Rectangle Glare"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/48.png"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #2",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Dust Beige"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Very Sad Depressed"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Black Jacket Yellow Turtleneck"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Campaign Hat Brown Plain"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Sunglasses Silver Dark Aviator"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/2.png"
+}

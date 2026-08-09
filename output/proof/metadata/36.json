@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #36",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Void Black"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Sweating Stressed"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Tactical Saddle Backpack"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Cap Nintendo Red"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Glasses Black Orange Accent"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/36.png"
+}

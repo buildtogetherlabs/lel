@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #47",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Gold Wash"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Angry Soy Glasses"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Black Jacket Green Stripes"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Cap Gray Meme Pepsi"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Pipe Brown"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/47.png"
+}

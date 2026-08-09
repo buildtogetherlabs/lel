@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #50",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Void Black"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Sad Stubble"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Mcdonalds Uniform"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Cap San Andreas Black"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Sunglasses Gold White Aviator"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/50.png"
+}

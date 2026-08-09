@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #29",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Blood Maroon"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Shocked Wide Eyes"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Hawaiian Floral Shirt"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Fez Burgundy Tassel"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Chain Necklace Gold"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/29.png"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #17",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Sunset Orange"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Depressed Dark"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Gray Tactical Vest"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Cowboy White"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Goggles Brown Aviator"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/17.png"
+}

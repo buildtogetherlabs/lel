@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #27",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Void Black"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Big Ear Side Profile"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Purple Collar Teeth"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Bucket Black"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Gray Bowtie"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/27.png"
+}

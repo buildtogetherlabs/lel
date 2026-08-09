@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #4",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Sunset Orange"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Npc Gray Cracked Mask White"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Black Vest Green Stripes"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Pith Helmet Green Safari"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Sunglasses Gold White Aviator"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/4.png"
+}

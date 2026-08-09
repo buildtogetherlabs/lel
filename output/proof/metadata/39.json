@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #39",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Dust Beige"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Jeff Killer Smile"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Blue Vneck Sweater White Shirt Tie"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Fedora Dark Brown"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Sunglasses Black Rectangular"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/39.png"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #6",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Void Black"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Sad Baggy Eyes"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Gray Jacket Orange Turtleneck"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Fedora Tan Variation"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "None"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/6.png"
+}

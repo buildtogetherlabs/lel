@@ -1,0 +1,31 @@
+{
+  "name": "Wojak #11",
+  "description": "Wojak PFP Collection \u2014 6,666 unique wojaks.",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Blood Maroon"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Beaten Bruised"
+    },
+    {
+      "trait_type": "Clothing",
+      "value": "Mcdonalds Uniform"
+    },
+    {
+      "trait_type": "Hat",
+      "value": "Stocking Black"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Brown Scarf"
+    },
+    {
+      "trait_type": "Mask",
+      "value": "None"
+    }
+  ],
+  "image": "images/11.png"
+}

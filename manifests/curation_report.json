@@ -1,0 +1,20 @@
+{
+  "kept": {
+    "background": 12,
+    "face": 98,
+    "clothing": 87,
+    "hat": 66,
+    "hat_with_none": 67,
+    "accessory": 34,
+    "accessory_with_none": 35,
+    "mask": 11,
+    "mask_with_none": 12,
+    "total_renderable": 296
+  },
+  "notes": [
+    "Dropped *_v2, *_v3, *_alt near-duplicates",
+    "Dropped blank/outline templates and tiny icons",
+    "Excluded special/ full-body assets from production set",
+    "Merged faces/faces2/faces3 and clothing/clothing2/hoodies"
+  ]
+}

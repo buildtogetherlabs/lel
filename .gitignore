@@ -11,16 +11,27 @@ __pycache__/
 .vscode/
 *.swp
 
-# Local full mint dumps (keep proof samples tracked if small)
+# ── Generated outputs (never commit proof/renders until quality-gated) ──
 output/images/
 output/metadata/
 output/previews/
+output/proof/
+!output/**/.gitkeep
+!output/README.md
 
-# Large full-collection manifests (keep proof manifests)
-manifests/combos_6666.json
-manifests/combos_6666.csv
+# QA reports from local runs
+reports/*.png
+reports/*.json
+!reports/README.md
+!reports/.gitkeep
+
+# Full-collection manifests (regenerable; large)
+manifests/combos_*.json
+manifests/combos_*.csv
 manifests/images_sha256.txt
+# Keep curation notes
+!manifests/curation_report.json
 
-# Secrets / env
+# Secrets
 .env
 .env.*

@@ -34,8 +34,10 @@
     ]
   },
   "metadata": {
-    "name_prefix": "Wojak",
-    "description": "Wojak PFP Collection — 6,666 unique wojaks.",
+    "name_prefix": "LEL",
+    "description": "LEL — 6,666 unique white-base Wojak PFPs. Special bases reserved as 1-of-1s.",
     "external_url": ""
-  }
+  },
+  "base_policy": "white_only_majority"
 }
+

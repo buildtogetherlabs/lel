@@ -13,13 +13,13 @@
   },
   "guides_y": {
     "head_top": 0.08,
-    "hat_brim": 0.176,
+    "hat_brim": 0.28,
     "brow": 0.256,
-    "eye_line": 0.336,
+    "eye_line": 0.36,
     "nose": 0.464,
     "mouth": 0.544,
     "chin": 0.64,
-    "collar": 0.704,
+    "collar": 0.58,
     "shoulder": 0.84
   },
   "guides_x": {

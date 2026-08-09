@@ -4,10 +4,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "config"
 LAYERS_RAW = ROOT / "layers_raw" / "wojak_pfp_project"
-LAYERS_NORM = ROOT / "layers_normalized"
+LAYERS_NORM = ROOT / "layers_normalized"  # legacy auto-align archive
+LAYERS_TEMPLATE = ROOT / "layers_template"  # production (white base path)
 MANIFESTS = ROOT / "manifests"
 OUTPUT = ROOT / "output"
 IMAGES = OUTPUT / "images"
 METADATA = OUTPUT / "metadata"
 PREVIEWS = OUTPUT / "previews"
 REPORTS = ROOT / "reports"
+TEMPLATE = ROOT / "template"

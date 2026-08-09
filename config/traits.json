@@ -1,26 +1,54 @@
 {
-  "version": 1,
-  "raw_root": "/Users/bmelliott/Projects/wojak-collection/layers_raw/wojak_pfp_project",
+  "version": 2,
+  "base_policy": "white_only_majority",
+  "layers_root": "/Users/bmelliott/Projects/wojak-collection/layers_template",
   "counts": {
     "background": 12,
-    "face": 98,
-    "clothing": 87,
+    "face_white": 53,
+    "face_special_1of1": 31,
+    "clothing": 85,
     "hat": 66,
-    "hat_with_none": 67,
-    "accessory": 34,
-    "accessory_with_none": 35,
-    "mask": 11,
-    "mask_with_none": 12,
-    "total_renderable": 296
+    "accessory": 34
   },
+  "special_1of1_faces": [
+    "angry_soy_glasses",
+    "angry_vampire_fangs",
+    "bloody_horror_crying",
+    "clown_makeup",
+    "creepy_wide_smile",
+    "dark_shadowed_beard",
+    "evil_grin_teeth",
+    "glasses_screaming_beard",
+    "jeff_killer_smile",
+    "npc_gray_angry_furrowed_brow",
+    "npc_gray_angry_gritting_teeth",
+    "npc_gray_cracked_mask_brown",
+    "npc_gray_cracked_mask_tan",
+    "npc_gray_cracked_mask_white",
+    "npc_gray_neutral",
+    "npc_gray_sad_eyebrows",
+    "npc_gray_sunglasses",
+    "npc_gray_surprised_mouth",
+    "npc_gray_winking",
+    "pink_crying_blood_tears",
+    "pink_crying_blood_tears_variant",
+    "red_angry_gritting_teeth",
+    "shocked_wide_eyes",
+    "skeleton_skull",
+    "smoking_cigarette_brown_hair",
+    "soy_glasses_black_hair",
+    "soy_glasses_open_mouth",
+    "tired_sad_subtle",
+    "very_sad_depressed",
+    "wojak_beaten_bloody",
+    "wojak_red_devil_horns"
+  ],
   "traits": {
     "background": [
       {
         "id": "void_black",
         "category": "background",
         "name": "Void Black",
-        "source": null,
-        "source_rel": null,
         "color": [
           12,
           12,
@@ -28,14 +56,13 @@
           255
         ],
         "weight": 18.0,
-        "tier": "common"
+        "tier": "common",
+        "source_rel": "background/void_black.png"
       },
       {
         "id": "paper_white",
         "category": "background",
         "name": "Paper White",
-        "source": null,
-        "source_rel": null,
         "color": [
           245,
           243,
@@ -43,14 +70,13 @@
           255
         ],
         "weight": 16.0,
-        "tier": "common"
+        "tier": "common",
+        "source_rel": "background/paper_white.png"
       },
       {
         "id": "slate_gray",
         "category": "background",
         "name": "Slate Gray",
-        "source": null,
-        "source_rel": null,
         "color": [
           90,
           96,
@@ -58,14 +84,13 @@
           255
         ],
         "weight": 12.0,
-        "tier": "common"
+        "tier": "common",
+        "source_rel": "background/slate_gray.png"
       },
       {
         "id": "dust_beige",
         "category": "background",
         "name": "Dust Beige",
-        "source": null,
-        "source_rel": null,
         "color": [
           214,
           198,
@@ -73,14 +98,13 @@
           255
         ],
         "weight": 10.0,
-        "tier": "common"
+        "tier": "common",
+        "source_rel": "background/dust_beige.png"
       },
       {
         "id": "muted_blue",
         "category": "background",
         "name": "Muted Blue",
-        "source": null,
-        "source_rel": null,
         "color": [
           72,
           104,
@@ -88,14 +112,13 @@
           255
         ],
         "weight": 9.0,
-        "tier": "uncommon"
+        "tier": "uncommon",
+        "source_rel": "background/muted_blue.png"
       },
       {
         "id": "forest_green",
         "category": "background",
         "name": "Forest Green",
-        "source": null,
-        "source_rel": null,
         "color": [
           46,
           84,
@@ -103,14 +126,13 @@
           255
         ],
         "weight": 8.0,
-        "tier": "uncommon"
+        "tier": "uncommon",
+        "source_rel": "background/forest_green.png"
       },
       {
         "id": "blood_maroon",
         "category": "background",
         "name": "Blood Maroon",
-        "source": null,
-        "source_rel": null,
         "color": [
           92,
           28,
@@ -118,14 +140,13 @@
           255
         ],
         "weight": 7.0,
-        "tier": "uncommon"
+        "tier": "uncommon",
+        "source_rel": "background/blood_maroon.png"
       },
       {
         "id": "sunset_orange",
         "category": "background",
         "name": "Sunset Orange",
-        "source": null,
-        "source_rel": null,
         "color": [
           210,
           120,
@@ -133,14 +154,13 @@
           255
         ],
         "weight": 6.0,
-        "tier": "rare"
+        "tier": "rare",
+        "source_rel": "background/sunset_orange.png"
       },
       {
         "id": "toxic_lime",
         "category": "background",
         "name": "Toxic Lime",
-        "source": null,
-        "source_rel": null,
         "color": [
           140,
           200,
@@ -148,14 +168,13 @@
           255
         ],
         "weight": 5.0,
-        "tier": "rare"
+        "tier": "rare",
+        "source_rel": "background/toxic_lime.png"
       },
       {
         "id": "royal_purple",
         "category": "background",
         "name": "Royal Purple",
-        "source": null,
-        "source_rel": null,
         "color": [
           88,
           48,
@@ -163,14 +182,13 @@
           255
         ],
         "weight": 5.0,
-        "tier": "rare"
+        "tier": "rare",
+        "source_rel": "background/royal_purple.png"
       },
       {
         "id": "hot_pink",
         "category": "background",
         "name": "Hot Pink",
-        "source": null,
-        "source_rel": null,
         "color": [
           220,
           70,
@@ -178,14 +196,13 @@
           255
         ],
         "weight": 3.0,
-        "tier": "epic"
+        "tier": "epic",
+        "source_rel": "background/hot_pink.png"
       },
       {
         "id": "gold_wash",
         "category": "background",
         "name": "Gold Wash",
-        "source": null,
-        "source_rel": null,
         "color": [
           198,
           160,
@@ -193,7 +210,8 @@
           255
         ],
         "weight": 1.0,
-        "tier": "legendary"
+        "tier": "legendary",
+        "source_rel": "background/gold_wash.png"
       }
     ],
     "face": [
@@ -201,53 +219,23 @@
         "id": "acne_red_dots_eyebrows",
         "category": "face",
         "name": "Acne Red Dots Eyebrows",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/acne_red_dots_eyebrows.png",
-        "source_rel": "faces/acne_red_dots_eyebrows.png",
+        "source_rel": "face/acne_red_dots_eyebrows.png",
         "weight": 8.0,
         "tier": "common"
-      },
-      {
-        "id": "angry_mad",
-        "category": "face",
-        "name": "Angry Mad",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/angry_mad.png",
-        "source_rel": "faces/angry_mad.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "angry_soy_glasses",
-        "category": "face",
-        "name": "Angry Soy Glasses",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/angry_soy_glasses.png",
-        "source_rel": "faces/angry_soy_glasses.png",
-        "weight": 6.0,
-        "tier": "uncommon"
       },
       {
         "id": "angry_stubble",
         "category": "face",
         "name": "Angry Stubble",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/angry_stubble.png",
-        "source_rel": "faces/angry_stubble.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "big_ear_side_profile",
-        "category": "face",
-        "name": "Big Ear Side Profile",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/big_ear_side_profile.png",
-        "source_rel": "faces/big_ear_side_profile.png",
+        "source_rel": "face/angry_stubble.png",
         "weight": 8.0,
         "tier": "common"
       },
       {
-        "id": "clown_makeup",
+        "id": "boomer_beard_wrinkles",
         "category": "face",
-        "name": "Clown Makeup",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/clown_makeup.png",
-        "source_rel": "faces/clown_makeup.png",
+        "name": "Boomer Beard Wrinkles",
+        "source_rel": "face/boomer_beard_wrinkles.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -255,8 +243,7 @@
         "id": "confused_squint",
         "category": "face",
         "name": "Confused Squint",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/confused_squint.png",
-        "source_rel": "faces/confused_squint.png",
+        "source_rel": "face/confused_squint.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -264,8 +251,7 @@
         "id": "creepy_smiling_big_teeth",
         "category": "face",
         "name": "Creepy Smiling Big Teeth",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/creepy_smiling_big_teeth.png",
-        "source_rel": "faces/creepy_smiling_big_teeth.png",
+        "source_rel": "face/creepy_smiling_big_teeth.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -273,17 +259,7 @@
         "id": "crying_streams",
         "category": "face",
         "name": "Crying Streams",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/crying_streams.png",
-        "source_rel": "faces/crying_streams.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "dark_shadowed_beard",
-        "category": "face",
-        "name": "Dark Shadowed Beard",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/dark_shadowed_beard.png",
-        "source_rel": "faces/dark_shadowed_beard.png",
+        "source_rel": "face/crying_streams.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -291,8 +267,7 @@
         "id": "depressed_dark",
         "category": "face",
         "name": "Depressed Dark",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/depressed_dark.png",
-        "source_rel": "faces/depressed_dark.png",
+        "source_rel": "face/depressed_dark.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -300,17 +275,7 @@
         "id": "elderly_super_wrinkled",
         "category": "face",
         "name": "Elderly Super Wrinkled",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/elderly_super_wrinkled.png",
-        "source_rel": "faces/elderly_super_wrinkled.png",
-        "weight": 8.0,
-        "tier": "common"
-      },
-      {
-        "id": "elderly_wrinkled",
-        "category": "face",
-        "name": "Elderly Wrinkled",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/elderly_wrinkled.png",
-        "source_rel": "faces/elderly_wrinkled.png",
+        "source_rel": "face/elderly_super_wrinkled.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -318,8 +283,7 @@
         "id": "grumpy_frown",
         "category": "face",
         "name": "Grumpy Frown",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/grumpy_frown.png",
-        "source_rel": "faces/grumpy_frown.png",
+        "source_rel": "face/grumpy_frown.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -327,8 +291,7 @@
         "id": "happy_content",
         "category": "face",
         "name": "Happy Content",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/happy_content.png",
-        "source_rel": "faces/happy_content.png",
+        "source_rel": "face/happy_content.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -336,17 +299,7 @@
         "id": "happy_smiling",
         "category": "face",
         "name": "Happy Smiling",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/happy_smiling.png",
-        "source_rel": "faces/happy_smiling.png",
-        "weight": 8.0,
-        "tier": "common"
-      },
-      {
-        "id": "jeff_killer_smile",
-        "category": "face",
-        "name": "Jeff Killer Smile",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/jeff_killer_smile.png",
-        "source_rel": "faces/jeff_killer_smile.png",
+        "source_rel": "face/happy_smiling.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -354,8 +307,7 @@
         "id": "neutral_calm",
         "category": "face",
         "name": "Neutral Calm",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/neutral_calm.png",
-        "source_rel": "faces/neutral_calm.png",
+        "source_rel": "face/neutral_calm.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -363,8 +315,7 @@
         "id": "neutral_simple",
         "category": "face",
         "name": "Neutral Simple",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/neutral_simple.png",
-        "source_rel": "faces/neutral_simple.png",
+        "source_rel": "face/neutral_simple.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -372,134 +323,15 @@
         "id": "neutral_squinting",
         "category": "face",
         "name": "Neutral Squinting",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/neutral_squinting.png",
-        "source_rel": "faces/neutral_squinting.png",
+        "source_rel": "face/neutral_squinting.png",
         "weight": 8.0,
         "tier": "common"
-      },
-      {
-        "id": "npc_gray_angry_furrowed_brow",
-        "category": "face",
-        "name": "Npc Gray Angry Furrowed Brow",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/npc_gray_angry_furrowed_brow.png",
-        "source_rel": "faces/npc_gray_angry_furrowed_brow.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "npc_gray_angry_gritting_teeth",
-        "category": "face",
-        "name": "Npc Gray Angry Gritting Teeth",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/npc_gray_angry_gritting_teeth.png",
-        "source_rel": "faces/npc_gray_angry_gritting_teeth.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "npc_gray_cracked_mask_brown",
-        "category": "face",
-        "name": "Npc Gray Cracked Mask Brown",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/npc_gray_cracked_mask_brown.png",
-        "source_rel": "faces/npc_gray_cracked_mask_brown.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "npc_gray_cracked_mask_tan",
-        "category": "face",
-        "name": "Npc Gray Cracked Mask Tan",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/npc_gray_cracked_mask_tan.png",
-        "source_rel": "faces/npc_gray_cracked_mask_tan.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "npc_gray_cracked_mask_white",
-        "category": "face",
-        "name": "Npc Gray Cracked Mask White",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/npc_gray_cracked_mask_white.png",
-        "source_rel": "faces/npc_gray_cracked_mask_white.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "npc_gray_neutral",
-        "category": "face",
-        "name": "Npc Gray Neutral",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/npc_gray_neutral.png",
-        "source_rel": "faces/npc_gray_neutral.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "npc_gray_sad_eyebrows",
-        "category": "face",
-        "name": "Npc Gray Sad Eyebrows",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/npc_gray_sad_eyebrows.png",
-        "source_rel": "faces/npc_gray_sad_eyebrows.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "npc_gray_sunglasses",
-        "category": "face",
-        "name": "Npc Gray Sunglasses",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/npc_gray_sunglasses.png",
-        "source_rel": "faces/npc_gray_sunglasses.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "npc_gray_surprised_mouth",
-        "category": "face",
-        "name": "Npc Gray Surprised Mouth",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/npc_gray_surprised_mouth.png",
-        "source_rel": "faces/npc_gray_surprised_mouth.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "npc_gray_winking",
-        "category": "face",
-        "name": "Npc Gray Winking",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/npc_gray_winking.png",
-        "source_rel": "faces/npc_gray_winking.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "pink_crying_blood_tears",
-        "category": "face",
-        "name": "Pink Crying Blood Tears",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/pink_crying_blood_tears.png",
-        "source_rel": "faces/pink_crying_blood_tears.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "pink_crying_blood_tears_variant",
-        "category": "face",
-        "name": "Pink Crying Blood Tears Variant",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/pink_crying_blood_tears_variant.png",
-        "source_rel": "faces/pink_crying_blood_tears_variant.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "red_angry_gritting_teeth",
-        "category": "face",
-        "name": "Red Angry Gritting Teeth",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/red_angry_gritting_teeth.png",
-        "source_rel": "faces/red_angry_gritting_teeth.png",
-        "weight": 6.0,
-        "tier": "uncommon"
       },
       {
         "id": "sad_baggy_eyes",
         "category": "face",
         "name": "Sad Baggy Eyes",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/sad_baggy_eyes.png",
-        "source_rel": "faces/sad_baggy_eyes.png",
+        "source_rel": "face/sad_baggy_eyes.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -507,8 +339,7 @@
         "id": "sad_baggy_eyes_variant",
         "category": "face",
         "name": "Sad Baggy Eyes Variant",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/sad_baggy_eyes_variant.png",
-        "source_rel": "faces/sad_baggy_eyes_variant.png",
+        "source_rel": "face/sad_baggy_eyes_variant.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -516,8 +347,7 @@
         "id": "sad_concerned_eyebrow",
         "category": "face",
         "name": "Sad Concerned Eyebrow",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/sad_concerned_eyebrow.png",
-        "source_rel": "faces/sad_concerned_eyebrow.png",
+        "source_rel": "face/sad_concerned_eyebrow.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -525,8 +355,7 @@
         "id": "sad_dark_circles",
         "category": "face",
         "name": "Sad Dark Circles",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/sad_dark_circles.png",
-        "source_rel": "faces/sad_dark_circles.png",
+        "source_rel": "face/sad_dark_circles.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -534,8 +363,7 @@
         "id": "sad_droopy",
         "category": "face",
         "name": "Sad Droopy",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/sad_droopy.png",
-        "source_rel": "faces/sad_droopy.png",
+        "source_rel": "face/sad_droopy.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -543,8 +371,7 @@
         "id": "sad_stubble",
         "category": "face",
         "name": "Sad Stubble",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/sad_stubble.png",
-        "source_rel": "faces/sad_stubble.png",
+        "source_rel": "face/sad_stubble.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -552,8 +379,7 @@
         "id": "sad_tired",
         "category": "face",
         "name": "Sad Tired",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/sad_tired.png",
-        "source_rel": "faces/sad_tired.png",
+        "source_rel": "face/sad_tired.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -561,89 +387,47 @@
         "id": "sad_tired_no_stubble",
         "category": "face",
         "name": "Sad Tired No Stubble",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/sad_tired_no_stubble.png",
-        "source_rel": "faces/sad_tired_no_stubble.png",
+        "source_rel": "face/sad_tired_no_stubble.png",
         "weight": 8.0,
         "tier": "common"
-      },
-      {
-        "id": "skeleton_skull",
-        "category": "face",
-        "name": "Skeleton Skull",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/skeleton_skull.png",
-        "source_rel": "faces/skeleton_skull.png",
-        "weight": 0.5,
-        "tier": "legendary"
       },
       {
         "id": "smirking",
         "category": "face",
         "name": "Smirking",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/smirking.png",
-        "source_rel": "faces/smirking.png",
+        "source_rel": "face/smirking.png",
         "weight": 8.0,
         "tier": "common"
-      },
-      {
-        "id": "smoking_cigarette_brown_hair",
-        "category": "face",
-        "name": "Smoking Cigarette Brown Hair",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/smoking_cigarette_brown_hair.png",
-        "source_rel": "faces/smoking_cigarette_brown_hair.png",
-        "weight": 3.0,
-        "tier": "rare"
       },
       {
         "id": "smug_grin",
         "category": "face",
         "name": "Smug Grin",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/smug_grin.png",
-        "source_rel": "faces/smug_grin.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "face/smug_grin.png",
+        "weight": 8.0,
+        "tier": "common"
       },
       {
         "id": "smug_pointing",
         "category": "face",
         "name": "Smug Pointing",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/smug_pointing.png",
-        "source_rel": "faces/smug_pointing.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "face/smug_pointing.png",
+        "weight": 8.0,
+        "tier": "common"
       },
       {
         "id": "smug_slight_smile",
         "category": "face",
         "name": "Smug Slight Smile",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/smug_slight_smile.png",
-        "source_rel": "faces/smug_slight_smile.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "soy_glasses_black_hair",
-        "category": "face",
-        "name": "Soy Glasses Black Hair",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/soy_glasses_black_hair.png",
-        "source_rel": "faces/soy_glasses_black_hair.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "soy_glasses_open_mouth",
-        "category": "face",
-        "name": "Soy Glasses Open Mouth",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/soy_glasses_open_mouth.png",
-        "source_rel": "faces/soy_glasses_open_mouth.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "face/smug_slight_smile.png",
+        "weight": 8.0,
+        "tier": "common"
       },
       {
         "id": "tired_heavy_eyes",
         "category": "face",
         "name": "Tired Heavy Eyes",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces/tired_heavy_eyes.png",
-        "source_rel": "faces/tired_heavy_eyes.png",
+        "source_rel": "face/tired_heavy_eyes.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -651,44 +435,31 @@
         "id": "wojak_angry_determined",
         "category": "face",
         "name": "Angry Determined",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_angry_determined.png",
-        "source_rel": "faces2/wojak_angry_determined.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "face/wojak_angry_determined.png",
+        "weight": 8.0,
+        "tier": "common"
       },
       {
         "id": "wojak_angry_furrowed",
         "category": "face",
         "name": "Angry Furrowed",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_angry_furrowed.png",
-        "source_rel": "faces2/wojak_angry_furrowed.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "wojak_beaten_bloody",
-        "category": "face",
-        "name": "Beaten Bloody",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_beaten_bloody.png",
-        "source_rel": "faces2/wojak_beaten_bloody.png",
-        "weight": 1.5,
-        "tier": "epic"
+        "source_rel": "face/wojak_angry_furrowed.png",
+        "weight": 8.0,
+        "tier": "common"
       },
       {
         "id": "wojak_beaten_bruised",
         "category": "face",
         "name": "Beaten Bruised",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_beaten_bruised.png",
-        "source_rel": "faces2/wojak_beaten_bruised.png",
-        "weight": 3.0,
-        "tier": "rare"
+        "source_rel": "face/wojak_beaten_bruised.png",
+        "weight": 8.0,
+        "tier": "common"
       },
       {
         "id": "wojak_blushing_with_tears",
         "category": "face",
         "name": "Blushing With Tears",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_blushing_with_tears.png",
-        "source_rel": "faces2/wojak_blushing_with_tears.png",
+        "source_rel": "face/wojak_blushing_with_tears.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -696,8 +467,7 @@
         "id": "wojak_content_smile",
         "category": "face",
         "name": "Content Smile",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_content_smile.png",
-        "source_rel": "faces2/wojak_content_smile.png",
+        "source_rel": "face/wojak_content_smile.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -705,8 +475,7 @@
         "id": "wojak_creepy_wide_grin",
         "category": "face",
         "name": "Creepy Wide Grin",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_creepy_wide_grin.png",
-        "source_rel": "faces2/wojak_creepy_wide_grin.png",
+        "source_rel": "face/wojak_creepy_wide_grin.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -714,26 +483,23 @@
         "id": "wojak_crying_but_happy",
         "category": "face",
         "name": "Crying But Happy",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_crying_but_happy.png",
-        "source_rel": "faces2/wojak_crying_but_happy.png",
-        "weight": 3.0,
-        "tier": "rare"
+        "source_rel": "face/wojak_crying_but_happy.png",
+        "weight": 8.0,
+        "tier": "common"
       },
       {
         "id": "wojak_crying_streams",
         "category": "face",
         "name": "Crying Streams",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_crying_streams.png",
-        "source_rel": "faces2/wojak_crying_streams.png",
-        "weight": 3.0,
-        "tier": "rare"
+        "source_rel": "face/wojak_crying_streams.png",
+        "weight": 8.0,
+        "tier": "common"
       },
       {
         "id": "wojak_derpy_rolling_eyes",
         "category": "face",
         "name": "Derpy Rolling Eyes",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_derpy_rolling_eyes.png",
-        "source_rel": "faces2/wojak_derpy_rolling_eyes.png",
+        "source_rel": "face/wojak_derpy_rolling_eyes.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -741,8 +507,7 @@
         "id": "wojak_evil_red_eyes",
         "category": "face",
         "name": "Evil Red Eyes",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_evil_red_eyes.png",
-        "source_rel": "faces2/wojak_evil_red_eyes.png",
+        "source_rel": "face/wojak_evil_red_eyes.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -750,8 +515,7 @@
         "id": "wojak_eyes_closed_peaceful",
         "category": "face",
         "name": "Eyes Closed Peaceful",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_eyes_closed_peaceful.png",
-        "source_rel": "faces2/wojak_eyes_closed_peaceful.png",
+        "source_rel": "face/wojak_eyes_closed_peaceful.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -759,26 +523,23 @@
         "id": "wojak_intense_crying_gritted",
         "category": "face",
         "name": "Intense Crying Gritted",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_intense_crying_gritted.png",
-        "source_rel": "faces2/wojak_intense_crying_gritted.png",
-        "weight": 3.0,
-        "tier": "rare"
+        "source_rel": "face/wojak_intense_crying_gritted.png",
+        "weight": 8.0,
+        "tier": "common"
       },
       {
         "id": "wojak_intense_crying_teeth",
         "category": "face",
         "name": "Intense Crying Teeth",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_intense_crying_teeth.png",
-        "source_rel": "faces2/wojak_intense_crying_teeth.png",
-        "weight": 3.0,
-        "tier": "rare"
+        "source_rel": "face/wojak_intense_crying_teeth.png",
+        "weight": 8.0,
+        "tier": "common"
       },
       {
         "id": "wojak_laughing_excited",
         "category": "face",
         "name": "Laughing Excited",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_laughing_excited.png",
-        "source_rel": "faces2/wojak_laughing_excited.png",
+        "source_rel": "face/wojak_laughing_excited.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -786,8 +547,7 @@
         "id": "wojak_neutral_calm",
         "category": "face",
         "name": "Neutral Calm",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_neutral_calm.png",
-        "source_rel": "faces2/wojak_neutral_calm.png",
+        "source_rel": "face/wojak_neutral_calm.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -795,26 +555,15 @@
         "id": "wojak_neutral_straight_brows",
         "category": "face",
         "name": "Neutral Straight Brows",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_neutral_straight_brows.png",
-        "source_rel": "faces2/wojak_neutral_straight_brows.png",
+        "source_rel": "face/wojak_neutral_straight_brows.png",
         "weight": 8.0,
         "tier": "common"
-      },
-      {
-        "id": "wojak_red_devil_horns",
-        "category": "face",
-        "name": "Red Devil Horns",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_red_devil_horns.png",
-        "source_rel": "faces2/wojak_red_devil_horns.png",
-        "weight": 0.5,
-        "tier": "legendary"
       },
       {
         "id": "wojak_side_glance",
         "category": "face",
         "name": "Side Glance",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_side_glance.png",
-        "source_rel": "faces2/wojak_side_glance.png",
+        "source_rel": "face/wojak_side_glance.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -822,8 +571,7 @@
         "id": "wojak_single_tear",
         "category": "face",
         "name": "Single Tear",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_single_tear.png",
-        "source_rel": "faces2/wojak_single_tear.png",
+        "source_rel": "face/wojak_single_tear.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -831,8 +579,7 @@
         "id": "wojak_sinister_smirk",
         "category": "face",
         "name": "Sinister Smirk",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_sinister_smirk.png",
-        "source_rel": "faces2/wojak_sinister_smirk.png",
+        "source_rel": "face/wojak_sinister_smirk.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -840,8 +587,7 @@
         "id": "wojak_slight_smile",
         "category": "face",
         "name": "Slight Smile",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_slight_smile.png",
-        "source_rel": "faces2/wojak_slight_smile.png",
+        "source_rel": "face/wojak_slight_smile.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -849,8 +595,7 @@
         "id": "wojak_smirking_wrinkled",
         "category": "face",
         "name": "Smirking Wrinkled",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_smirking_wrinkled.png",
-        "source_rel": "faces2/wojak_smirking_wrinkled.png",
+        "source_rel": "face/wojak_smirking_wrinkled.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -858,17 +603,15 @@
         "id": "wojak_smug_content",
         "category": "face",
         "name": "Smug Content",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_smug_content.png",
-        "source_rel": "faces2/wojak_smug_content.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "face/wojak_smug_content.png",
+        "weight": 8.0,
+        "tier": "common"
       },
       {
         "id": "wojak_sweating_stressed",
         "category": "face",
         "name": "Sweating Stressed",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_sweating_stressed.png",
-        "source_rel": "faces2/wojak_sweating_stressed.png",
+        "source_rel": "face/wojak_sweating_stressed.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -876,17 +619,7 @@
         "id": "wojak_tears_neutral_face",
         "category": "face",
         "name": "Tears Neutral Face",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_tears_neutral_face.png",
-        "source_rel": "faces2/wojak_tears_neutral_face.png",
-        "weight": 8.0,
-        "tier": "common"
-      },
-      {
-        "id": "wojak_wide_eyes_anxious",
-        "category": "face",
-        "name": "Wide Eyes Anxious",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_wide_eyes_anxious.png",
-        "source_rel": "faces2/wojak_wide_eyes_anxious.png",
+        "source_rel": "face/wojak_tears_neutral_face.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -894,8 +627,7 @@
         "id": "wojak_wrinkled_determined",
         "category": "face",
         "name": "Wrinkled Determined",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_wrinkled_determined.png",
-        "source_rel": "faces2/wojak_wrinkled_determined.png",
+        "source_rel": "face/wojak_wrinkled_determined.png",
         "weight": 8.0,
         "tier": "common"
       },
@@ -903,965 +635,690 @@
         "id": "wojak_wrinkled_neutral",
         "category": "face",
         "name": "Wrinkled Neutral",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces2/wojak_wrinkled_neutral.png",
-        "source_rel": "faces2/wojak_wrinkled_neutral.png",
-        "weight": 8.0,
-        "tier": "common"
-      },
-      {
-        "id": "angry_vampire_fangs",
-        "category": "face",
-        "name": "Angry Vampire Fangs",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/angry_vampire_fangs.png",
-        "source_rel": "faces3/angry_vampire_fangs.png",
-        "weight": 0.5,
-        "tier": "legendary"
-      },
-      {
-        "id": "bloody_horror_crying",
-        "category": "face",
-        "name": "Bloody Horror Crying",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/bloody_horror_crying.png",
-        "source_rel": "faces3/bloody_horror_crying.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "bloody_horror_injured",
-        "category": "face",
-        "name": "Bloody Horror Injured",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/bloody_horror_injured.png",
-        "source_rel": "faces3/bloody_horror_injured.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "boomer_beard_wrinkles",
-        "category": "face",
-        "name": "Boomer Beard Wrinkles",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/boomer_beard_wrinkles.png",
-        "source_rel": "faces3/boomer_beard_wrinkles.png",
-        "weight": 0.5,
-        "tier": "legendary"
-      },
-      {
-        "id": "creepy_wide_smile",
-        "category": "face",
-        "name": "Creepy Wide Smile",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/creepy_wide_smile.png",
-        "source_rel": "faces3/creepy_wide_smile.png",
-        "weight": 8.0,
-        "tier": "common"
-      },
-      {
-        "id": "crying_blue_tears",
-        "category": "face",
-        "name": "Crying Blue Tears",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/crying_blue_tears.png",
-        "source_rel": "faces3/crying_blue_tears.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "evil_grin_teeth",
-        "category": "face",
-        "name": "Evil Grin Teeth",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/evil_grin_teeth.png",
-        "source_rel": "faces3/evil_grin_teeth.png",
-        "weight": 8.0,
-        "tier": "common"
-      },
-      {
-        "id": "female_wojak_ponytail",
-        "category": "face",
-        "name": "Female Wojak Ponytail",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/female_wojak_ponytail.png",
-        "source_rel": "faces3/female_wojak_ponytail.png",
-        "weight": 0.5,
-        "tier": "legendary"
-      },
-      {
-        "id": "glasses_screaming_beard",
-        "category": "face",
-        "name": "Glasses Screaming Beard",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/glasses_screaming_beard.png",
-        "source_rel": "faces3/glasses_screaming_beard.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "happy_laughing",
-        "category": "face",
-        "name": "Happy Laughing",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/happy_laughing.png",
-        "source_rel": "faces3/happy_laughing.png",
-        "weight": 8.0,
-        "tier": "common"
-      },
-      {
-        "id": "neutral_wrinkled",
-        "category": "face",
-        "name": "Neutral Wrinkled",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/neutral_wrinkled.png",
-        "source_rel": "faces3/neutral_wrinkled.png",
-        "weight": 8.0,
-        "tier": "common"
-      },
-      {
-        "id": "sad_closed_eyes",
-        "category": "face",
-        "name": "Sad Closed Eyes",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/sad_closed_eyes.png",
-        "source_rel": "faces3/sad_closed_eyes.png",
-        "weight": 8.0,
-        "tier": "common"
-      },
-      {
-        "id": "sad_frown",
-        "category": "face",
-        "name": "Sad Frown",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/sad_frown.png",
-        "source_rel": "faces3/sad_frown.png",
-        "weight": 8.0,
-        "tier": "common"
-      },
-      {
-        "id": "shocked_wide_eyes",
-        "category": "face",
-        "name": "Shocked Wide Eyes",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/shocked_wide_eyes.png",
-        "source_rel": "faces3/shocked_wide_eyes.png",
-        "weight": 8.0,
-        "tier": "common"
-      },
-      {
-        "id": "tired_neutral",
-        "category": "face",
-        "name": "Tired Neutral",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/tired_neutral.png",
-        "source_rel": "faces3/tired_neutral.png",
-        "weight": 8.0,
-        "tier": "common"
-      },
-      {
-        "id": "tired_sad_subtle",
-        "category": "face",
-        "name": "Tired Sad Subtle",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/tired_sad_subtle.png",
-        "source_rel": "faces3/tired_sad_subtle.png",
-        "weight": 8.0,
-        "tier": "common"
-      },
-      {
-        "id": "tongue_out",
-        "category": "face",
-        "name": "Tongue Out",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/tongue_out.png",
-        "source_rel": "faces3/tongue_out.png",
-        "weight": 8.0,
-        "tier": "common"
-      },
-      {
-        "id": "vampire_fangs_blood",
-        "category": "face",
-        "name": "Vampire Fangs Blood",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/vampire_fangs_blood.png",
-        "source_rel": "faces3/vampire_fangs_blood.png",
-        "weight": 0.5,
-        "tier": "legendary"
-      },
-      {
-        "id": "very_sad_depressed",
-        "category": "face",
-        "name": "Very Sad Depressed",
-        "source": "/Users/bmelliott/wojak_pfp_project/faces3/very_sad_depressed.png",
-        "source_rel": "faces3/very_sad_depressed.png",
+        "source_rel": "face/wojak_wrinkled_neutral.png",
         "weight": 8.0,
         "tier": "common"
       }
     ],
     "clothing": [
       {
+        "id": "ash_gray_tee",
+        "category": "clothing",
+        "name": "Ash Gray Tee",
+        "source_rel": "clothing/ash_gray_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
         "id": "beige_jacket_orange_scarf",
         "category": "clothing",
         "name": "Beige Jacket Orange Scarf",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/beige_jacket_orange_scarf.png",
         "source_rel": "clothing/beige_jacket_orange_scarf.png",
-        "weight": 10.0,
+        "weight": 6.0,
         "tier": "common"
       },
       {
         "id": "black_blazer_brown_tshirt",
         "category": "clothing",
         "name": "Black Blazer Brown Tshirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_blazer_brown_tshirt.png",
         "source_rel": "clothing/black_blazer_brown_tshirt.png",
-        "weight": 10.0,
+        "weight": 6.0,
         "tier": "common"
       },
       {
         "id": "black_blazer_tan_tshirt",
         "category": "clothing",
         "name": "Black Blazer Tan Tshirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_blazer_tan_tshirt.png",
         "source_rel": "clothing/black_blazer_tan_tshirt.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "black_hoodie",
-        "category": "clothing",
-        "name": "Black Hoodie",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_hoodie.png",
-        "source_rel": "clothing/black_hoodie.png",
         "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "black_jacket_olive_turtleneck",
-        "category": "clothing",
-        "name": "Black Jacket Olive Turtleneck",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_jacket_olive_turtleneck.png",
-        "source_rel": "clothing/black_jacket_olive_turtleneck.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "black_jacket_yellow_turtleneck",
-        "category": "clothing",
-        "name": "Black Jacket Yellow Turtleneck",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_jacket_yellow_turtleneck.png",
-        "source_rel": "clothing/black_jacket_yellow_turtleneck.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "black_leather_jacket_brown_tshirt",
-        "category": "clothing",
-        "name": "Black Leather Jacket Brown Tshirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_leather_jacket_brown_tshirt.png",
-        "source_rel": "clothing/black_leather_jacket_brown_tshirt.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "black_suit_black_tie",
-        "category": "clothing",
-        "name": "Black Suit Black Tie",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_suit_black_tie.png",
-        "source_rel": "clothing/black_suit_black_tie.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "black_suit_black_tie_variant",
-        "category": "clothing",
-        "name": "Black Suit Black Tie Variant",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_suit_black_tie_variant.png",
-        "source_rel": "clothing/black_suit_black_tie_variant.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "black_suit_blue_striped_tie",
-        "category": "clothing",
-        "name": "Black Suit Blue Striped Tie",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_suit_blue_striped_tie.png",
-        "source_rel": "clothing/black_suit_blue_striped_tie.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "black_suit_purple_tie",
-        "category": "clothing",
-        "name": "Black Suit Purple Tie",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_suit_purple_tie.png",
-        "source_rel": "clothing/black_suit_purple_tie.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "black_suit_white_collar",
-        "category": "clothing",
-        "name": "Black Suit White Collar",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_suit_white_collar.png",
-        "source_rel": "clothing/black_suit_white_collar.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "black_tuxedo_bow_tie",
-        "category": "clothing",
-        "name": "Black Tuxedo Bow Tie",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_tuxedo_bow_tie.png",
-        "source_rel": "clothing/black_tuxedo_bow_tie.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "black_tuxedo_bow_tie_rose",
-        "category": "clothing",
-        "name": "Black Tuxedo Bow Tie Rose",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_tuxedo_bow_tie_rose.png",
-        "source_rel": "clothing/black_tuxedo_bow_tie_rose.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "black_tuxedo_white_bow_tie",
-        "category": "clothing",
-        "name": "Black Tuxedo White Bow Tie",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_tuxedo_white_bow_tie.png",
-        "source_rel": "clothing/black_tuxedo_white_bow_tie.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "black_vest_gray_sleeves",
-        "category": "clothing",
-        "name": "Black Vest Gray Sleeves",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_vest_gray_sleeves.png",
-        "source_rel": "clothing/black_vest_gray_sleeves.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "black_vest_white_sleeves",
-        "category": "clothing",
-        "name": "Black Vest White Sleeves",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/black_vest_white_sleeves.png",
-        "source_rel": "clothing/black_vest_white_sleeves.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "blue_victorian_dress_black_hat",
-        "category": "clothing",
-        "name": "Blue Victorian Dress Black Hat",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/blue_victorian_dress_black_hat.png",
-        "source_rel": "clothing/blue_victorian_dress_black_hat.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "blue_vneck_sweater_shirt_tie",
-        "category": "clothing",
-        "name": "Blue Vneck Sweater Shirt Tie",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/blue_vneck_sweater_shirt_tie.png",
-        "source_rel": "clothing/blue_vneck_sweater_shirt_tie.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "blue_vneck_sweater_white_shirt_tie",
-        "category": "clothing",
-        "name": "Blue Vneck Sweater White Shirt Tie",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/blue_vneck_sweater_white_shirt_tie.png",
-        "source_rel": "clothing/blue_vneck_sweater_white_shirt_tie.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "brown_uniform_yellow_stars_collar",
-        "category": "clothing",
-        "name": "Brown Uniform Yellow Stars Collar",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/brown_uniform_yellow_stars_collar.png",
-        "source_rel": "clothing/brown_uniform_yellow_stars_collar.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "brushstroke_camo_military_jacket",
-        "category": "clothing",
-        "name": "Brushstroke Camo Military Jacket",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/brushstroke_camo_military_jacket.png",
-        "source_rel": "clothing/brushstroke_camo_military_jacket.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "burgundy_suit_decorative_collar",
-        "category": "clothing",
-        "name": "Burgundy Suit Decorative Collar",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/burgundy_suit_decorative_collar.png",
-        "source_rel": "clothing/burgundy_suit_decorative_collar.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "camo_tactical_vest_tan_shoulders",
-        "category": "clothing",
-        "name": "Camo Tactical Vest Tan Shoulders",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/camo_tactical_vest_tan_shoulders.png",
-        "source_rel": "clothing/camo_tactical_vest_tan_shoulders.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "checkered_suit_black_tie",
-        "category": "clothing",
-        "name": "Checkered Suit Black Tie",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/checkered_suit_black_tie.png",
-        "source_rel": "clothing/checkered_suit_black_tie.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "denim_jacket_bandana",
-        "category": "clothing",
-        "name": "Denim Jacket Bandana",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/denim_jacket_bandana.png",
-        "source_rel": "clothing/denim_jacket_bandana.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "gray_blazer_brown_tshirt",
-        "category": "clothing",
-        "name": "Gray Blazer Brown Tshirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/gray_blazer_brown_tshirt.png",
-        "source_rel": "clothing/gray_blazer_brown_tshirt.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "gray_jacket_orange_turtleneck",
-        "category": "clothing",
-        "name": "Gray Jacket Orange Turtleneck",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/gray_jacket_orange_turtleneck.png",
-        "source_rel": "clothing/gray_jacket_orange_turtleneck.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "gray_jacket_orange_turtleneck_variant",
-        "category": "clothing",
-        "name": "Gray Jacket Orange Turtleneck Variant",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/gray_jacket_orange_turtleneck_variant.png",
-        "source_rel": "clothing/gray_jacket_orange_turtleneck_variant.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "gray_suit_black_tie",
-        "category": "clothing",
-        "name": "Gray Suit Black Tie",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/gray_suit_black_tie.png",
-        "source_rel": "clothing/gray_suit_black_tie.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "gray_tactical_vest",
-        "category": "clothing",
-        "name": "Gray Tactical Vest",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/gray_tactical_vest.png",
-        "source_rel": "clothing/gray_tactical_vest.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "green_button_shirt_collar",
-        "category": "clothing",
-        "name": "Green Button Shirt Collar",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/green_button_shirt_collar.png",
-        "source_rel": "clothing/green_button_shirt_collar.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "green_military_jacket",
-        "category": "clothing",
-        "name": "Green Military Jacket",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/green_military_jacket.png",
-        "source_rel": "clothing/green_military_jacket.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "medieval_knight_armor_axe",
-        "category": "clothing",
-        "name": "Medieval Knight Armor Axe",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/medieval_knight_armor_axe.png",
-        "source_rel": "clothing/medieval_knight_armor_axe.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "napoleonic_uniform_gold_epaulettes",
-        "category": "clothing",
-        "name": "Napoleonic Uniform Gold Epaulettes",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/napoleonic_uniform_gold_epaulettes.png",
-        "source_rel": "clothing/napoleonic_uniform_gold_epaulettes.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "navy_jacket_gray_turtleneck",
-        "category": "clothing",
-        "name": "Navy Jacket Gray Turtleneck",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/navy_jacket_gray_turtleneck.png",
-        "source_rel": "clothing/navy_jacket_gray_turtleneck.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "navy_jacket_gray_white_turtleneck",
-        "category": "clothing",
-        "name": "Navy Jacket Gray White Turtleneck",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/navy_jacket_gray_white_turtleneck.png",
-        "source_rel": "clothing/navy_jacket_gray_white_turtleneck.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "navy_suit_navy_tie",
-        "category": "clothing",
-        "name": "Navy Suit Navy Tie",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/navy_suit_navy_tie.png",
-        "source_rel": "clothing/navy_suit_navy_tie.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "navy_suit_red_tie",
-        "category": "clothing",
-        "name": "Navy Suit Red Tie",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/navy_suit_red_tie.png",
-        "source_rel": "clothing/navy_suit_red_tie.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "navy_suit_red_tie_variant",
-        "category": "clothing",
-        "name": "Navy Suit Red Tie Variant",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/navy_suit_red_tie_variant.png",
-        "source_rel": "clothing/navy_suit_red_tie_variant.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "purple_collar_teeth",
-        "category": "clothing",
-        "name": "Purple Collar Teeth",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/purple_collar_teeth.png",
-        "source_rel": "clothing/purple_collar_teeth.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "red_dress_uniform_medals",
-        "category": "clothing",
-        "name": "Red Dress Uniform Medals",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/red_dress_uniform_medals.png",
-        "source_rel": "clothing/red_dress_uniform_medals.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "red_victorian_dress_black_hat",
-        "category": "clothing",
-        "name": "Red Victorian Dress Black Hat",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/red_victorian_dress_black_hat.png",
-        "source_rel": "clothing/red_victorian_dress_black_hat.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "tactical_leg_ammo_bandolier",
-        "category": "clothing",
-        "name": "Tactical Leg Ammo Bandolier",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/tactical_leg_ammo_bandolier.png",
-        "source_rel": "clothing/tactical_leg_ammo_bandolier.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "tactical_saddle_backpack",
-        "category": "clothing",
-        "name": "Tactical Saddle Backpack",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/tactical_saddle_backpack.png",
-        "source_rel": "clothing/tactical_saddle_backpack.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "tactical_vest_desert_camo_sleeves",
-        "category": "clothing",
-        "name": "Tactical Vest Desert Camo Sleeves",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/tactical_vest_desert_camo_sleeves.png",
-        "source_rel": "clothing/tactical_vest_desert_camo_sleeves.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "tactical_vest_multicam_sleeves",
-        "category": "clothing",
-        "name": "Tactical Vest Multicam Sleeves",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/tactical_vest_multicam_sleeves.png",
-        "source_rel": "clothing/tactical_vest_multicam_sleeves.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "tactical_vest_woodland_camo_sleeves",
-        "category": "clothing",
-        "name": "Tactical Vest Woodland Camo Sleeves",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/tactical_vest_woodland_camo_sleeves.png",
-        "source_rel": "clothing/tactical_vest_woodland_camo_sleeves.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "tan_blazer_navy_shirt",
-        "category": "clothing",
-        "name": "Tan Blazer Navy Shirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/tan_blazer_navy_shirt.png",
-        "source_rel": "clothing/tan_blazer_navy_shirt.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "tan_blazer_navy_tshirt",
-        "category": "clothing",
-        "name": "Tan Blazer Navy Tshirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/tan_blazer_navy_tshirt.png",
-        "source_rel": "clothing/tan_blazer_navy_tshirt.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "tan_suit_black_tie",
-        "category": "clothing",
-        "name": "Tan Suit Black Tie",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/tan_suit_black_tie.png",
-        "source_rel": "clothing/tan_suit_black_tie.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "tuxedo_red_jacket",
-        "category": "clothing",
-        "name": "Tuxedo Red Jacket",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/tuxedo_red_jacket.png",
-        "source_rel": "clothing/tuxedo_red_jacket.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "white_blazer_red_shirt",
-        "category": "clothing",
-        "name": "White Blazer Red Shirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/white_blazer_red_shirt.png",
-        "source_rel": "clothing/white_blazer_red_shirt.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "white_blazer_red_tshirt",
-        "category": "clothing",
-        "name": "White Blazer Red Tshirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/white_blazer_red_tshirt.png",
-        "source_rel": "clothing/white_blazer_red_tshirt.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "white_shirt_black_bow_tie",
-        "category": "clothing",
-        "name": "White Shirt Black Bow Tie",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/white_shirt_black_bow_tie.png",
-        "source_rel": "clothing/white_shirt_black_bow_tie.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "woodland_camo_military_jacket",
-        "category": "clothing",
-        "name": "Woodland Camo Military Jacket",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing/woodland_camo_military_jacket.png",
-        "source_rel": "clothing/woodland_camo_military_jacket.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "ash_gray_tee",
-        "category": "clothing",
-        "name": "Ash Gray Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/ash_gray_tee.png",
-        "source_rel": "clothing2/ash_gray_tee.png",
-        "weight": 10.0,
         "tier": "common"
       },
       {
         "id": "black_button_shirt",
         "category": "clothing",
         "name": "Black Button Shirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/black_button_shirt.png",
-        "source_rel": "clothing2/black_button_shirt.png",
-        "weight": 10.0,
+        "source_rel": "clothing/black_button_shirt.png",
+        "weight": 6.0,
         "tier": "common"
       },
       {
         "id": "black_collar_shirt",
         "category": "clothing",
         "name": "Black Collar Shirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/black_collar_shirt.png",
-        "source_rel": "clothing2/black_collar_shirt.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "black_raglan_tee",
-        "category": "clothing",
-        "name": "Black Raglan Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/black_raglan_tee.png",
-        "source_rel": "clothing2/black_raglan_tee.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "black_tee",
-        "category": "clothing",
-        "name": "Black Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/black_tee.png",
-        "source_rel": "clothing2/black_tee.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "black_vest_green_stripes",
-        "category": "clothing",
-        "name": "Black Vest Green Stripes",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/black_vest_green_stripes.png",
-        "source_rel": "clothing2/black_vest_green_stripes.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "black_white_plaid",
-        "category": "clothing",
-        "name": "Black White Plaid",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/black_white_plaid.png",
-        "source_rel": "clothing2/black_white_plaid.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "blue_plaid_flannel",
-        "category": "clothing",
-        "name": "Blue Plaid Flannel",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/blue_plaid_flannel.png",
-        "source_rel": "clothing2/blue_plaid_flannel.png",
+        "source_rel": "clothing/black_collar_shirt.png",
         "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "charcoal_tee",
-        "category": "clothing",
-        "name": "Charcoal Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/charcoal_tee.png",
-        "source_rel": "clothing2/charcoal_tee.png",
-        "weight": 10.0,
         "tier": "common"
       },
       {
-        "id": "dark_gray_polo",
+        "id": "black_hoodie",
         "category": "clothing",
-        "name": "Dark Gray Polo",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/dark_gray_polo.png",
-        "source_rel": "clothing2/dark_gray_polo.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "dark_gray_shirt",
-        "category": "clothing",
-        "name": "Dark Gray Shirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/dark_gray_shirt.png",
-        "source_rel": "clothing2/dark_gray_shirt.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "dark_gray_tee",
-        "category": "clothing",
-        "name": "Dark Gray Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/dark_gray_tee.png",
-        "source_rel": "clothing2/dark_gray_tee.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "gray_polo_shirt",
-        "category": "clothing",
-        "name": "Gray Polo Shirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/gray_polo_shirt.png",
-        "source_rel": "clothing2/gray_polo_shirt.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "gray_raglan_tee",
-        "category": "clothing",
-        "name": "Gray Raglan Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/gray_raglan_tee.png",
-        "source_rel": "clothing2/gray_raglan_tee.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "green_pol_pepe_tee",
-        "category": "clothing",
-        "name": "Green Pol Pepe Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/green_pol_pepe_tee.png",
-        "source_rel": "clothing2/green_pol_pepe_tee.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "green_tee",
-        "category": "clothing",
-        "name": "Green Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/green_tee.png",
-        "source_rel": "clothing2/green_tee.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "hawaiian_floral_shirt",
-        "category": "clothing",
-        "name": "Hawaiian Floral Shirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/hawaiian_floral_shirt.png",
-        "source_rel": "clothing2/hawaiian_floral_shirt.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "light_gray_polo",
-        "category": "clothing",
-        "name": "Light Gray Polo",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/light_gray_polo.png",
-        "source_rel": "clothing2/light_gray_polo.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "light_gray_tee",
-        "category": "clothing",
-        "name": "Light Gray Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/light_gray_tee.png",
-        "source_rel": "clothing2/light_gray_tee.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "mcdonalds_uniform",
-        "category": "clothing",
-        "name": "Mcdonalds Uniform",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/mcdonalds_uniform.png",
-        "source_rel": "clothing2/mcdonalds_uniform.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "medium_gray_tee",
-        "category": "clothing",
-        "name": "Medium Gray Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/medium_gray_tee.png",
-        "source_rel": "clothing2/medium_gray_tee.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "navy_blue_button_shirt",
-        "category": "clothing",
-        "name": "Navy Blue Button Shirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/navy_blue_button_shirt.png",
-        "source_rel": "clothing2/navy_blue_button_shirt.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "navy_collar_shirt",
-        "category": "clothing",
-        "name": "Navy Collar Shirt",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/navy_collar_shirt.png",
-        "source_rel": "clothing2/navy_collar_shirt.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "navy_tee",
-        "category": "clothing",
-        "name": "Navy Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/navy_tee.png",
-        "source_rel": "clothing2/navy_tee.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "orange_tee",
-        "category": "clothing",
-        "name": "Orange Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/orange_tee.png",
-        "source_rel": "clothing2/orange_tee.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "red_black_flannel",
-        "category": "clothing",
-        "name": "Red Black Flannel",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/red_black_flannel.png",
-        "source_rel": "clothing2/red_black_flannel.png",
+        "name": "Black Hoodie",
+        "source_rel": "clothing/black_hoodie.png",
         "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "slate_gray_tee",
-        "category": "clothing",
-        "name": "Slate Gray Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/slate_gray_tee.png",
-        "source_rel": "clothing2/slate_gray_tee.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "white_gray_tee",
-        "category": "clothing",
-        "name": "White Gray Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/white_gray_tee.png",
-        "source_rel": "clothing2/white_gray_tee.png",
-        "weight": 10.0,
-        "tier": "common"
-      },
-      {
-        "id": "white_nasa_tee",
-        "category": "clothing",
-        "name": "White Nasa Tee",
-        "source": "/Users/bmelliott/wojak_pfp_project/clothing2/white_nasa_tee.png",
-        "source_rel": "clothing2/white_nasa_tee.png",
-        "weight": 10.0,
         "tier": "common"
       },
       {
         "id": "black_hoodie_drawstrings",
         "category": "clothing",
         "name": "Black Hoodie Drawstrings",
-        "source": "/Users/bmelliott/wojak_pfp_project/hoodies/black_hoodie_drawstrings.png",
-        "source_rel": "hoodies/black_hoodie_drawstrings.png",
+        "source_rel": "clothing/black_hoodie_drawstrings.png",
         "weight": 6.0,
-        "tier": "uncommon"
+        "tier": "common"
       },
       {
         "id": "black_jacket_green_stripes",
         "category": "clothing",
         "name": "Black Jacket Green Stripes",
-        "source": "/Users/bmelliott/wojak_pfp_project/hoodies/black_jacket_green_stripes.png",
-        "source_rel": "hoodies/black_jacket_green_stripes.png",
-        "weight": 10.0,
+        "source_rel": "clothing/black_jacket_green_stripes.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_jacket_olive_turtleneck",
+        "category": "clothing",
+        "name": "Black Jacket Olive Turtleneck",
+        "source_rel": "clothing/black_jacket_olive_turtleneck.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_jacket_yellow_turtleneck",
+        "category": "clothing",
+        "name": "Black Jacket Yellow Turtleneck",
+        "source_rel": "clothing/black_jacket_yellow_turtleneck.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_leather_jacket_brown_tshirt",
+        "category": "clothing",
+        "name": "Black Leather Jacket Brown Tshirt",
+        "source_rel": "clothing/black_leather_jacket_brown_tshirt.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_raglan_tee",
+        "category": "clothing",
+        "name": "Black Raglan Tee",
+        "source_rel": "clothing/black_raglan_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_suit_black_tie",
+        "category": "clothing",
+        "name": "Black Suit Black Tie",
+        "source_rel": "clothing/black_suit_black_tie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_suit_black_tie_variant",
+        "category": "clothing",
+        "name": "Black Suit Black Tie Variant",
+        "source_rel": "clothing/black_suit_black_tie_variant.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_suit_blue_striped_tie",
+        "category": "clothing",
+        "name": "Black Suit Blue Striped Tie",
+        "source_rel": "clothing/black_suit_blue_striped_tie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_suit_purple_tie",
+        "category": "clothing",
+        "name": "Black Suit Purple Tie",
+        "source_rel": "clothing/black_suit_purple_tie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_suit_white_collar",
+        "category": "clothing",
+        "name": "Black Suit White Collar",
+        "source_rel": "clothing/black_suit_white_collar.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_tee",
+        "category": "clothing",
+        "name": "Black Tee",
+        "source_rel": "clothing/black_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_tuxedo_bow_tie",
+        "category": "clothing",
+        "name": "Black Tuxedo Bow Tie",
+        "source_rel": "clothing/black_tuxedo_bow_tie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_tuxedo_bow_tie_rose",
+        "category": "clothing",
+        "name": "Black Tuxedo Bow Tie Rose",
+        "source_rel": "clothing/black_tuxedo_bow_tie_rose.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_tuxedo_white_bow_tie",
+        "category": "clothing",
+        "name": "Black Tuxedo White Bow Tie",
+        "source_rel": "clothing/black_tuxedo_white_bow_tie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_vest_gray_sleeves",
+        "category": "clothing",
+        "name": "Black Vest Gray Sleeves",
+        "source_rel": "clothing/black_vest_gray_sleeves.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_vest_green_stripes",
+        "category": "clothing",
+        "name": "Black Vest Green Stripes",
+        "source_rel": "clothing/black_vest_green_stripes.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_vest_white_sleeves",
+        "category": "clothing",
+        "name": "Black Vest White Sleeves",
+        "source_rel": "clothing/black_vest_white_sleeves.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_white_plaid",
+        "category": "clothing",
+        "name": "Black White Plaid",
+        "source_rel": "clothing/black_white_plaid.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "blue_plaid_flannel",
+        "category": "clothing",
+        "name": "Blue Plaid Flannel",
+        "source_rel": "clothing/blue_plaid_flannel.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "blue_victorian_dress_black_hat",
+        "category": "clothing",
+        "name": "Blue Victorian Dress Black Hat",
+        "source_rel": "clothing/blue_victorian_dress_black_hat.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "blue_vneck_sweater_shirt_tie",
+        "category": "clothing",
+        "name": "Blue Vneck Sweater Shirt Tie",
+        "source_rel": "clothing/blue_vneck_sweater_shirt_tie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "blue_vneck_sweater_white_shirt_tie",
+        "category": "clothing",
+        "name": "Blue Vneck Sweater White Shirt Tie",
+        "source_rel": "clothing/blue_vneck_sweater_white_shirt_tie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "brown_uniform_yellow_stars_collar",
+        "category": "clothing",
+        "name": "Brown Uniform Yellow Stars Collar",
+        "source_rel": "clothing/brown_uniform_yellow_stars_collar.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "brushstroke_camo_military_jacket",
+        "category": "clothing",
+        "name": "Brushstroke Camo Military Jacket",
+        "source_rel": "clothing/brushstroke_camo_military_jacket.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "burgundy_suit_decorative_collar",
+        "category": "clothing",
+        "name": "Burgundy Suit Decorative Collar",
+        "source_rel": "clothing/burgundy_suit_decorative_collar.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "camo_tactical_vest_tan_shoulders",
+        "category": "clothing",
+        "name": "Camo Tactical Vest Tan Shoulders",
+        "source_rel": "clothing/camo_tactical_vest_tan_shoulders.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "charcoal_tee",
+        "category": "clothing",
+        "name": "Charcoal Tee",
+        "source_rel": "clothing/charcoal_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "checkered_suit_black_tie",
+        "category": "clothing",
+        "name": "Checkered Suit Black Tie",
+        "source_rel": "clothing/checkered_suit_black_tie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "dark_gray_polo",
+        "category": "clothing",
+        "name": "Dark Gray Polo",
+        "source_rel": "clothing/dark_gray_polo.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "dark_gray_shirt",
+        "category": "clothing",
+        "name": "Dark Gray Shirt",
+        "source_rel": "clothing/dark_gray_shirt.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "dark_gray_tee",
+        "category": "clothing",
+        "name": "Dark Gray Tee",
+        "source_rel": "clothing/dark_gray_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "denim_jacket_bandana",
+        "category": "clothing",
+        "name": "Denim Jacket Bandana",
+        "source_rel": "clothing/denim_jacket_bandana.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "gray_blazer_brown_tshirt",
+        "category": "clothing",
+        "name": "Gray Blazer Brown Tshirt",
+        "source_rel": "clothing/gray_blazer_brown_tshirt.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "gray_jacket_orange_turtleneck",
+        "category": "clothing",
+        "name": "Gray Jacket Orange Turtleneck",
+        "source_rel": "clothing/gray_jacket_orange_turtleneck.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "gray_jacket_orange_turtleneck_variant",
+        "category": "clothing",
+        "name": "Gray Jacket Orange Turtleneck Variant",
+        "source_rel": "clothing/gray_jacket_orange_turtleneck_variant.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "gray_polo_shirt",
+        "category": "clothing",
+        "name": "Gray Polo Shirt",
+        "source_rel": "clothing/gray_polo_shirt.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "gray_raglan_tee",
+        "category": "clothing",
+        "name": "Gray Raglan Tee",
+        "source_rel": "clothing/gray_raglan_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "gray_suit_black_tie",
+        "category": "clothing",
+        "name": "Gray Suit Black Tie",
+        "source_rel": "clothing/gray_suit_black_tie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "gray_tactical_vest",
+        "category": "clothing",
+        "name": "Gray Tactical Vest",
+        "source_rel": "clothing/gray_tactical_vest.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "green_button_shirt_collar",
+        "category": "clothing",
+        "name": "Green Button Shirt Collar",
+        "source_rel": "clothing/green_button_shirt_collar.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "green_military_jacket",
+        "category": "clothing",
+        "name": "Green Military Jacket",
+        "source_rel": "clothing/green_military_jacket.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "green_tee",
+        "category": "clothing",
+        "name": "Green Tee",
+        "source_rel": "clothing/green_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "hawaiian_floral_shirt",
+        "category": "clothing",
+        "name": "Hawaiian Floral Shirt",
+        "source_rel": "clothing/hawaiian_floral_shirt.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "light_gray_polo",
+        "category": "clothing",
+        "name": "Light Gray Polo",
+        "source_rel": "clothing/light_gray_polo.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "light_gray_tee",
+        "category": "clothing",
+        "name": "Light Gray Tee",
+        "source_rel": "clothing/light_gray_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "medieval_knight_armor_axe",
+        "category": "clothing",
+        "name": "Medieval Knight Armor Axe",
+        "source_rel": "clothing/medieval_knight_armor_axe.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "medium_gray_tee",
+        "category": "clothing",
+        "name": "Medium Gray Tee",
+        "source_rel": "clothing/medium_gray_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "napoleonic_uniform_gold_epaulettes",
+        "category": "clothing",
+        "name": "Napoleonic Uniform Gold Epaulettes",
+        "source_rel": "clothing/napoleonic_uniform_gold_epaulettes.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "navy_blue_button_shirt",
+        "category": "clothing",
+        "name": "Navy Blue Button Shirt",
+        "source_rel": "clothing/navy_blue_button_shirt.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "navy_collar_shirt",
+        "category": "clothing",
+        "name": "Navy Collar Shirt",
+        "source_rel": "clothing/navy_collar_shirt.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "navy_jacket_gray_turtleneck",
+        "category": "clothing",
+        "name": "Navy Jacket Gray Turtleneck",
+        "source_rel": "clothing/navy_jacket_gray_turtleneck.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "navy_jacket_gray_white_turtleneck",
+        "category": "clothing",
+        "name": "Navy Jacket Gray White Turtleneck",
+        "source_rel": "clothing/navy_jacket_gray_white_turtleneck.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "navy_suit_navy_tie",
+        "category": "clothing",
+        "name": "Navy Suit Navy Tie",
+        "source_rel": "clothing/navy_suit_navy_tie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "navy_suit_red_tie",
+        "category": "clothing",
+        "name": "Navy Suit Red Tie",
+        "source_rel": "clothing/navy_suit_red_tie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "navy_suit_red_tie_variant",
+        "category": "clothing",
+        "name": "Navy Suit Red Tie Variant",
+        "source_rel": "clothing/navy_suit_red_tie_variant.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "navy_tee",
+        "category": "clothing",
+        "name": "Navy Tee",
+        "source_rel": "clothing/navy_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "orange_tee",
+        "category": "clothing",
+        "name": "Orange Tee",
+        "source_rel": "clothing/orange_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "purple_collar_teeth",
+        "category": "clothing",
+        "name": "Purple Collar Teeth",
+        "source_rel": "clothing/purple_collar_teeth.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "red_black_flannel",
+        "category": "clothing",
+        "name": "Red Black Flannel",
+        "source_rel": "clothing/red_black_flannel.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "red_dress_uniform_medals",
+        "category": "clothing",
+        "name": "Red Dress Uniform Medals",
+        "source_rel": "clothing/red_dress_uniform_medals.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "red_victorian_dress_black_hat",
+        "category": "clothing",
+        "name": "Red Victorian Dress Black Hat",
+        "source_rel": "clothing/red_victorian_dress_black_hat.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "slate_gray_tee",
+        "category": "clothing",
+        "name": "Slate Gray Tee",
+        "source_rel": "clothing/slate_gray_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "tactical_leg_ammo_bandolier",
+        "category": "clothing",
+        "name": "Tactical Leg Ammo Bandolier",
+        "source_rel": "clothing/tactical_leg_ammo_bandolier.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "tactical_saddle_backpack",
+        "category": "clothing",
+        "name": "Tactical Saddle Backpack",
+        "source_rel": "clothing/tactical_saddle_backpack.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "tactical_vest_desert_camo_sleeves",
+        "category": "clothing",
+        "name": "Tactical Vest Desert Camo Sleeves",
+        "source_rel": "clothing/tactical_vest_desert_camo_sleeves.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "tactical_vest_multicam_sleeves",
+        "category": "clothing",
+        "name": "Tactical Vest Multicam Sleeves",
+        "source_rel": "clothing/tactical_vest_multicam_sleeves.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "tactical_vest_woodland_camo_sleeves",
+        "category": "clothing",
+        "name": "Tactical Vest Woodland Camo Sleeves",
+        "source_rel": "clothing/tactical_vest_woodland_camo_sleeves.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "tan_blazer_navy_shirt",
+        "category": "clothing",
+        "name": "Tan Blazer Navy Shirt",
+        "source_rel": "clothing/tan_blazer_navy_shirt.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "tan_blazer_navy_tshirt",
+        "category": "clothing",
+        "name": "Tan Blazer Navy Tshirt",
+        "source_rel": "clothing/tan_blazer_navy_tshirt.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "tan_suit_black_tie",
+        "category": "clothing",
+        "name": "Tan Suit Black Tie",
+        "source_rel": "clothing/tan_suit_black_tie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "tuxedo_red_jacket",
+        "category": "clothing",
+        "name": "Tuxedo Red Jacket",
+        "source_rel": "clothing/tuxedo_red_jacket.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "white_blazer_red_shirt",
+        "category": "clothing",
+        "name": "White Blazer Red Shirt",
+        "source_rel": "clothing/white_blazer_red_shirt.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "white_blazer_red_tshirt",
+        "category": "clothing",
+        "name": "White Blazer Red Tshirt",
+        "source_rel": "clothing/white_blazer_red_tshirt.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "white_gray_tee",
+        "category": "clothing",
+        "name": "White Gray Tee",
+        "source_rel": "clothing/white_gray_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "white_nasa_tee",
+        "category": "clothing",
+        "name": "White Nasa Tee",
+        "source_rel": "clothing/white_nasa_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "white_shirt_black_bow_tie",
+        "category": "clothing",
+        "name": "White Shirt Black Bow Tie",
+        "source_rel": "clothing/white_shirt_black_bow_tie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "woodland_camo_military_jacket",
+        "category": "clothing",
+        "name": "Woodland Camo Military Jacket",
+        "source_rel": "clothing/woodland_camo_military_jacket.png",
+        "weight": 6.0,
         "tier": "common"
       }
     ],
@@ -1870,601 +1327,534 @@
         "id": "bandana_green",
         "category": "hat",
         "name": "Bandana Green",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/bandana_green.png",
-        "source_rel": "hats/bandana_green.png",
-        "weight": 10.0,
+        "source_rel": "hat/bandana_green.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "bandana_navy_blue",
         "category": "hat",
         "name": "Bandana Navy Blue",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/bandana_navy_blue.png",
-        "source_rel": "hats/bandana_navy_blue.png",
-        "weight": 10.0,
+        "source_rel": "hat/bandana_navy_blue.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "bandana_red",
         "category": "hat",
         "name": "Bandana Red",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/bandana_red.png",
-        "source_rel": "hats/bandana_red.png",
-        "weight": 10.0,
+        "source_rel": "hat/bandana_red.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "beanie_black_ribbed",
         "category": "hat",
         "name": "Beanie Black Ribbed",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/beanie_black_ribbed.png",
-        "source_rel": "hats/beanie_black_ribbed.png",
-        "weight": 10.0,
+        "source_rel": "hat/beanie_black_ribbed.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "beanie_dark_ribbed",
         "category": "hat",
         "name": "Beanie Dark Ribbed",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/beanie_dark_ribbed.png",
-        "source_rel": "hats/beanie_dark_ribbed.png",
-        "weight": 10.0,
+        "source_rel": "hat/beanie_dark_ribbed.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "beret_black",
         "category": "hat",
         "name": "Beret Black",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/beret_black.png",
-        "source_rel": "hats/beret_black.png",
-        "weight": 10.0,
+        "source_rel": "hat/beret_black.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "beret_military_green_plain",
         "category": "hat",
         "name": "Beret Military Green Plain",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/beret_military_green_plain.png",
-        "source_rel": "hats/beret_military_green_plain.png",
-        "weight": 3.0,
-        "tier": "rare"
+        "source_rel": "hat/beret_military_green_plain.png",
+        "weight": 4.0,
+        "tier": "common"
       },
       {
         "id": "beret_military_green_red_star",
         "category": "hat",
         "name": "Beret Military Green Red Star",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/beret_military_green_red_star.png",
-        "source_rel": "hats/beret_military_green_red_star.png",
-        "weight": 3.0,
-        "tier": "rare"
+        "source_rel": "hat/beret_military_green_red_star.png",
+        "weight": 4.0,
+        "tier": "common"
       },
       {
         "id": "beret_military_maroon_star",
         "category": "hat",
         "name": "Beret Military Maroon Star",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/beret_military_maroon_star.png",
-        "source_rel": "hats/beret_military_maroon_star.png",
-        "weight": 3.0,
-        "tier": "rare"
+        "source_rel": "hat/beret_military_maroon_star.png",
+        "weight": 4.0,
+        "tier": "common"
       },
       {
         "id": "bicorne_black_napoleon",
         "category": "hat",
         "name": "Bicorne Black Napoleon",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/bicorne_black_napoleon.png",
-        "source_rel": "hats/bicorne_black_napoleon.png",
-        "weight": 10.0,
+        "source_rel": "hat/bicorne_black_napoleon.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "boonie_camo_rhodesian",
         "category": "hat",
         "name": "Boonie Camo Rhodesian",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/boonie_camo_rhodesian.png",
-        "source_rel": "hats/boonie_camo_rhodesian.png",
-        "weight": 10.0,
+        "source_rel": "hat/boonie_camo_rhodesian.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "boonie_camo_woodland",
         "category": "hat",
         "name": "Boonie Camo Woodland",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/boonie_camo_woodland.png",
-        "source_rel": "hats/boonie_camo_woodland.png",
-        "weight": 10.0,
+        "source_rel": "hat/boonie_camo_woodland.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "bucket_black",
         "category": "hat",
         "name": "Bucket Black",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/bucket_black.png",
-        "source_rel": "hats/bucket_black.png",
-        "weight": 10.0,
+        "source_rel": "hat/bucket_black.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "bucket_checkered_red_white",
         "category": "hat",
         "name": "Bucket Checkered Red White",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/bucket_checkered_red_white.png",
-        "source_rel": "hats/bucket_checkered_red_white.png",
-        "weight": 10.0,
+        "source_rel": "hat/bucket_checkered_red_white.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "bucket_frog_green_pepe",
         "category": "hat",
         "name": "Bucket Frog Green Pepe",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/bucket_frog_green_pepe.png",
-        "source_rel": "hats/bucket_frog_green_pepe.png",
-        "weight": 10.0,
+        "source_rel": "hat/bucket_frog_green_pepe.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "bucket_green",
         "category": "hat",
         "name": "Bucket Green",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/bucket_green.png",
-        "source_rel": "hats/bucket_green.png",
-        "weight": 10.0,
+        "source_rel": "hat/bucket_green.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "bucket_purple",
         "category": "hat",
         "name": "Bucket Purple",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/bucket_purple.png",
-        "source_rel": "hats/bucket_purple.png",
-        "weight": 10.0,
+        "source_rel": "hat/bucket_purple.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "campaign_hat_brown_plain",
         "category": "hat",
         "name": "Campaign Hat Brown Plain",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/campaign_hat_brown_plain.png",
-        "source_rel": "hats/campaign_hat_brown_plain.png",
-        "weight": 10.0,
+        "source_rel": "hat/campaign_hat_brown_plain.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_bitcoin_orange_white_circle",
         "category": "hat",
         "name": "Cap Bitcoin Orange White Circle",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_bitcoin_orange_white_circle.png",
-        "source_rel": "hats/cap_bitcoin_orange_white_circle.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_bitcoin_orange_white_circle.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_black_down_only",
         "category": "hat",
         "name": "Cap Black Down Only",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_black_down_only.png",
-        "source_rel": "hats/cap_black_down_only.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_black_down_only.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_black_gradient_logo",
         "category": "hat",
         "name": "Cap Black Gradient Logo",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_black_gradient_logo.png",
-        "source_rel": "hats/cap_black_gradient_logo.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_black_gradient_logo.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_blue_plain",
         "category": "hat",
         "name": "Cap Blue Plain",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_blue_plain.png",
-        "source_rel": "hats/cap_blue_plain.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_blue_plain.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_dominos_black",
         "category": "hat",
         "name": "Cap Dominos Black",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_dominos_black.png",
-        "source_rel": "hats/cap_dominos_black.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_dominos_black.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_gray_meme_pepsi",
         "category": "hat",
         "name": "Cap Gray Meme Pepsi",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_gray_meme_pepsi.png",
-        "source_rel": "hats/cap_gray_meme_pepsi.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_gray_meme_pepsi.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_maga_red",
         "category": "hat",
         "name": "Cap Maga Red",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_maga_red.png",
-        "source_rel": "hats/cap_maga_red.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_maga_red.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_mcdonalds_black_small_logo",
         "category": "hat",
         "name": "Cap Mcdonalds Black Small Logo",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_mcdonalds_black_small_logo.png",
-        "source_rel": "hats/cap_mcdonalds_black_small_logo.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_mcdonalds_black_small_logo.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_mcdonalds_red_golden_arches",
         "category": "hat",
         "name": "Cap Mcdonalds Red Golden Arches",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_mcdonalds_red_golden_arches.png",
-        "source_rel": "hats/cap_mcdonalds_red_golden_arches.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_mcdonalds_red_golden_arches.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_nintendo_red",
         "category": "hat",
         "name": "Cap Nintendo Red",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_nintendo_red.png",
-        "source_rel": "hats/cap_nintendo_red.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_nintendo_red.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_pilot_blue_airline",
         "category": "hat",
         "name": "Cap Pilot Blue Airline",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_pilot_blue_airline.png",
-        "source_rel": "hats/cap_pilot_blue_airline.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_pilot_blue_airline.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_police_black_badge",
         "category": "hat",
         "name": "Cap Police Black Badge",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_police_black_badge.png",
-        "source_rel": "hats/cap_police_black_badge.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_police_black_badge.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_propeller_multicolor",
         "category": "hat",
         "name": "Cap Propeller Multicolor",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_propeller_multicolor.png",
-        "source_rel": "hats/cap_propeller_multicolor.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_propeller_multicolor.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_red_bitcoin_yellow",
         "category": "hat",
         "name": "Cap Red Bitcoin Yellow",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_red_bitcoin_yellow.png",
-        "source_rel": "hats/cap_red_bitcoin_yellow.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_red_bitcoin_yellow.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_san_andreas_black",
         "category": "hat",
         "name": "Cap San Andreas Black",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_san_andreas_black.png",
-        "source_rel": "hats/cap_san_andreas_black.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_san_andreas_black.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_white_black_maroon_panels",
         "category": "hat",
         "name": "Cap White Black Maroon Panels",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_white_black_maroon_panels.png",
-        "source_rel": "hats/cap_white_black_maroon_panels.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_white_black_maroon_panels.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cap_white_gray_plain",
         "category": "hat",
         "name": "Cap White Gray Plain",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cap_white_gray_plain.png",
-        "source_rel": "hats/cap_white_gray_plain.png",
-        "weight": 10.0,
+        "source_rel": "hat/cap_white_gray_plain.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "chef_hat_white_toque",
         "category": "hat",
         "name": "Chef Hat White Toque",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/chef_hat_white_toque.png",
-        "source_rel": "hats/chef_hat_white_toque.png",
-        "weight": 10.0,
+        "source_rel": "hat/chef_hat_white_toque.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cowboy_black_red_band",
         "category": "hat",
         "name": "Cowboy Black Red Band",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cowboy_black_red_band.png",
-        "source_rel": "hats/cowboy_black_red_band.png",
-        "weight": 10.0,
+        "source_rel": "hat/cowboy_black_red_band.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cowboy_brown",
         "category": "hat",
         "name": "Cowboy Brown",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cowboy_brown.png",
-        "source_rel": "hats/cowboy_brown.png",
-        "weight": 10.0,
+        "source_rel": "hat/cowboy_brown.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "cowboy_white",
         "category": "hat",
         "name": "Cowboy White",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/cowboy_white.png",
-        "source_rel": "hats/cowboy_white.png",
-        "weight": 10.0,
+        "source_rel": "hat/cowboy_white.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "fedora_black_gray_band",
         "category": "hat",
         "name": "Fedora Black Gray Band",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/fedora_black_gray_band.png",
-        "source_rel": "hats/fedora_black_gray_band.png",
-        "weight": 10.0,
+        "source_rel": "hat/fedora_black_gray_band.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "fedora_blue_black_band",
         "category": "hat",
         "name": "Fedora Blue Black Band",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/fedora_blue_black_band.png",
-        "source_rel": "hats/fedora_blue_black_band.png",
-        "weight": 10.0,
+        "source_rel": "hat/fedora_blue_black_band.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "fedora_dark_brown",
         "category": "hat",
         "name": "Fedora Dark Brown",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/fedora_dark_brown.png",
-        "source_rel": "hats/fedora_dark_brown.png",
-        "weight": 10.0,
+        "source_rel": "hat/fedora_dark_brown.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "fedora_gray_black_band",
         "category": "hat",
         "name": "Fedora Gray Black Band",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/fedora_gray_black_band.png",
-        "source_rel": "hats/fedora_gray_black_band.png",
-        "weight": 10.0,
+        "source_rel": "hat/fedora_gray_black_band.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "fedora_tan_brown_classic",
         "category": "hat",
         "name": "Fedora Tan Brown Classic",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/fedora_tan_brown_classic.png",
-        "source_rel": "hats/fedora_tan_brown_classic.png",
-        "weight": 10.0,
+        "source_rel": "hat/fedora_tan_brown_classic.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "fedora_tan_variation",
         "category": "hat",
         "name": "Fedora Tan Variation",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/fedora_tan_variation.png",
-        "source_rel": "hats/fedora_tan_variation.png",
-        "weight": 10.0,
+        "source_rel": "hat/fedora_tan_variation.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "fez_burgundy_tassel",
         "category": "hat",
         "name": "Fez Burgundy Tassel",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/fez_burgundy_tassel.png",
-        "source_rel": "hats/fez_burgundy_tassel.png",
-        "weight": 10.0,
+        "source_rel": "hat/fez_burgundy_tassel.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "fez_red",
         "category": "hat",
         "name": "Fez Red",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/fez_red.png",
-        "source_rel": "hats/fez_red.png",
-        "weight": 10.0,
+        "source_rel": "hat/fez_red.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "gambler_black",
         "category": "hat",
         "name": "Gambler Black",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/gambler_black.png",
-        "source_rel": "hats/gambler_black.png",
-        "weight": 10.0,
+        "source_rel": "hat/gambler_black.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "gambler_brown",
         "category": "hat",
         "name": "Gambler Brown",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/gambler_brown.png",
-        "source_rel": "hats/gambler_brown.png",
-        "weight": 10.0,
+        "source_rel": "hat/gambler_brown.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "gambler_gray",
         "category": "hat",
         "name": "Gambler Gray",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/gambler_gray.png",
-        "source_rel": "hats/gambler_gray.png",
-        "weight": 10.0,
+        "source_rel": "hat/gambler_gray.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "gambler_navy_blue",
         "category": "hat",
         "name": "Gambler Navy Blue",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/gambler_navy_blue.png",
-        "source_rel": "hats/gambler_navy_blue.png",
-        "weight": 10.0,
+        "source_rel": "hat/gambler_navy_blue.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "hardhat_orange",
         "category": "hat",
         "name": "Hardhat Orange",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/hardhat_orange.png",
-        "source_rel": "hats/hardhat_orange.png",
-        "weight": 10.0,
+        "source_rel": "hat/hardhat_orange.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "hardhat_yellow",
         "category": "hat",
         "name": "Hardhat Yellow",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/hardhat_yellow.png",
-        "source_rel": "hats/hardhat_yellow.png",
-        "weight": 10.0,
+        "source_rel": "hat/hardhat_yellow.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "helmet_camo_woodland_m1",
         "category": "hat",
         "name": "Helmet Camo Woodland M1",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/helmet_camo_woodland_m1.png",
-        "source_rel": "hats/helmet_camo_woodland_m1.png",
-        "weight": 10.0,
+        "source_rel": "hat/helmet_camo_woodland_m1.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "helmet_combat_green_modern",
         "category": "hat",
         "name": "Helmet Combat Green Modern",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/helmet_combat_green_modern.png",
-        "source_rel": "hats/helmet_combat_green_modern.png",
-        "weight": 10.0,
+        "source_rel": "hat/helmet_combat_green_modern.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "helmet_military_gray_clean",
         "category": "hat",
         "name": "Helmet Military Gray Clean",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/helmet_military_gray_clean.png",
-        "source_rel": "hats/helmet_military_gray_clean.png",
-        "weight": 3.0,
-        "tier": "rare"
+        "source_rel": "hat/helmet_military_gray_clean.png",
+        "weight": 4.0,
+        "tier": "common"
       },
       {
         "id": "helmet_military_gray_horse_emblem",
         "category": "hat",
         "name": "Helmet Military Gray Horse Emblem",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/helmet_military_gray_horse_emblem.png",
-        "source_rel": "hats/helmet_military_gray_horse_emblem.png",
-        "weight": 3.0,
-        "tier": "rare"
+        "source_rel": "hat/helmet_military_gray_horse_emblem.png",
+        "weight": 4.0,
+        "tier": "common"
       },
       {
         "id": "helmet_military_green_clean",
         "category": "hat",
         "name": "Helmet Military Green Clean",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/helmet_military_green_clean.png",
-        "source_rel": "hats/helmet_military_green_clean.png",
-        "weight": 3.0,
-        "tier": "rare"
+        "source_rel": "hat/helmet_military_green_clean.png",
+        "weight": 4.0,
+        "tier": "common"
       },
       {
         "id": "helmet_military_olive_damaged",
         "category": "hat",
         "name": "Helmet Military Olive Damaged",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/helmet_military_olive_damaged.png",
-        "source_rel": "hats/helmet_military_olive_damaged.png",
-        "weight": 3.0,
-        "tier": "rare"
+        "source_rel": "hat/helmet_military_olive_damaged.png",
+        "weight": 4.0,
+        "tier": "common"
       },
       {
         "id": "helmet_swat_black_goggles",
         "category": "hat",
         "name": "Helmet Swat Black Goggles",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/helmet_swat_black_goggles.png",
-        "source_rel": "hats/helmet_swat_black_goggles.png",
-        "weight": 10.0,
+        "source_rel": "hat/helmet_swat_black_goggles.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "helmet_vietnam_born_to_feel",
         "category": "hat",
         "name": "Helmet Vietnam Born To Feel",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/helmet_vietnam_born_to_feel.png",
-        "source_rel": "hats/helmet_vietnam_born_to_feel.png",
-        "weight": 10.0,
+        "source_rel": "hat/helmet_vietnam_born_to_feel.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "pith_helmet_green_safari",
         "category": "hat",
         "name": "Pith Helmet Green Safari",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/pith_helmet_green_safari.png",
-        "source_rel": "hats/pith_helmet_green_safari.png",
-        "weight": 10.0,
+        "source_rel": "hat/pith_helmet_green_safari.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "pith_helmet_tan_safari",
         "category": "hat",
         "name": "Pith Helmet Tan Safari",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/pith_helmet_tan_safari.png",
-        "source_rel": "hats/pith_helmet_tan_safari.png",
-        "weight": 10.0,
+        "source_rel": "hat/pith_helmet_tan_safari.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "ranger_hat_brown_badge",
         "category": "hat",
         "name": "Ranger Hat Brown Badge",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/ranger_hat_brown_badge.png",
-        "source_rel": "hats/ranger_hat_brown_badge.png",
-        "weight": 10.0,
+        "source_rel": "hat/ranger_hat_brown_badge.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "stocking_black",
         "category": "hat",
         "name": "Stocking Black",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/stocking_black.png",
-        "source_rel": "hats/stocking_black.png",
-        "weight": 10.0,
+        "source_rel": "hat/stocking_black.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "top_hat_white_gray",
         "category": "hat",
         "name": "Top Hat White Gray",
-        "source": "/Users/bmelliott/wojak_pfp_project/hats/top_hat_white_gray.png",
-        "source_rel": "hats/top_hat_white_gray.png",
-        "weight": 10.0,
+        "source_rel": "hat/top_hat_white_gray.png",
+        "weight": 4.0,
         "tier": "common"
       },
       {
         "id": "none",
         "category": "hat",
         "name": "None",
-        "source": null,
         "source_rel": null,
         "weight": 40.0,
         "tier": "common"
@@ -2475,313 +1865,278 @@
         "id": "accessory_bitcoin_necklace",
         "category": "accessory",
         "name": "Bitcoin Necklace",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_bitcoin_necklace.png",
-        "source_rel": "accessories/accessory_bitcoin_necklace.png",
-        "weight": 10.0,
+        "source_rel": "accessory/accessory_bitcoin_necklace.png",
+        "weight": 3.0,
         "tier": "common"
       },
       {
         "id": "accessory_black_cape_flowing",
         "category": "accessory",
         "name": "Black Cape Flowing",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_black_cape_flowing.png",
-        "source_rel": "accessories/accessory_black_cape_flowing.png",
+        "source_rel": "accessory/accessory_black_cape_flowing.png",
         "weight": 3.0,
-        "tier": "rare"
+        "tier": "common"
       },
       {
         "id": "accessory_brown_scarf",
         "category": "accessory",
         "name": "Brown Scarf",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_brown_scarf.png",
-        "source_rel": "accessories/accessory_brown_scarf.png",
-        "weight": 10.0,
+        "source_rel": "accessory/accessory_brown_scarf.png",
+        "weight": 3.0,
         "tier": "common"
       },
       {
         "id": "accessory_chain_necklace_black",
         "category": "accessory",
         "name": "Chain Necklace Black",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_chain_necklace_black.png",
-        "source_rel": "accessories/accessory_chain_necklace_black.png",
-        "weight": 10.0,
+        "source_rel": "accessory/accessory_chain_necklace_black.png",
+        "weight": 3.0,
         "tier": "common"
       },
       {
         "id": "accessory_chain_necklace_gold",
         "category": "accessory",
         "name": "Chain Necklace Gold",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_chain_necklace_gold.png",
-        "source_rel": "accessories/accessory_chain_necklace_gold.png",
-        "weight": 10.0,
+        "source_rel": "accessory/accessory_chain_necklace_gold.png",
+        "weight": 3.0,
         "tier": "common"
       },
       {
         "id": "accessory_cigar_black",
         "category": "accessory",
         "name": "Cigar Black",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_cigar_black.png",
-        "source_rel": "accessories/accessory_cigar_black.png",
+        "source_rel": "accessory/accessory_cigar_black.png",
         "weight": 3.0,
-        "tier": "rare"
+        "tier": "common"
       },
       {
         "id": "accessory_cigarette_smoking",
         "category": "accessory",
         "name": "Cigarette Smoking",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_cigarette_smoking.png",
-        "source_rel": "accessories/accessory_cigarette_smoking.png",
+        "source_rel": "accessory/accessory_cigarette_smoking.png",
         "weight": 3.0,
-        "tier": "rare"
+        "tier": "common"
       },
       {
         "id": "accessory_gas_mask_black",
         "category": "accessory",
         "name": "Gas Mask Black",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_gas_mask_black.png",
-        "source_rel": "accessories/accessory_gas_mask_black.png",
-        "weight": 1.5,
-        "tier": "epic"
+        "source_rel": "accessory/accessory_gas_mask_black.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_glasses_aviator_outline",
         "category": "accessory",
         "name": "Glasses Aviator Outline",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_glasses_aviator_outline.png",
-        "source_rel": "accessories/accessory_glasses_aviator_outline.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_glasses_aviator_outline.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_glasses_black_frame",
         "category": "accessory",
         "name": "Glasses Black Frame",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_glasses_black_frame.png",
-        "source_rel": "accessories/accessory_glasses_black_frame.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_glasses_black_frame.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_glasses_black_orange_accent",
         "category": "accessory",
         "name": "Glasses Black Orange Accent",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_glasses_black_orange_accent.png",
-        "source_rel": "accessories/accessory_glasses_black_orange_accent.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_glasses_black_orange_accent.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_glasses_blue_frame",
         "category": "accessory",
         "name": "Glasses Blue Frame",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_glasses_blue_frame.png",
-        "source_rel": "accessories/accessory_glasses_blue_frame.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_glasses_blue_frame.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_glasses_brown_reading",
         "category": "accessory",
         "name": "Glasses Brown Reading",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_glasses_brown_reading.png",
-        "source_rel": "accessories/accessory_glasses_brown_reading.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_glasses_brown_reading.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_glasses_rectangle_glare",
         "category": "accessory",
         "name": "Glasses Rectangle Glare",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_glasses_rectangle_glare.png",
-        "source_rel": "accessories/accessory_glasses_rectangle_glare.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_glasses_rectangle_glare.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_glasses_rectangle_outline",
         "category": "accessory",
         "name": "Glasses Rectangle Outline",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_glasses_rectangle_outline.png",
-        "source_rel": "accessories/accessory_glasses_rectangle_outline.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_glasses_rectangle_outline.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_glasses_round_reflective",
         "category": "accessory",
         "name": "Glasses Round Reflective",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_glasses_round_reflective.png",
-        "source_rel": "accessories/accessory_glasses_round_reflective.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_glasses_round_reflective.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_glasses_tan_reading",
         "category": "accessory",
         "name": "Glasses Tan Reading",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_glasses_tan_reading.png",
-        "source_rel": "accessories/accessory_glasses_tan_reading.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_glasses_tan_reading.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_goggles_brown_aviator",
         "category": "accessory",
         "name": "Goggles Brown Aviator",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_goggles_brown_aviator.png",
-        "source_rel": "accessories/accessory_goggles_brown_aviator.png",
-        "weight": 10.0,
+        "source_rel": "accessory/accessory_goggles_brown_aviator.png",
+        "weight": 3.0,
         "tier": "common"
       },
       {
         "id": "accessory_gray_bowtie",
         "category": "accessory",
         "name": "Gray Bowtie",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_gray_bowtie.png",
-        "source_rel": "accessories/accessory_gray_bowtie.png",
-        "weight": 10.0,
+        "source_rel": "accessory/accessory_gray_bowtie.png",
+        "weight": 3.0,
         "tier": "common"
       },
       {
         "id": "accessory_pilot_goggles_brown",
         "category": "accessory",
         "name": "Pilot Goggles Brown",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_pilot_goggles_brown.png",
-        "source_rel": "accessories/accessory_pilot_goggles_brown.png",
-        "weight": 10.0,
+        "source_rel": "accessory/accessory_pilot_goggles_brown.png",
+        "weight": 3.0,
         "tier": "common"
       },
       {
         "id": "accessory_pipe_brown",
         "category": "accessory",
         "name": "Pipe Brown",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_pipe_brown.png",
-        "source_rel": "accessories/accessory_pipe_brown.png",
+        "source_rel": "accessory/accessory_pipe_brown.png",
         "weight": 3.0,
-        "tier": "rare"
+        "tier": "common"
       },
       {
         "id": "accessory_pipe_tan",
         "category": "accessory",
         "name": "Pipe Tan",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_pipe_tan.png",
-        "source_rel": "accessories/accessory_pipe_tan.png",
+        "source_rel": "accessory/accessory_pipe_tan.png",
         "weight": 3.0,
-        "tier": "rare"
+        "tier": "common"
       },
       {
         "id": "accessory_red_black_cape",
         "category": "accessory",
         "name": "Red Black Cape",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_red_black_cape.png",
-        "source_rel": "accessories/accessory_red_black_cape.png",
+        "source_rel": "accessory/accessory_red_black_cape.png",
         "weight": 3.0,
-        "tier": "rare"
+        "tier": "common"
       },
       {
         "id": "accessory_red_cape",
         "category": "accessory",
         "name": "Red Cape",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_red_cape.png",
-        "source_rel": "accessories/accessory_red_cape.png",
+        "source_rel": "accessory/accessory_red_cape.png",
         "weight": 3.0,
-        "tier": "rare"
+        "tier": "common"
       },
       {
         "id": "accessory_spiked_collar_ring",
         "category": "accessory",
         "name": "Spiked Collar Ring",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_spiked_collar_ring.png",
-        "source_rel": "accessories/accessory_spiked_collar_ring.png",
-        "weight": 10.0,
+        "source_rel": "accessory/accessory_spiked_collar_ring.png",
+        "weight": 3.0,
         "tier": "common"
       },
       {
         "id": "accessory_sunglasses_black_dark",
         "category": "accessory",
         "name": "Sunglasses Black Dark",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_sunglasses_black_dark.png",
-        "source_rel": "accessories/accessory_sunglasses_black_dark.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_sunglasses_black_dark.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_sunglasses_black_rectangular",
         "category": "accessory",
         "name": "Sunglasses Black Rectangular",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_sunglasses_black_rectangular.png",
-        "source_rel": "accessories/accessory_sunglasses_black_rectangular.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_sunglasses_black_rectangular.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_sunglasses_brown_aviator",
         "category": "accessory",
         "name": "Sunglasses Brown Aviator",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_sunglasses_brown_aviator.png",
-        "source_rel": "accessories/accessory_sunglasses_brown_aviator.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_sunglasses_brown_aviator.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_sunglasses_brown_aviator_dark",
         "category": "accessory",
         "name": "Sunglasses Brown Aviator Dark",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_sunglasses_brown_aviator_dark.png",
-        "source_rel": "accessories/accessory_sunglasses_brown_aviator_dark.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_sunglasses_brown_aviator_dark.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_sunglasses_gold_blue_aviator",
         "category": "accessory",
         "name": "Sunglasses Gold Blue Aviator",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_sunglasses_gold_blue_aviator.png",
-        "source_rel": "accessories/accessory_sunglasses_gold_blue_aviator.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_sunglasses_gold_blue_aviator.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_sunglasses_gold_white_aviator",
         "category": "accessory",
         "name": "Sunglasses Gold White Aviator",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_sunglasses_gold_white_aviator.png",
-        "source_rel": "accessories/accessory_sunglasses_gold_white_aviator.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_sunglasses_gold_white_aviator.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_sunglasses_palm_tree_reflection",
         "category": "accessory",
         "name": "Sunglasses Palm Tree Reflection",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_sunglasses_palm_tree_reflection.png",
-        "source_rel": "accessories/accessory_sunglasses_palm_tree_reflection.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_sunglasses_palm_tree_reflection.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_sunglasses_round_black",
         "category": "accessory",
         "name": "Sunglasses Round Black",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_sunglasses_round_black.png",
-        "source_rel": "accessories/accessory_sunglasses_round_black.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_sunglasses_round_black.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "accessory_sunglasses_silver_dark_aviator",
         "category": "accessory",
         "name": "Sunglasses Silver Dark Aviator",
-        "source": "/Users/bmelliott/wojak_pfp_project/accessories/accessory_sunglasses_silver_dark_aviator.png",
-        "source_rel": "accessories/accessory_sunglasses_silver_dark_aviator.png",
-        "weight": 6.0,
-        "tier": "uncommon"
+        "source_rel": "accessory/accessory_sunglasses_silver_dark_aviator.png",
+        "weight": 3.0,
+        "tier": "common"
       },
       {
         "id": "none",
         "category": "accessory",
         "name": "None",
-        "source": null,
         "source_rel": null,
         "weight": 38.0,
         "tier": "common"
@@ -2789,109 +2144,9 @@
     ],
     "mask": [
       {
-        "id": "mask_black_balaclava",
-        "category": "mask",
-        "name": "Black Balaclava",
-        "source": "/Users/bmelliott/wojak_pfp_project/masks/mask_black_balaclava.png",
-        "source_rel": "masks/mask_black_balaclava.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "mask_creepy_wide_grin",
-        "category": "mask",
-        "name": "Creepy Wide Grin",
-        "source": "/Users/bmelliott/wojak_pfp_project/masks/mask_creepy_wide_grin.png",
-        "source_rel": "masks/mask_creepy_wide_grin.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "mask_dark_scratchy_horror",
-        "category": "mask",
-        "name": "Dark Scratchy Horror",
-        "source": "/Users/bmelliott/wojak_pfp_project/masks/mask_dark_scratchy_horror.png",
-        "source_rel": "masks/mask_dark_scratchy_horror.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "mask_gray_angry_npc",
-        "category": "mask",
-        "name": "Gray Angry Npc",
-        "source": "/Users/bmelliott/wojak_pfp_project/masks/mask_gray_angry_npc.png",
-        "source_rel": "masks/mask_gray_angry_npc.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
-        "id": "mask_gray_neutral_npc",
-        "category": "mask",
-        "name": "Gray Neutral Npc",
-        "source": "/Users/bmelliott/wojak_pfp_project/masks/mask_gray_neutral_npc.png",
-        "source_rel": "masks/mask_gray_neutral_npc.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "mask_happy_laughing",
-        "category": "mask",
-        "name": "Happy Laughing",
-        "source": "/Users/bmelliott/wojak_pfp_project/masks/mask_happy_laughing.png",
-        "source_rel": "masks/mask_happy_laughing.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "mask_intense_crying_tears",
-        "category": "mask",
-        "name": "Intense Crying Tears",
-        "source": "/Users/bmelliott/wojak_pfp_project/masks/mask_intense_crying_tears.png",
-        "source_rel": "masks/mask_intense_crying_tears.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "mask_neutral_calm",
-        "category": "mask",
-        "name": "Neutral Calm",
-        "source": "/Users/bmelliott/wojak_pfp_project/masks/mask_neutral_calm.png",
-        "source_rel": "masks/mask_neutral_calm.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "mask_pink_angry_crying_stitched",
-        "category": "mask",
-        "name": "Pink Angry Crying Stitched",
-        "source": "/Users/bmelliott/wojak_pfp_project/masks/mask_pink_angry_crying_stitched.png",
-        "source_rel": "masks/mask_pink_angry_crying_stitched.png",
-        "weight": 3.0,
-        "tier": "rare"
-      },
-      {
-        "id": "mask_simple_smile",
-        "category": "mask",
-        "name": "Simple Smile",
-        "source": "/Users/bmelliott/wojak_pfp_project/masks/mask_simple_smile.png",
-        "source_rel": "masks/mask_simple_smile.png",
-        "weight": 1.5,
-        "tier": "epic"
-      },
-      {
-        "id": "mask_smug_expression",
-        "category": "mask",
-        "name": "Smug Expression",
-        "source": "/Users/bmelliott/wojak_pfp_project/masks/mask_smug_expression.png",
-        "source_rel": "masks/mask_smug_expression.png",
-        "weight": 6.0,
-        "tier": "uncommon"
-      },
-      {
         "id": "none",
         "category": "mask",
         "name": "None",
-        "source": null,
         "source_rel": null,
         "weight": 100.0,
         "tier": "common"

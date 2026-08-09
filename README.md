@@ -4,71 +4,66 @@ Generative Wojak PFP collection — target **6,666** (ERC-721 / Robinhood-compat
 
 Repo: [buildtogetherlabs/lel](https://github.com/buildtogetherlabs/lel)
 
-## Strategy (current)
+## Base policy
 
-**Hybrid template path** — auto-align of raw mixed crops was abandoned (geometry incompatible).
+**Majority = classic white wojak faces only.**
 
-1. Lock **one master body** (`wojak_neutral_calm`)
-2. **Register** best faces to that skeleton  
-3. **Redraw** clothing / hats / glasses against the master  
-4. Only then generate proof → 6,666  
+| Pool | Role |
+|---|---|
+| `layers_template/face/` (~53) | Mass collection faces (white) |
+| `layers_template/face_special_1of1/` (~31) | Gray NPC, red devil, pink, skeleton, clown, soy, etc. — **1-of-1 later** |
 
-See **`template/REDRAW_BRIEF.md`** for the full art brief.
+See `template/base_policy.json`, `template/faces_white.txt`, `template/faces_special_1of1.txt`.
 
 ## Status
 
-| Phase | State |
+| Piece | State |
 |---|---|
-| Master template + guides | Done → `template/` |
-| Face keep/kill curation | Done → `template/faces_*.txt` |
-| First-pass face register | Done → `layers_template/face/` (~84) |
-| Clothing / hat / glasses redraw | **Not started** (critical path) |
-| Proof 50 / full 6666 | Blocked on redraw gate |
+| Master template + skeleton | Locked |
+| White faces registered | ~53 in `layers_template/face/` |
+| Clothing / hats / accessories aligned to skeleton | Yes (`align_traits.py`) |
+| Special faces parked for 1-of-1 | Yes |
+| Generator reads `layers_template/` | Yes |
+| Proof samples | Local only (gitignored) |
+
+Alignment is **good enough to iterate**; full mint quality may still need per-trait redraws on clothing/hats. Special bases stay out of mass gen.
 
 ## Layout
 
 | Path | What |
 |---|---|
-| `template/` | Master base, guides, skeleton, redraw brief, keep/kill lists |
-| `layers_template/` | **Production** traits (template-registered / redrawn) |
-| `layers_raw/` | Archive / style reference only |
-| `layers_normalized/` | Legacy auto-align experiment (do not use for mint) |
-| `config/` | Rules, backgrounds, skeleton copy |
-| `scripts/` | Curate, register, generate, QA |
-| `output/`, `reports/` | Local generates only (gitignored) |
+| `template/` | Master base, guides, policy, briefs |
+| `layers_template/` | **Production** layers (white path) |
+| `layers_raw/` | Archive / style reference |
+| `layers_normalized/` | Legacy experiment (ignore for mint) |
+| `scripts/` | align / catalog / generate / composite |
+| `output/`, `reports/` | Local generates only |
 
-## Quick start
+## Commands
 
 ```bash
-git clone https://github.com/buildtogetherlabs/lel.git
-cd lel
-python3 -m venv .venv
-source .venv/bin/activate
+cd ~/Projects/wojak-collection   # or clone from GitHub
+python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
-# Inspect master template
-open template/master_template_guides.png
-open template/REDRAW_BRIEF.md
+# Align clothing/hats/accessories to master skeleton
+python scripts/align_traits.py
 
-# Re-register faces to template (optional)
-python scripts/register_face.py --all-keep
+# Rebuild trait catalog from layers_template (white faces only)
+python scripts/build_catalog.py
 
-# After clothing/hats/glasses exist under layers_template/:
-# (generator switch to layers_template comes next when art is ready)
+# Local completed samples
+python scripts/generate_collection.py --count 36
+python scripts/make_contact_sheet.py --limit 36 --out reports/samples_completed_36.png
+open reports/samples_completed_36.png
 ```
-
-## Quality gate (before another proof set)
-
-From `template/REDRAW_BRIEF.md`:
-
-- ≥ 20 faces in `layers_template/face/` (registered + QA’d)  
-- ≥ 15 clothing **redrawn** to collar line  
-- ≥ 12 hats **redrawn** to brim line  
-- ≥ 8 glasses **redrawn** to eye line  
-- Local spot-check: no floating hats / collar-through-face  
-
-Until then, **do not** commit sample PNGs.
 
 ## Layer order
 
 Background → Face → Clothing → Mask → Accessory → Hat
+
+## Notes
+
+- Generated renders are **not** committed (keeps the repo clean).
+- Pepe tee / McDonald’s uniform excluded from mass clothing pool for now.
+- Next quality step: redraw worst clothing/hats against `template/master_base.png` when auto-align isn’t enough.

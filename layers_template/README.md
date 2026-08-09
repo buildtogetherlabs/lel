@@ -1,14 +1,15 @@
 # layers_template
 
-Production traits **registered or redrawn** to the master template.
+Production traits for the **white-base majority** collection.
 
 | Subfolder | Status |
 |---|---|
-| `face/` | Populate via `scripts/register_face.py` + manual QA |
-| `clothing/` | **Redraw** per `template/REDRAW_BRIEF.md` |
-| `hat/` | **Redraw** |
-| `accessory/` | **Redraw** (glasses first) |
-| `mask/` | Optional |
-| `background/` | Copy from solid backgrounds when ready |
+| `face/` | White wojaks only (~53) — mass gen |
+| `face_special_1of1/` | Gray / devil / pink / skeleton / etc. — not in mass gen |
+| `clothing/` | Aligned to skeleton via `scripts/align_traits.py` |
+| `hat/` | Aligned |
+| `accessory/` | Aligned |
+| `mask/` | Optional / mostly None for v1 |
+| `background/` | Solid colors ready |
 
-Empty until art is delivered. Generator will switch here after the quality gate.
+Rebuild catalog: `python scripts/build_catalog.py`

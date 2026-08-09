@@ -16,7 +16,7 @@ import random
 import sys
 from pathlib import Path
 
-from paths import CONFIG, MANIFESTS
+from paths import CONFIG, LAYERS_TEMPLATE, MANIFESTS
 from composite import render_and_save
 
 
@@ -81,14 +81,16 @@ def generate_combos(catalog: dict, rules: dict, count: int, seed: int) -> list[d
     # mask_none_weight is high; actual items keep their weights.
     # Soft-adjust: if mask_rate set, scale non-none down.
     mask_rate = float(rules.get("mask_rate", 0.09))
-    # Build effective mask pool
+    # Build effective mask pool (white-base v1 may have mask=None only)
     mask_pool = []
+    others = sum(float(x["weight"]) for x in masks if x["id"] != "none")
     for m in masks:
         if m["id"] == "none":
-            # weight so P(none) ≈ 1 - mask_rate
-            # Let none_w / (none_w + sum_others) ≈ 1 - rate
-            others = sum(float(x["weight"]) for x in masks if x["id"] != "none")
-            none_w = others * (1 - mask_rate) / max(mask_rate, 1e-6)
+            if others <= 0:
+                none_w = 1.0  # only None available
+            else:
+                # P(none) ≈ 1 - mask_rate
+                none_w = others * (1 - mask_rate) / max(mask_rate, 1e-6)
             mask_pool.append({**m, "weight": none_w})
         else:
             mask_pool.append(m)
@@ -168,21 +170,20 @@ def main() -> None:
         print("Dry run: skip render")
         return
 
-    # Verify normalized layers exist for used traits
-    from paths import LAYERS_NORM
-
+    # Verify template layers exist (white-base production path)
     missing = []
     for c in combos:
         for cat in ("background", "face", "clothing", "hat", "accessory", "mask"):
             tid = c[cat]
             if tid == "none":
                 continue
-            if not (LAYERS_NORM / cat / f"{tid}.png").exists():
+            if not (LAYERS_TEMPLATE / cat / f"{tid}.png").exists():
                 missing.append(f"{cat}/{tid}")
     if missing:
         uniq = sorted(set(missing))
         print(
-            f"ERROR: {len(uniq)} normalized layers missing. Run normalize_batch.py first.",
+            f"ERROR: {len(uniq)} template layers missing. "
+            "Run align_traits.py + ensure white faces in layers_template/face/.",
             file=sys.stderr,
         )
         for m in uniq[:30]:

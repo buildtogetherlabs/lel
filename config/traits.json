@@ -1,7 +1,7 @@
 {
   "version": 2,
   "base_policy": "white_only_majority",
-  "layers_root": "/Users/bmelliott/Projects/wojak-collection/layers_template",
+  "layers_root": "/Volumes/BryanXBTLacie/Projects/wojak-collection/layers_template",
   "counts": {
     "background": 12,
     "face_white": 53,

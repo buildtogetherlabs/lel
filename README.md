@@ -62,6 +62,14 @@ open reports/samples_completed_36.png
 
 Background → Face → Clothing → Mask → Accessory → Hat
 
+## Flawless quality
+
+Auto-align is for **draft** composites only. Mint-ready traits must be **redrawn as 1000×1000** layers against `template/master_base.png`.
+
+See **`template/FLAWLESS_PRODUCTION.md`**.
+
+Draft boards (master + trait): `python scripts/export_redraw_boards.py --category clothing --limit 12`
+
 ## Notes
 
 - Generated renders are **not** committed (keeps the repo clean).

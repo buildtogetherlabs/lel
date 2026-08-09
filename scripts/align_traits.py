@@ -68,19 +68,25 @@ def place_clothing(im: Image.Image, sk: dict) -> Image.Image:
     W, H = sk["canvas"]["width"], sk["canvas"]["height"]
     collar_y = sk["guides_y"]["collar"]
     im = trim(im)
-    # width ~ full shoulders; allow taller so white chest is covered
+    # width ~ full shoulders; fill from collar down (clothes sit lower on body)
     target_w = int(W * 0.98)
     scale = target_w / im.width
     nw, nh = max(1, int(im.width * scale)), max(1, int(im.height * scale))
-    # allow clothing to reach near bottom of canvas from collar
-    max_h = int(H * (1.0 - collar_y + 0.02))
+    fill_h = int(H * (1.0 - collar_y))
+    if nh < fill_h * 0.85:
+        scale = fill_h / im.height
+        nw, nh = max(1, int(im.width * scale)), max(1, int(im.height * scale))
+        if nw > int(W * 1.02):
+            scale = (W * 0.98) / im.width
+            nw, nh = max(1, int(im.width * scale)), max(1, int(im.height * scale))
+    max_h = fill_h + 20
     if nh > max_h:
         scale = max_h / im.height
         nw, nh = max(1, int(im.width * scale)), max(1, int(im.height * scale))
     im = im.resize((nw, nh), Image.Resampling.LANCZOS)
     canvas = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     x = (W - nw) // 2
-    y = int(H * collar_y)  # pin top of clothing to collar (covers face torso)
+    y = int(H * collar_y)
     paste_safe(canvas, im, x, y)
     return canvas
 
@@ -115,14 +121,15 @@ def place_accessory(im: Image.Image, sk: dict, stem: str) -> Image.Image:
     W, H = sk["canvas"]["width"], sk["canvas"]["height"]
     im = trim(im)
     low = stem.lower()
+    acc_cx = float(sk["guides_x"].get("accessory_center_x", 0.54))
     if any(k in low for k in ("glasses", "sunglasses", "goggles", "aviator")):
-        tw = sk["guides_x"]["eye_span"] + 0.12  # slightly wider than eye span
+        tw = sk["guides_x"]["eye_span"] + 0.14
         cy = sk["guides_y"]["eye_line"]
-        cx = 0.50
+        cx = acc_cx
     elif any(k in low for k in ("cigar", "cigarette", "pipe")):
-        tw, cy, cx = 0.30, sk["guides_y"]["mouth"], 0.62
+        tw, cy, cx = 0.30, sk["guides_y"]["mouth"], 0.66
     elif any(k in low for k in ("necklace", "chain", "collar", "bowtie", "scarf")):
-        tw, cy, cx = 0.44, sk["guides_y"]["collar"] - 0.04, 0.50
+        tw, cy, cx = 0.44, sk["guides_y"]["collar"] + 0.02, acc_cx
     elif "cape" in low:
         tw, cy, cx = 0.92, 0.45, 0.50
         # top-pin cape
@@ -133,9 +140,9 @@ def place_accessory(im: Image.Image, sk: dict, stem: str) -> Image.Image:
         paste_safe(canvas, im, (W - nw) // 2, int(H * 0.30))
         return canvas
     elif "gas_mask" in low:
-        tw, cy, cx = 0.55, sk["guides_y"]["nose"], 0.50
+        tw, cy, cx = 0.55, sk["guides_y"]["nose"], acc_cx
     else:
-        tw, cy, cx = 0.40, sk["guides_y"]["eye_line"], 0.50
+        tw, cy, cx = 0.40, sk["guides_y"]["eye_line"], acc_cx
 
     scale = (W * tw) / im.width
     nw, nh = max(1, int(im.width * scale)), max(1, int(im.height * scale))

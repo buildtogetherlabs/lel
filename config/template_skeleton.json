@@ -13,20 +13,21 @@
   },
   "guides_y": {
     "head_top": 0.08,
-    "hat_brim": 0.28,
+    "hat_brim": 0.3,
     "brow": 0.256,
-    "eye_line": 0.36,
+    "eye_line": 0.37,
     "nose": 0.464,
     "mouth": 0.544,
     "chin": 0.64,
-    "collar": 0.58,
-    "shoulder": 0.84
+    "collar": 0.66,
+    "shoulder": 0.86
   },
   "guides_x": {
     "center": 0.5,
     "head_left": 0.17,
     "head_right": 0.83,
-    "eye_span": 0.36
+    "eye_span": 0.38,
+    "accessory_center_x": 0.54
   },
   "layer_order": [
     "background",
@@ -46,5 +47,10 @@
     "transparent_background": true,
     "no_drop_shadows": true,
     "line_weight": "match master base black stroke"
+  },
+  "placement_notes": {
+    "clothing": "top pinned to collar (moved down)",
+    "accessory": "glasses shifted right for 3/4 face",
+    "hat": "bottom on hat_brim"
   }
 }

@@ -6,7 +6,7 @@
     "background": 12,
     "face_white": 53,
     "face_special_1of1": 31,
-    "clothing": 0,
+    "clothing": 4,
     "hat": 0,
     "accessory": 0
   },
@@ -640,7 +640,40 @@
         "tier": "common"
       }
     ],
-    "clothing": [],
+    "clothing": [
+      {
+        "id": "black_hoodie",
+        "category": "clothing",
+        "name": "Black Hoodie",
+        "source_rel": "clothing/black_hoodie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_suit_black_tie",
+        "category": "clothing",
+        "name": "Black Suit Black Tie",
+        "source_rel": "clothing/black_suit_black_tie.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "black_tee",
+        "category": "clothing",
+        "name": "Black Tee",
+        "source_rel": "clothing/black_tee.png",
+        "weight": 6.0,
+        "tier": "common"
+      },
+      {
+        "id": "blue_plaid_flannel",
+        "category": "clothing",
+        "name": "Blue Plaid Flannel",
+        "source_rel": "clothing/blue_plaid_flannel.png",
+        "weight": 6.0,
+        "tier": "common"
+      }
+    ],
     "hat": [
       {
         "id": "none",

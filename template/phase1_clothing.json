@@ -1,0 +1,85 @@
+{
+  "phase": 1,
+  "name": "clothing_core",
+  "goal": "First production clothing set drawn on body_base",
+  "body": "layers/base/body_base.png",
+  "drawing_map": "layers/base/drawing_map.png",
+  "collar_y": 0.69,
+  "batch": [
+    {
+      "id": "black_tee",
+      "style_ref": "style_ref/clothing2/black_tee.png",
+      "status": "todo"
+    },
+    {
+      "id": "black_hoodie",
+      "style_ref": "style_ref/clothing2/black_hoodie.png",
+      "status": "todo"
+    },
+    {
+      "id": "charcoal_tee",
+      "style_ref": "style_ref/clothing2/charcoal_tee.png",
+      "status": "todo"
+    },
+    {
+      "id": "blue_plaid_flannel",
+      "style_ref": "style_ref/clothing2/blue_plaid_flannel.png",
+      "status": "todo"
+    },
+    {
+      "id": "green_tee",
+      "style_ref": "style_ref/clothing2/green_tee.png",
+      "status": "todo"
+    },
+    {
+      "id": "navy_tee",
+      "style_ref": "style_ref/clothing2/navy_tee.png",
+      "status": "todo"
+    },
+    {
+      "id": "ash_gray_tee",
+      "style_ref": "style_ref/clothing2/ash_gray_tee.png",
+      "status": "todo"
+    },
+    {
+      "id": "black_suit_black_tie",
+      "style_ref": "style_ref/clothing/black_suit_black_tie.png",
+      "status": "todo"
+    },
+    {
+      "id": "navy_suit_red_tie",
+      "style_ref": "style_ref/clothing/navy_suit_red_tie.png",
+      "status": "todo"
+    },
+    {
+      "id": "denim_jacket_bandana",
+      "style_ref": "style_ref/clothing/denim_jacket_bandana.png",
+      "status": "todo"
+    },
+    {
+      "id": "black_blazer_tan_tshirt",
+      "style_ref": "style_ref/clothing/black_blazer_tan_tshirt.png",
+      "status": "todo"
+    },
+    {
+      "id": "hawaiian_floral_shirt",
+      "style_ref": "style_ref/clothing2/hawaiian_floral_shirt.png",
+      "status": "todo"
+    },
+    {
+      "id": "red_black_flannel",
+      "style_ref": "style_ref/clothing2/red_black_flannel.png",
+      "status": "todo"
+    },
+    {
+      "id": "white_shirt_black_bow_tie",
+      "style_ref": "style_ref/clothing/white_shirt_black_bow_tie.png",
+      "status": "todo"
+    },
+    {
+      "id": "black_hoodie_drawstrings",
+      "style_ref": "style_ref/hoodies/black_hoodie_drawstrings.png",
+      "status": "todo"
+    }
+  ]
+}
